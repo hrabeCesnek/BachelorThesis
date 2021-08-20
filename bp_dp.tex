@@ -1,4 +1,4 @@
-% -----------------------------------------------
+	% -----------------------------------------------
 % Styl pro psaní diplomových a bakalářských prací
 % Určeno pro překlad pdfcsLaTeXem
 % -----------------------------------------------
@@ -23,6 +23,8 @@
 % balíček pro vkládání hypertextových odkazů
 \usepackage{url}
 
+\usepackage[numbers]{natbib}
+
 % -----------------------------------------------
 % Přepínač mezi bakalářskou a diplomovou prací, 
 % barevným a černobílým logem a mezi studentem a studentkou (vypracoval/vypracovala apod.)
@@ -34,12 +36,12 @@
 % -----------------------------------------------
 % Údaje o práci – doplní se i do bibliografické identifikace, pouze v prohlášení je nutné vložit jméno vedoucího práce, které není v 1. pádě
 % -----------------------------------------------
+\newcommand{\nazevcz}{Kalibrace a monitorování astročásticových teleskopů}
 \newcommand{\nazev}{Calibration and monitoring of astroparticle telescopes}
-\newcommand{\nazeven}{The Thesis Title}
 \newcommand{\student}{Daniel Staník}
 \ifbakal%
-  \newcommand{\program}{B1701 Aplikovaná fyzika}%
-  \newcommand{\obor}{1701R003 Aplikovaná fyzika (AFYZ)}%
+  \newcommand{\program}{B0533A110007  Applied Physics}%
+  \newcommand{\obor}{1702R001  Applied Physics  (AFYZ)}%
   %\else%
   %\newcommand{\program}{N1701 Fyzika}%
   %\newcommand{\obor}{7504T055 Učitelství fyziky pro střední školy}%
@@ -196,8 +198,8 @@ In~Olomouc~\today   \hfill\parbox[t]{6cm}{\centering\null\dotfill\\\student}
 % -----------------------------------------------
 % Úvod
 % -----------------------------------------------
-\chapter*{Úvod}
-\addcontentsline{toc}{chapter}{Úvod}
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit amet lectus vestibulum dignissim. Cras sit amet enim vitae mi elementum blandit eget nec tortor. Curabitur eget eros vitae arcu luctus varius commodo vel mauris. Nam elementum convallis pretium. Nunc dignissim pulvinar urna, nec blandit ante fringilla at. Ut et magna purus, vel pellentesque massa. In tortor nisi, faucibus condimentum cursus ut, sollicitudin quis leo. Ut at purus nec arcu accumsan tincidunt id id massa. Nam id vehicula mi. 
 
@@ -206,25 +208,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit
 % -----------------------------------------------
 % Kapitoly lze ukládat do zvláštních souborů...
 % -----------------------------------------------
-\input{text}
+\input{Chapter1}
 % -----------------------------------------------
-
+\input{Chapter2}
 % -----------------------------------------------
 % Závěr
 % -----------------------------------------------
-\chapter*{Závěr}
-\addcontentsline{toc}{chapter}{Závěr}
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit amet lectus vestibulum dignissim. Cras sit amet enim vitae mi elementum blandit eget nec tortor. Curabitur eget eros vitae arcu luctus varius commodo vel mauris. Nam elementum convallis pretium. Nunc dignissim pulvinar urna, nec blandit ante fringilla at. Ut et magna purus, vel pellentesque massa. In tortor nisi, faucibus condimentum cursus ut, sollicitudin quis leo. Ut at purus nec arcu accumsan tincidunt id id massa. Nam id vehicula mi. 
 
 % -----------------------------------------------
 % Literatura a prameny
 % -----------------------------------------------
-\begin{thebibliography}{99}
-\addcontentsline{toc}{chapter}{Literatura}
-\bibitem{gravitation} MISNER, Ch. W.; THORNE, K. S.; WHEELER, J. A. \emph{Gravitation}. San Francisco: W. Freeman, 1973.
-\end{thebibliography}
+%\begin{thebibliography}{99}
+\bibliographystyle{apsrev4-2}
+\nocite{*}
+\bibliography{citations}
+%\addcontentsline{toc}{chapter}{Literatura}
+%\bibitem{gravitation} MISNER, Ch. W.; THORNE, K. S.; WHEELER, J. A. %\emph{Gravitation}. San Francisco: W. Freeman, 1973.
+%\end{thebibliography}
 
+\newpage
 Preferované jsou citace podle norem ČSN ISO 690 a ISO 690-2, popř. styly APS (American Physical Society – u~prací zaměřených fyzikálně) nebo APA (American Psychological Association – u~prací zaměřených více didakticky a pedagogicky).
 \end{document}
 % Konec souboru %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
