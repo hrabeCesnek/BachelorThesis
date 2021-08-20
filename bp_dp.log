@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.20)  20 AUG 2021 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.20)  21 AUG 2021 00:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -744,7 +744,7 @@ LaTeX Info: Redefining \nameref on input line 123.
 \@outlinefile=\write3
 \openout3 = `bp_dp.out'.
 
-<up_logo_bw.pdf, id=24, 96.36pt x 98.3675pt>
+<up_logo_bw.pdf, id=68, 96.36pt x 98.3675pt>
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 147.
@@ -764,60 +764,65 @@ Underfull \hbox (badness 6542) in paragraph at lines 43--45
 
  [5
 
-] (./text.tex [6
+] (./Chapter1.tex [6
 
 ]
 Chapter 1.
-
-Package natbib Warning: Citation `gravitation' on page 7 undefined on input lin
-e 20.
-
-[7
-
-]) [8] (./bp_dp.bbl [9
-
-]) [10
+) (./Chapter2.tex [7
 
 ]
+Chapter 2.
+) (./Chapter3.tex [8
 
-Package natbib Warning: There were undefined citations.
+]
+Chapter 3.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
-[11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
+Overfull \hbox (6.56004pt too wide) in paragraph at lines 21--21
+[]\OT1/cmr/bx/n/17.28 Hardware for ex-per-i-ment and mea-sure-ment con-
+ []
+
+) [9
+
+] (./bp_dp.bbl [10
+
+]) [11
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
  (./bp_dp.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
-Package rerunfilecheck Info: File `bp_dp.out' has not changed.
-(rerunfilecheck)             Checksum: 690A7BB7006E2D6309825B216BEA4DCD;641.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 237.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
+
+
+Package rerunfilecheck Warning: File `bp_dp.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `bp_dp.out':
+(rerunfilecheck)             Before: BBB22163282743A9C52C736C95601401;2609
+(rerunfilecheck)             After:  CAE7E0DD8D22B3112820A588B03C988D;2690.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 237.
  ) 
 Here is how much of TeX's memory you used:
- 11000 strings out of 494880
- 148236 string characters out of 6179601
- 232430 words of memory out of 5000000
- 14167 multiletter control sequences out of 15000+600000
- 14643 words of font info for 54 fonts, out of 8000000 for 9000
+ 10991 strings out of 494880
+ 148191 string characters out of 6179601
+ 230096 words of memory out of 5000000
+ 14161 multiletter control sequences out of 15000+600000
+ 11832 words of font info for 44 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 28i,12n,28p,549b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on bp_dp.pdf (11 pages, 157779 bytes).
+ 28i,9n,31p,547b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on bp_dp.pdf (12 pages, 92460 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 
