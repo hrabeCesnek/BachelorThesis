@@ -15,4 +15,8 @@
 \contentsline {section}{\numberline {3.4}Hardware for experiment and measurement control}{14}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Raspberry Pi}{14}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}STM32 based microcontrolers}{14}{subsection.3.4.2}
-\contentsline {chapter}{Conclusion}{15}{chapter*.5}
+\contentsline {chapter}{\numberline {4}FAST telescope}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Principle of operation}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Remote control and monitoring}{15}{section.4.2}
+\contentsline {section}{\numberline {4.3}}{15}{section.4.3}
+\contentsline {chapter}{Conclusion}{17}{chapter*.5}
