@@ -3,46 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: bp_dp.aux
 The style file: unsrt.bst
 Database file #1: citations.bib
-Warning--I didn't find a database entry for "gravitation"
-You've used 3 entries,
+You've used 4 entries,
             1791 wiz_defined-function locations,
-            469 strings with 4612 characters,
-and the built_in function-call counts, 932 in all, are:
-= -- 50
-> -- 104
+            471 strings with 4654 characters,
+and the built_in function-call counts, 1021 in all, are:
+= -- 55
+> -- 105
 < -- 0
-+ -- 36
++ -- 37
 - -- 33
 * -- 92
-:= -- 188
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 2
+:= -- 194
+add.period$ -- 10
+call.type$ -- 4
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 25
-empty$ -- 56
+cite$ -- 4
+duplicate$ -- 30
+empty$ -- 74
 format.name$ -- 33
-if$ -- 176
+if$ -- 200
 int.to.chr$ -- 0
-int.to.str$ -- 3
+int.to.str$ -- 4
 missing$ -- 2
-newline$ -- 18
+newline$ -- 21
 num.names$ -- 3
-pop$ -- 4
+pop$ -- 10
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 8
+skip$ -- 16
 stack$ -- 0
 substring$ -- 36
-swap$ -- 3
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 5
-width$ -- 4
-write$ -- 35
-(There was 1 warning)
+width$ -- 5
+write$ -- 40

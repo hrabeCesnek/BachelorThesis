@@ -1,5 +1,13 @@
 \begin{thebibliography}{1}
 
+\bibitem{VACULA2021167169}
+Martin Vacula, Pavel Horvath, Ladislav Chytka, Kai Daumiller, Ralph Engel,
+  Miroslav Hrabovsky, Dusan Mandat, Hermann-Josef Mathes, Stanislav Michal,
+  Miroslav Palatka, Miroslav Pech, Christoph~M. Schäfer, and Petr Schovanek.
+\newblock Use of a general purpose integrating sphere as a low intensity
+  near-uv extended uniform light source.
+\newblock {\em Optik}, 242:167169, 2021.
+
 \bibitem{MALACARI2020102430}
 M.~Malacari, J.~Farmer, T.~Fujii, J.~Albury, J.A. Bellido, L.~Chytka, P.~Hamal,
   P.~Horvath, M.~Hrabovský, D.~Mandat, J.N. Matthews, L.~Nozka, M.~Palatka,
@@ -9,18 +17,13 @@ M.~Malacari, J.~Farmer, T.~Fujii, J.~Albury, J.A. Bellido, L.~Chytka, P.~Hamal,
   single-pixel telescopes.
 \newblock {\em Astroparticle Physics}, 119:102430, 2020.
 
-\bibitem{VACULA2021167169}
-Martin Vacula, Pavel Horvath, Ladislav Chytka, Kai Daumiller, Ralph Engel,
-  Miroslav Hrabovsky, Dusan Mandat, Hermann-Josef Mathes, Stanislav Michal,
-  Miroslav Palatka, Miroslav Pech, Christoph~M. Schäfer, and Petr Schovanek.
-\newblock Use of a general purpose integrating sphere as a low intensity
-  near-uv extended uniform light source.
-\newblock {\em Optik}, 242:167169, 2021.
-
 \bibitem{Tomankova2016_1000061954}
 Lenka Tománková.
 \newblock {\em Optical Properties and Calibration of the Pierre Auger
   Fluorescence Detector}.
 \newblock PhD thesis, Karlsruher Institut für Technologie (KIT), 2016.
+
+\bibitem{Photonis}
+Photonis: Photomultiplier tube basics.
 
 \end{thebibliography}

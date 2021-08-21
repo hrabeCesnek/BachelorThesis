@@ -12,14 +12,18 @@
 \contentsline {section}{\numberline {3.1}Integration sphere}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Photomultiplier}{14}{section.3.2}
 \contentsline {section}{\numberline {3.3}Silicon PM}{14}{section.3.3}
-\contentsline {section}{\numberline {3.4}Hardware for experiment and measurement control}{14}{section.3.4}
+\contentsline {section}{\numberline {3.4}Hardware for experiment control}{14}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Raspberry Pi}{14}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}STM32 based microcontrolers}{14}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Sensors and other electronics components}{14}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}MPU6050}{14}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}servo motors}{14}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Dallas DS18B20 thermometer}{14}{subsection.3.5.3}
 \contentsline {chapter}{\numberline {4}Calibration UV optical source}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Karlsruhe UV source}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}Testing and measurement of UV source}{15}{section.4.2}
 \contentsline {section}{\numberline {4.3}Adding optical feedback}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Modified UV light source for drone calibration }{15}{section.4.4}
+\contentsline {section}{\numberline {4.4}Modified UV source for drone mounting}{15}{section.4.4}
 \contentsline {chapter}{\numberline {5}FAST Calibration data analysis}{17}{chapter.5}
 \contentsline {section}{\numberline {5.1}Photomultiplier relative calibration}{17}{section.5.1}
 \contentsline {section}{\numberline {5.2}}{17}{section.5.2}
