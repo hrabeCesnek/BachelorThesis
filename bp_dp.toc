@@ -1,17 +1,18 @@
 \babel@toc {english}{}
-\contentsline {chapter}{Introduction}{6}{chapter*.4}
-\contentsline {chapter}{\numberline {1}Astroparticle detection}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}Cosmic rays and particles}{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Ultra-high energy cosmic rays (UHECRs)}{7}{section.1.2}
-\contentsline {section}{\numberline {1.3}Detection principles}{7}{section.1.3}
-\contentsline {chapter}{\numberline {2}FAST telescope}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}Principle of operation}{8}{section.2.1}
-\contentsline {section}{\numberline {2.2}Remote control and monitoring}{8}{section.2.2}
-\contentsline {section}{\numberline {2.3}}{8}{section.2.3}
-\contentsline {chapter}{\numberline {3}Instrumentalization and measurement preparation}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Integration sphere}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Photomultiplier}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Hardware for experiment and measurement control}{9}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Raspberry Pi}{9}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}STM32 based microcontrolers}{9}{subsection.3.3.2}
-\contentsline {chapter}{Conclusion}{10}{chapter*.5}
+\contentsline {chapter}{Introduction}{7}{chapter*.4}
+\contentsline {chapter}{\numberline {1}Astroparticle detection}{9}{chapter.1}
+\contentsline {section}{\numberline {1.1}Cosmic rays and particles}{9}{section.1.1}
+\contentsline {section}{\numberline {1.2}Ultra-high energy cosmic rays (UHECRs)}{9}{section.1.2}
+\contentsline {section}{\numberline {1.3}Detection principles}{9}{section.1.3}
+\contentsline {chapter}{\numberline {2}FAST telescope}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Principle of operation}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Remote control and monitoring}{11}{section.2.2}
+\contentsline {section}{\numberline {2.3}}{11}{section.2.3}
+\contentsline {chapter}{\numberline {3}Instrumentalization and measurement preparation}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Integration sphere}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Photomultiplier}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Silicon PM}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Hardware for experiment and measurement control}{14}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Raspberry Pi}{14}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}STM32 based microcontrolers}{14}{subsection.3.4.2}
+\contentsline {chapter}{Conclusion}{15}{chapter*.5}
