@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {4.1}Karlsruhe UV source}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}Testing and measurement of UV source}{15}{section.4.2}
 \contentsline {section}{\numberline {4.3}Adding optical feedback}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Modified UV light for drone calibration }{15}{section.4.4}
+\contentsline {section}{\numberline {4.4}Modified UV light source for drone calibration }{15}{section.4.4}
 \contentsline {chapter}{\numberline {5}FAST Calibration data analysis}{17}{chapter.5}
 \contentsline {section}{\numberline {5.1}Photomultiplier relative calibration}{17}{section.5.1}
 \contentsline {section}{\numberline {5.2}}{17}{section.5.2}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.20)  21 AUG 2021 05:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.20)  21 AUG 2021 05:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,7 +732,7 @@ LaTeX Info: Redefining \nameref on input line 126.
 \@outlinefile=\write3
 \openout3 = `bp_dp.out'.
 
-<up_logo_bw.pdf, id=92, 96.36pt x 98.3675pt>
+<up_logo_bw.pdf, id=108, 96.36pt x 98.3675pt>
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 150.
@@ -800,22 +800,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
  (./bp_dp.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
-
-
-Package rerunfilecheck Warning: File `bp_dp.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bp_dp.out':
-(rerunfilecheck)             Before: 2CD92F7EECD840223C0BB6F49EADD5BC;3845
-(rerunfilecheck)             After:  6CDFB440542E60B61C6E31438952CE0A;4379.
+Package rerunfilecheck Info: File `bp_dp.out' has not changed.
+(rerunfilecheck)             Checksum: DD3E0FD20E577F354976DAAE76CD527C;4417.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 11006 strings out of 494880
- 148393 string characters out of 6179601
- 229226 words of memory out of 5000000
- 14148 multiletter control sequences out of 15000+600000
+ 11010 strings out of 494880
+ 148443 string characters out of 6179601
+ 230226 words of memory out of 5000000
+ 14152 multiletter control sequences out of 15000+600000
  11832 words of font info for 44 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  28i,9n,31p,547b,348s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -826,10 +819,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on bp_dp.pdf (22 pages, 105808 bytes).
+Output written on bp_dp.pdf (22 pages, 106279 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
+ 288 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
  57 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
