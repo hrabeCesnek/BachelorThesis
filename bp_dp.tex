@@ -120,6 +120,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit
      \def\bgchi{\vec{\char149}}
      \def\bgvartheta{\vec{\char154}}
 \renewcommand{\thefigure}{\arabic{figure}}
+
+\raggedbottom %přidaný kvůli špatnýmu řádkování
 % ---------------------------------------------------------------
 % Samotná práce
 % ---------------------------------------------------------------
@@ -193,6 +195,7 @@ In~Olomouc~\today   \hfill\parbox[t]{6cm}{\centering\null\dotfill\\\student}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \widowpenalty =10000
 \pagestyle{plain}
+\let\cleardoublepage\clearpage %odstanění dvojitých stran
 % -----------------------------------------------
 % Obsah je generován automaticky, změny se projeví po 2 překladech
 % -----------------------------------------------

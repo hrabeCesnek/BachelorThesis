@@ -29,9 +29,61 @@ More deeper explanation of IS working principles and characterization of optical
 For our pusrposes, in case of FAST calibration, we use IS as EULS in UV spectre. In case of testing optical calibration source, we don't even care about homegenity. The reason why we use IS in this case is that it focuses the entire optical power of the source into output ports, where  our detectors are mounted, and blocks any other external light source, which could affect our detectors.
 % -----------------------------------------------
 
-\section{Photomultiplier}
+\section{Photomultiplier tube}
 % -----------------------------------------------
-Photomultiplier (PMT) is considered to be a high voltage optoelectronical part.
+Photomultiplier tube (PMT) is considered to be a high voltage optoelectronical part. It allows us to measure very low intesity optical signals. PMT is also characterized by high amplification, low noise and stability. 
+\subsection{Operating principle}
+PMT consists of 6 main elements, which can be seen on scheme \ref{PMT scheme}.
+
+\begin{figure}[H]
+ \includegraphics{up_logo_bw}
+ \caption{Photomultiplier tube scheme.}
+ \label{PMT scheme}
+\end{figure}
+
+
+\par
+The input photon with sufficient energy, which strikes the PMT's photocathode, excites photocathode's electron. This electron then follows electrostatitc field to the first dynode of the electron multiplier, where it induces secondary emission of more electrons. These electrons are then attracted by the next dynode, where the emission process repeats. After few times of multiplying electron number over dynodes, the electrons are then collected by 
+the anode, which is situated on the end of the electron multiplier. The anode output current is then converted to voltage signal by appropriate load resistor or by operational amplifier current-to-voltage circuit.
+\par
+As all other laboratory instruments, which are based on accelerating electrons, such as electron microscopes, the photomultiplier's main parts must be kept in vacuum. To maintain vacuum, the photomultiplier is surrounded by special glass envelope. To avoid mechanical damage of the glass envelope, the entire photomultiplier is situated in a plastic tube.
+
+\subsubsection{Window}
+
+The photocathode is superimposed by glass window, whose main purpose is to admit light of certain wavelengths. Glass materials are characterized by the spectral sensitivity to wavelengths. For transparency in UV spectre, it is advised to use borosilicate or fused silica glasses.
+
+
+\subsubsection{Photocathode}
+
+The photocathode is the only light-sensitive part of PMT. It transfers the light flux into electric current.
+\par
+One of its main parameters is quantum efficenty. It is refered as ratio of emitted photoelectrons to the number of incident photons expressed as a percentage. It is generally less than 35 \%. For measurement, the more practical parameter is cathode radiant sensitivity. It is the ratio of photocathode current to an incident light power, which is expressed in mA/W.
+\par
+Photocathode material must be sensitive to certain wavelengths, which we want to detect with PMT, and must have sufficent quantum efficenty. Prefered materials are usually alkali antimodes.
+\subsubsection{Electron multiplier}
+The electron multiplier consists of dynodes and one anode.
+Dynodes are electrodes, which produces more electrons through secondary emission. To maintain elecrostatic field between dynodes, each of dynodes is held on different potential. This is achieved by using the voltage divider. Every resistor in the divider sets the potential of one diode according to its resistivity.
+\par
+All of the photoelectrons emitted by photocathode should be ideally collected by the first dynode. However, many of them could be diverted from their path to dynode due to various effects. The parameter, which characterizes this, is the collection efficiency. The Collection efficiency is a probability that photoelectron will strike area of the first dynode. 
+\par
+There are few types of dynodes arrangements. On the scheme \ref{PMT scheme} is the classic linear-focusing multiplier. 
+
+
+\subsubsection{Voltage divider}
+It is a simple resistor network.  
+ 
+
+
+\subsection{Gain and sensitivity}
+
+\subsection{Noises and Dark current}
+
+\subsection{Lifetime and degradation}
+
+\subsection{FAST's PMTs}
+
+\subsection{Calibration}
+
 %------------------------------------------------
 
 \section{Silicon PM}

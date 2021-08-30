@@ -1,31 +1,41 @@
 \babel@toc {english}{}
 \contentsline {chapter}{Introduction}{7}{chapter*.4}
-\contentsline {chapter}{\numberline {1}Astroparticle detection}{9}{chapter.1}
-\contentsline {section}{\numberline {1.1}Cosmic rays and particles}{9}{section.1.1}
-\contentsline {section}{\numberline {1.2}Ultra-high energy cosmic rays (UHECRs)}{9}{section.1.2}
-\contentsline {section}{\numberline {1.3}Detection principles}{9}{section.1.3}
-\contentsline {chapter}{\numberline {2}FAST telescope}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}Principle of operation}{11}{section.2.1}
-\contentsline {section}{\numberline {2.2}Remote control and monitoring}{11}{section.2.2}
-\contentsline {section}{\numberline {2.3}}{11}{section.2.3}
-\contentsline {chapter}{\numberline {3}Instrumentalization and measurement preparation}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Integration sphere}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Photomultiplier}{14}{section.3.2}
-\contentsline {section}{\numberline {3.3}Silicon PM}{14}{section.3.3}
-\contentsline {section}{\numberline {3.4}Hardware for experiment control}{14}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Raspberry Pi}{14}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}STM32 based microcontrolers}{14}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Sensors and other electronics components}{14}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}MPU6050}{14}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}servo motors}{14}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Dallas DS18B20 thermometer}{14}{subsection.3.5.3}
-\contentsline {chapter}{\numberline {4}Calibration UV optical source}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Karlsruhe UV source}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Testing and measurement of UV source}{15}{section.4.2}
-\contentsline {section}{\numberline {4.3}Adding optical feedback}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Modified UV source for drone mounting}{15}{section.4.4}
-\contentsline {chapter}{\numberline {5}FAST Calibration data analysis}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Photomultiplier relative calibration}{17}{section.5.1}
-\contentsline {section}{\numberline {5.2}}{17}{section.5.2}
-\contentsline {section}{\numberline {5.3}}{17}{section.5.3}
-\contentsline {chapter}{Conclusion}{19}{chapter*.5}
+\contentsline {chapter}{\numberline {1}Astroparticle detection}{8}{chapter.1}
+\contentsline {section}{\numberline {1.1}Cosmic rays and particles}{8}{section.1.1}
+\contentsline {section}{\numberline {1.2}Ultra-high energy cosmic rays (UHECRs)}{8}{section.1.2}
+\contentsline {section}{\numberline {1.3}Detection principles}{8}{section.1.3}
+\contentsline {chapter}{\numberline {2}FAST telescope}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Principle of operation}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Remote control and monitoring}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}}{9}{section.2.3}
+\contentsline {chapter}{\numberline {3}Instrumentalization and measurement preparation}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Integration sphere}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Photomultiplier tube}{11}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Operating principle}{11}{subsection.3.2.1}
+\contentsline {subsubsection}{Window}{11}{section*.5}
+\contentsline {subsubsection}{Photocathode}{11}{section*.6}
+\contentsline {subsubsection}{Electron multiplier}{12}{section*.7}
+\contentsline {subsubsection}{Voltage divider}{12}{section*.8}
+\contentsline {subsection}{\numberline {3.2.2}Gain and sensitivity}{13}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Noises and Dark current}{13}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Lifetime and degradation}{13}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}FAST's PMTs}{13}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Calibration}{13}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Silicon PM}{13}{section.3.3}
+\contentsline {section}{\numberline {3.4}Hardware for experiment control}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Raspberry Pi}{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}STM32 based microcontrolers}{13}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Sensors and other electronics components}{13}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}MPU6050}{13}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}servo motors}{13}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Dallas DS18B20 thermometer}{13}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Calibration UV optical source}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Karlsruhe UV source}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Testing and measurement of UV source}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Adding optical feedback}{14}{section.4.3}
+\contentsline {section}{\numberline {4.4}Modified UV source for drone mounting}{14}{section.4.4}
+\contentsline {chapter}{\numberline {5}FAST Calibration data analysis}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Photomultiplier relative calibration}{15}{section.5.1}
+\contentsline {section}{\numberline {5.2}}{15}{section.5.2}
+\contentsline {section}{\numberline {5.3}}{15}{section.5.3}
+\contentsline {chapter}{Conclusion}{16}{chapter*.9}
