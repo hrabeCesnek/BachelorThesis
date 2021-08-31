@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {3.1}Integration sphere}{10}{section.3.1}
 \contentsline {section}{\numberline {3.2}Photomultiplier tube}{11}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Operating principle}{11}{subsection.3.2.1}
-\contentsline {subsubsection}{Window}{11}{section*.5}
+\contentsline {subsubsection}{Window}{12}{section*.5}
 \contentsline {subsubsection}{Photocathode}{12}{section*.6}
 \contentsline {subsubsection}{Electron multiplier}{12}{section*.7}
 \contentsline {subsubsection}{Voltage divider and voltage adjustement}{12}{section*.8}

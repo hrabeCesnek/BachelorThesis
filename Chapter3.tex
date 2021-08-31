@@ -53,8 +53,18 @@ As all other laboratory instruments, which are based on accelerating electrons, 
 One of the basic adjustable characteristic of PMT is its gain. The gain is defined as:
 
 \begin{equation}
-G = \frac{I_a}{I_p}.
+G = \frac{I_\textrm{a}}{I_\textrm{p}},
 \end{equation}
+where $I_\textrm{a}$ is the anode current and $I_\textrm{p}$ is the input photocurrent from the photocathode.
+\par
+In case of ideal, noiseless PMT, we can adjust gain by variing the supply voltage. By variing supply voltage we can adjust gain according to an euqation:
+
+\begin{equation}
+\frac{G_2}{G_1} = (\frac{V_2}{V_1})^{\alpha N},
+\end{equation}
+where $G_2$ and $G_1$ are gains at supply voltages $V_2$ and $V_1$. $\alpha$ is coefficient given by dynode material and $N$ is the number of dynodes.
+
+Other effects, such as temperature, may also vary PMT's gain, and it is neccesary to keep them on constant value or monitor.
 
 
 
