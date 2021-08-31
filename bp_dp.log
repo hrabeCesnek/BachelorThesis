@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.20)  30 AUG 2021 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.20)  31 AUG 2021 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -766,7 +766,7 @@ Chapter 2.
 Chapter 3.
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
-Package pdftex.def Info: up_logo_bw.pdf  used on input line 15.
+Package pdftex.def Info: up_logo_bw.pdf  used on input line 16.
 (pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
 [10
 
@@ -775,19 +775,20 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.32 \section
+l.33 \section
              {Photomultiplier tube}]
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
-Package pdftex.def Info: up_logo_bw.pdf  used on input line 39.
+Package pdftex.def Info: up_logo_bw.pdf  used on input line 41.
 (pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
  [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.61 \par
-         ]) (./Chapter4.tex [12] [13]
+l.70 O
+      ne of its main parameters is quantum efficenty. It is refered as ratio...
+] [12]) (./Chapter4.tex [13]
 Chapter 4.
 ) (./Chapter5.tex [14
 
@@ -807,12 +808,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
 Package rerunfilecheck Info: File `bp_dp.out' has not changed.
-(rerunfilecheck)             Checksum: 06CAA9DAE586CBBF9704E431215171A5;5919.
+(rerunfilecheck)             Checksum: 3616401AD16909D80A31741FDD0EA0F5;5952.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
  ) 
 Here is how much of TeX's memory you used:
- 11036 strings out of 494880
- 148869 string characters out of 6179601
+ 11037 strings out of 494880
+ 148883 string characters out of 6179601
  232304 words of memory out of 5000000
  14166 multiletter control sequences out of 15000+600000
  11832 words of font info for 44 fonts, out of 8000000 for 9000
@@ -820,15 +821,17 @@ Here is how much of TeX's memory you used:
  28i,9n,31p,547b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on bp_dp.pdf (18 pages, 112679 bytes).
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmtt12.pfb>
+Output written on bp_dp.pdf (18 pages, 129276 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 341 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 70 named destinations out of 1000 (max. 500000)
  294 words of extra memory for PDF output out of 10000 (max. 10000000)
 

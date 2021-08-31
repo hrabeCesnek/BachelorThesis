@@ -12,6 +12,7 @@ To perform all of neccesary measurements we need to use various types of optical
 The Integration sphere (IS) is a special optical equipment, which can be used either as extended uniform light source (EULS) or with spectrometer in determining the material reflectance. In our experiments we use general purpose Labsphere (Fig. \ref{Labsphere}).
 
 \begin{figure}[H]
+ \centering
  \includegraphics{up_logo_bw}
  \caption{General purpose Labsphere.}
  \label{Labsphere}
@@ -36,6 +37,7 @@ Photomultiplier tube (PMT) is considered to be a high voltage optoelectronical p
 PMT consists of 6 main elements, which can be seen on scheme \ref{PMT scheme}.
 
 \begin{figure}[H]
+ \centering
  \includegraphics{up_logo_bw}
  \caption{Photomultiplier tube scheme.}
  \label{PMT scheme}
@@ -47,6 +49,14 @@ The input photon with sufficient energy, which strikes the PMT's photocathode, e
 the anode, which is situated on the end of the electron multiplier. The anode output current is then converted to voltage signal by appropriate load resistor or by operational amplifier current-to-voltage circuit.
 \par
 As all other laboratory instruments, which are based on accelerating electrons, such as electron microscopes, the photomultiplier's main parts must be kept in vacuum. To maintain vacuum, the photomultiplier is surrounded by special glass envelope. To avoid mechanical damage of the glass envelope, the entire photomultiplier is situated in a plastic tube.
+\par
+One of the basic adjustable characteristic of PMT is its gain. The gain is defined as:
+
+\begin{equation}
+G = \frac{I_a}{I_p}.
+\end{equation}
+
+
 
 \subsubsection{Window}
 
@@ -59,26 +69,34 @@ The photocathode is the only light-sensitive part of PMT. It transfers the light
 \par
 One of its main parameters is quantum efficenty. It is refered as ratio of emitted photoelectrons to the number of incident photons expressed as a percentage. It is generally less than 35 \%. For measurement, the more practical parameter is cathode radiant sensitivity. It is the ratio of photocathode current to an incident light power, which is expressed in mA/W.
 \par
-Photocathode material must be sensitive to certain wavelengths, which we want to detect with PMT, and must have sufficent quantum efficenty. Prefered materials are usually alkali antimodes.
+Photocathode material must be sensitive to certain wavelengths, which we want to detect with the PMT, and must have sufficent quantum efficenty. Prefered materials are usually alkali antimodes.
 \subsubsection{Electron multiplier}
 The electron multiplier consists of dynodes and one anode.
-Dynodes are electrodes, which produces more electrons through secondary emission. To maintain elecrostatic field between dynodes, each of dynodes is held on different potential. This is achieved by using the voltage divider. Every resistor in the divider sets the potential of one diode according to its resistivity.
+Dynodes are electrodes, which produce more electrons through secondary emission. To maintain elecrostatic field between dynodes, each of dynodes is held on different potential. This is achieved by using the voltage divider. Every resistor in the divider sets the potential of one diode according to its resistivity.
 \par
 All of the photoelectrons emitted by photocathode should be ideally collected by the first dynode. However, many of them could be diverted from their path to dynode due to various effects. The parameter, which characterizes this, is the collection efficiency. The Collection efficiency is a probability that photoelectron will strike area of the first dynode. 
 \par
-There are few types of dynodes arrangements. On the scheme \ref{PMT scheme} is the classic linear-focusing multiplier. 
+There are few types of dynodes arrangements. On the fig. \ref{PMT scheme} is the classic linear-focusing multiplier. 
 
 
-\subsubsection{Voltage divider}
-It is a simple resistor network.  
- 
+\subsubsection{Voltage divider and voltage adjustement}
+Voltage divider could be a simple resistor serial network, which divide high input voltage between the dynodes. 
+\par
+It is neccessary to consider, that the multiplier current density increases in direction to the anode, so it tends to lessen the voltage between last dynode and anode. This phenomena can shake the potential levels across the entire multiplier. One way to reduce the impact on PMT's behaviour is to choose the proper resistor values of the divider. 
+\par
+The resistor values could same for all the dynodes, but for some applications it is better to have progresive voltage distribution, which increases from cathode to anode, or intermediate distribution with highest values on the beginning of the multiplier.
+
+\par
+In some aplications, where high anode current peaks are expected, the divider can be filled with reservoir capacitors, which prevent the temporaly charge exhaustion of the dynodes. In pulse mode, the unwanted oscillacions on dynodes may occur, in that case, it is desirable to connect additional damping resistor to the divider.
 
 
 \subsection{Gain and sensitivity}
 
 \subsection{Noises and Dark current}
 
-\subsection{Lifetime and degradation}
+\subsection{Operating life and degradation}
+The operating life of PMT is defined as the time required for anode sensitivity to be halved.
+
 
 \subsection{FAST's PMTs}
 

@@ -13,12 +13,12 @@
 \contentsline {section}{\numberline {3.2}Photomultiplier tube}{11}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Operating principle}{11}{subsection.3.2.1}
 \contentsline {subsubsection}{Window}{11}{section*.5}
-\contentsline {subsubsection}{Photocathode}{11}{section*.6}
+\contentsline {subsubsection}{Photocathode}{12}{section*.6}
 \contentsline {subsubsection}{Electron multiplier}{12}{section*.7}
-\contentsline {subsubsection}{Voltage divider}{12}{section*.8}
+\contentsline {subsubsection}{Voltage divider and voltage adjustement}{12}{section*.8}
 \contentsline {subsection}{\numberline {3.2.2}Gain and sensitivity}{13}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Noises and Dark current}{13}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Lifetime and degradation}{13}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Operating life and degradation}{13}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}FAST's PMTs}{13}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}Calibration}{13}{subsection.3.2.6}
 \contentsline {section}{\numberline {3.3}Silicon PM}{13}{section.3.3}
