@@ -16,26 +16,32 @@
 \contentsline {subsubsection}{Photocathode}{12}{section*.6}
 \contentsline {subsubsection}{Electron multiplier}{12}{section*.7}
 \contentsline {subsubsection}{Voltage divider and voltage adjustement}{12}{section*.8}
-\contentsline {subsection}{\numberline {3.2.2}Gain and sensitivity}{13}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Noises and Dark current}{13}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Operating life and degradation}{13}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}FAST's PMTs}{13}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Calibration}{13}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}Silicon PM}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Hardware for experiment control}{13}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Raspberry Pi}{13}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}STM32 based microcontrolers}{13}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Sensors and other electronics components}{13}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}MPU6050}{13}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}servo motors}{13}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Dallas DS18B20 thermometer}{13}{subsection.3.5.3}
-\contentsline {chapter}{\numberline {4}Calibration UV optical source}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Karlsruhe UV source}{14}{section.4.1}
-\contentsline {section}{\numberline {4.2}Testing and measurement of UV source}{14}{section.4.2}
-\contentsline {section}{\numberline {4.3}Adding optical feedback}{14}{section.4.3}
-\contentsline {section}{\numberline {4.4}Modified UV source for drone mounting}{14}{section.4.4}
-\contentsline {chapter}{\numberline {5}FAST Calibration data analysis}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Photomultiplier relative calibration}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}}{15}{section.5.2}
-\contentsline {section}{\numberline {5.3}}{15}{section.5.3}
-\contentsline {chapter}{Conclusion}{16}{chapter*.9}
+\contentsline {subsection}{\numberline {3.2.2}Dark current}{13}{subsection.3.2.2}
+\contentsline {subsubsection}{Ohmical leakage}{13}{section*.9}
+\contentsline {subsubsection}{Thermionic emission}{13}{section*.10}
+\contentsline {subsubsection}{Field emission}{13}{section*.11}
+\contentsline {subsubsection}{Radioactivity}{13}{section*.12}
+\contentsline {subsection}{\numberline {3.2.3}Timing and response}{14}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Operating life and degradation}{14}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}FAST's PMTs}{14}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Calibration}{14}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Silicon PM}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Hardware for experiment control}{14}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Raspberry Pi}{14}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}STM32 based microcontrolers}{14}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}USB osciloscope}{14}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Power meter}{14}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Sensors and other electronics components}{14}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}MPU6050}{14}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}servo motors}{14}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Dallas DS18B20 thermometer}{14}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Calibration UV optical source}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Karlsruhe UV source}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Testing and measurement of UV source}{15}{section.4.2}
+\contentsline {section}{\numberline {4.3}Adding optical feedback}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}Modified UV source for drone mounting}{15}{section.4.4}
+\contentsline {chapter}{\numberline {5}FAST Calibration data analysis}{16}{chapter.5}
+\contentsline {section}{\numberline {5.1}Photomultiplier relative calibration}{16}{section.5.1}
+\contentsline {section}{\numberline {5.2}}{16}{section.5.2}
+\contentsline {section}{\numberline {5.3}}{16}{section.5.3}
+\contentsline {chapter}{Conclusion}{17}{chapter*.13}

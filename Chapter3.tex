@@ -25,14 +25,14 @@ The inner surface is part where light intergration happens. The effect which tak
 \par
 Using optical source with IS requires baffle to prevent source's light flux or its part to exit IS without integration.
 \par
-More deeper explanation of IS working principles and characterization of optical properties of identical IS, which we use, can be found in \cite{VACULA2021167169}.
+More deeper explanation of IS working principles and characterization of optical properties of the identical IS, which we use, can be found in \cite{VACULA2021167169}.
 \par
 For our pusrposes, in case of FAST calibration, we use IS as EULS in UV spectre. In case of testing optical calibration source, we don't even care about homegenity. The reason why we use IS in this case is that it focuses the entire optical power of the source into output ports, where  our detectors are mounted, and blocks any other external light source, which could affect our detectors.
 % -----------------------------------------------
 
 \section{Photomultiplier tube}
 % -----------------------------------------------
-Photomultiplier tube (PMT) is considered to be a high voltage optoelectronical part. It allows us to measure very low intesity optical signals. PMT is also characterized by high amplification, low noise and stability. 
+Photomultiplier tube (PMT) is considered to be a high voltage optoelectronical part. It allows us to measure very low intesity optical signals. PMT is also characterized by high amplification, low noise and stability. It has many variants of usage. It can be used either as detector of optical signal (pulse or continual) for chosen wavelength or as a radiation detector. We can construct a counter or a multichannel analyzer by mounting an appropriate scintilator on the window of PMT. 
 \subsection{Operating principle}
 PMT consists of 6 main elements, which can be seen on scheme \ref{PMT scheme}.
 
@@ -63,9 +63,10 @@ In case of ideal, noiseless PMT, we can adjust gain by variing the supply voltag
 \frac{G_2}{G_1} = (\frac{V_2}{V_1})^{\alpha N},
 \end{equation}
 where $G_2$ and $G_1$ are gains at supply voltages $V_2$ and $V_1$. $\alpha$ is coefficient given by dynode material and $N$ is the number of dynodes.
-
-Other effects, such as temperature, may also vary PMT's gain, and it is neccesary to keep them on constant value or monitor.
-
+\par
+Other effects, such as temperature, may also vary PMT's gain, and it is neccesary to keep them on constant value or measure them and involve them in the final evaluation of data.
+\par
+For proper functionality of PMT, the charge and current linearity should be considered. Charge linearity is the ratio of the number of incident photons to the number of electrons collected at the anode.  
 
 
 \subsubsection{Window}
@@ -75,7 +76,7 @@ The photocathode is superimposed by glass window, whose main purpose is to admit
 
 \subsubsection{Photocathode}
 
-The photocathode is the only light-sensitive part of PMT. It transfers the light flux into electric current.
+The photocathode is the only light-sensitive part of PMT. It transfers the light flux into the electric current.
 \par
 One of its main parameters is quantum efficenty. It is refered as ratio of emitted photoelectrons to the number of incident photons expressed as a percentage. It is generally less than 35 \%. For measurement, the more practical parameter is cathode radiant sensitivity. It is the ratio of photocathode current to an incident light power, which is expressed in mA/W.
 \par
@@ -98,11 +99,26 @@ The resistor values could same for all the dynodes, but for some applications it
 
 \par
 In some aplications, where high anode current peaks are expected, the divider can be filled with reservoir capacitors, which prevent the temporaly charge exhaustion of the dynodes. In pulse mode, the unwanted oscillacions on dynodes may occur, in that case, it is desirable to connect additional damping resistor to the divider.
+\par
+Voltage supply should be stable during the PMT's operation. As was mention before, the PMT's gain is voltage dependent. For 
 
 
-\subsection{Gain and sensitivity}
+\subsection{Dark current}
+Dark current is anode current produced by photomultiplier in total darkness. It is considered to be a part of unwanted noise, causes errors in measurements and limits the detectivity of PMT. Dark current has origin in Ohmical leakage, thermionic and field emission or in radioactivity. Ohmical leakage is major part of dark current at low gain. With the increasing gain the thermionic emission prevails. At high gains the field emission becomes the major part.
+\subsubsection{Ohmical leakage}
+Insufficent insulation of electrodes, dynodes and all other parts which are under high voltage may lead to surface current over glass and tube. Dirt and humidity are in most cases the reason of Ohmical leakage.
 
-\subsection{Noises and Dark current}
+\subsubsection{Thermionic emission}
+Temperature causes emission of photocathode's electrons, which are at medium gains the major part of dark current.  Due to this effect, some PMTs may need to be cooled during operation.
+\subsubsection{Field emission}
+At high gains the electrostatic field is so strong that it can rip the electrons out of the electrodes and accelerate them onto other surfaces, where they cause secondary emission. Field emission rapidly increases with supply voltage. In some literature it is also refered as cold emission.
+\subsubsection{Radioactivity}
+The radioactivity of PMT's components depends only on the material composition. In some aplications, such as astroparticle detection, it is neccessary to decrease radiation as possible. In astroparticle detection the radioactivity could be a source of false events. Only way to prevent this is to use materials with a very low concentration of radioactive isotopes.
+
+\subsection{Timing and response}
+Differences of photoelectrons' trajectories from the cathode to the first dynode lead into time distorsion of signal. For example if we were able to produce delta-function pulse, the PMT would detect pulse with some response pulse width time $t_\textrm{w}$.
+\par 
+Another time delay is caused by 
 
 \subsection{Operating life and degradation}
 The operating life of PMT is defined as the time required for anode sensitivity to be halved.
@@ -121,9 +137,14 @@ The operating life of PMT is defined as the time required for anode sensitivity 
 
 \section{Hardware for experiment control}
 % -----------------------------------------------
+
 \subsection{Raspberry Pi}
 
 \subsection{STM32 based microcontrolers}
+
+\subsection{USB osciloscope}
+
+\subsection{Power meter}
 
 \section{Sensors and other electronics components}
 
