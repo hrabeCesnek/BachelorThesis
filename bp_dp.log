@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.20)  1 SEP 2021 06:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.20)  3 SEP 2021 03:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -781,27 +781,39 @@ File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 41.
 (pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
+File: up_logo_bw.pdf Graphic file (type pdf)
+<use up_logo_bw.pdf>
+Package pdftex.def Info: up_logo_bw.pdf  used on input line 48.
+(pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
  [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.64 \end{equation}
-                   ] [12] [13]) (./Chapter4.tex [14]
+l.59 O
+      ne of the basic adjustable characteristic of PMT is its gain. The gain...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.59 O
+      ne of the basic adjustable characteristic of PMT is its gain. The gain...
+] [12] [13]) (./Chapter4.tex [14] [15]
 Chapter 4.
-) (./Chapter5.tex [15
+) (./Chapter5.tex [16
 
 ]
 Chapter 5.
-) [16
+) [17
 
-] (./bp_dp.bbl [17
+] (./bp_dp.bbl [18
 
-]) [18
+]) [19
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
- [19]
+ [20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
  (./bp_dp.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
@@ -811,13 +823,13 @@ Package rerunfilecheck Info: File `bp_dp.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
  ) 
 Here is how much of TeX's memory you used:
- 11047 strings out of 494880
- 149017 string characters out of 6179601
- 232308 words of memory out of 5000000
- 14168 multiletter control sequences out of 15000+600000
+ 11053 strings out of 494880
+ 149064 string characters out of 6179601
+ 232371 words of memory out of 5000000
+ 14169 multiletter control sequences out of 15000+600000
  11832 words of font info for 44 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 28i,9n,31p,547b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,9n,31p,610b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
@@ -827,10 +839,10 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on bp_dp.pdf (19 pages, 134791 bytes).
+Output written on bp_dp.pdf (20 pages, 137871 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
  310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

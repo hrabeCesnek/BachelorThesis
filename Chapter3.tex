@@ -32,7 +32,7 @@ For our pusrposes, in case of FAST calibration, we use IS as EULS in UV spectre.
 
 \section{Photomultiplier tube}
 % -----------------------------------------------
-Photomultiplier tube (PMT) is considered to be a high voltage optoelectronical part. It allows us to measure very low intesity optical signals. PMT is also characterized by high amplification, low noise and stability. It has many variants of usage. It can be used either as detector of optical signal (pulse or continual) for chosen wavelength or as a radiation detector. We can construct a counter or a multichannel analyzer by mounting an appropriate scintilator on the window of PMT. 
+Photomultiplier tube (PMT) is considered to be a high voltage optoelectronical part. It allows us to measure very low intesity optical signals. PMT is also characterized by high amplification, low noise and stability. It has many variants of usage. It can be used either as detector of optical signal (pulse or continual) for chosen wavelength or as a radiation detector. We can construct a counter or a multichannel analyzer by mounting an appropriate scintilator on the window of the PMT. 
 \subsection{Operating principle}
 PMT consists of 6 main elements, which can be seen on scheme \ref{PMT scheme}.
 
@@ -43,6 +43,12 @@ PMT consists of 6 main elements, which can be seen on scheme \ref{PMT scheme}.
  \label{PMT scheme}
 \end{figure}
 
+\begin{figure}[H]
+ \centering
+ \includegraphics{up_logo_bw}
+ \caption{XP2262 PMT used for our measurements.}
+ \label{XP2262 PMT}
+\end{figure}
 
 \par
 The input photon with sufficient energy, which strikes the PMT's photocathode, excites photocathode's electron. This electron then follows electrostatitc field to the first dynode of the electron multiplier, where it induces secondary emission of more electrons. These electrons are then attracted by the next dynode, where the emission process repeats. After few times of multiplying electron number over dynodes, the electrons are then collected by 
@@ -66,7 +72,7 @@ where $G_2$ and $G_1$ are gains at supply voltages $V_2$ and $V_1$. $\alpha$ is 
 \par
 Other effects, such as temperature, may also vary PMT's gain, and it is neccesary to keep them on constant value or measure them and involve them in the final evaluation of data.
 \par
-For proper functionality of PMT, the charge and current linearity should be considered. Charge linearity is the ratio of the number of incident photons to the number of electrons collected at the anode.  
+For proper functionality of the PMT, the charge and current linearity should be considered. Charge linearity is the ratio of the number of incident photons to the number of electrons collected at the anode. Current linearity express the proportionality between incident light flux and anode current. Ideal PMT is always linear, but the real PMT may vary from linearity due to drifts, space charges, unstability of voltage divider etc. These effect can lead up to saturation of the PMT. In saturation, increasing the input light flux leaves the anode current mostly unchanged.      
 
 
 \subsubsection{Window}
@@ -100,8 +106,9 @@ The resistor values could same for all the dynodes, but for some applications it
 \par
 In some aplications, where high anode current peaks are expected, the divider can be filled with reservoir capacitors, which prevent the temporaly charge exhaustion of the dynodes. In pulse mode, the unwanted oscillacions on dynodes may occur, in that case, it is desirable to connect additional damping resistor to the divider.
 \par
-Voltage supply should be stable during the PMT's operation. As was mention before, the PMT's gain is voltage dependent. For 
-
+Voltage supply should be stable during the PMT's operation. As was mention before, the PMT's gain is voltage dependent. To adjust sufficent gain, high voltage (thosands of volts) needs to be applied between photocathode and anode. The high voltage needs to be ramped on required level gradually to avoid negative consequences of transition and dark current effects, which can decrease the operating life of PMT. The same truth is for shutting down the PMT.
+\par
+The high voltage could be applied to the PMT in negative or positive polarity. In case of positive polarity, the cathode is held at ground and anode on +HV. In case of negative polarity, the cathode is held at -HV and anode at ground. 
 
 \subsection{Dark current}
 Dark current is anode current produced by photomultiplier in total darkness. It is considered to be a part of unwanted noise, causes errors in measurements and limits the detectivity of PMT. Dark current has origin in Ohmical leakage, thermionic and field emission or in radioactivity. Ohmical leakage is major part of dark current at low gain. With the increasing gain the thermionic emission prevails. At high gains the field emission becomes the major part.
@@ -116,14 +123,21 @@ At high gains the electrostatic field is so strong that it can rip the electrons
 The radioactivity of PMT's components depends only on the material composition. In some aplications, such as astroparticle detection, it is neccessary to decrease radiation as possible. In astroparticle detection the radioactivity could be a source of false events. Only way to prevent this is to use materials with a very low concentration of radioactive isotopes.
 
 \subsection{Timing and response}
-Differences of photoelectrons' trajectories from the cathode to the first dynode lead into time distorsion of signal. For example if we were able to produce delta-function pulse, the PMT would detect pulse with some response pulse width time $t_\textrm{w}$.
-\par 
-Another time delay is caused by 
+Differences of photoelectrons' trajectories from the cathode to the first dynode lead into time distorsion of signal. For example if we were able to produce delta-function pulse, the PMT would detect pulse with some response width time $t_\textrm{w}$.
+With respect to differences in electron trajectories and arrival times, the PMTs are divided into 3 types:
+\begin{enumerate}
+\item \textbf{Very-fast tubes} - photoelectrons arrive simultaneously, low collection efficency.
+\item \textbf{Fast tubes} - compromise between timing performance and collection efficency
+\item \textbf{General-purpose tubes} - simple optoelectronics, good collection efficency, low timing performance
+\end{enumerate}
+%\par 
+%Another time delay to be considered 
 
 \subsection{Operating life and degradation}
-The operating life of PMT is defined as the time required for anode sensitivity to be halved.
-
-
+The operating life of PMT is defined as the time required for anode sensitivity to be halved. If we neglect the outside effects, the operating life mainly depends on anode current. 
+Degradation processes start to show themselves at currents higher than 10 $\mu$A. Aging is accompanied by increasing or decreasing gain at stable voltage. Operating life of PMT is measured in thousands of operating hours.
+\par
+By exposuring PMT to bad conditions, such as humidity, mechanical stress, high temperatures or the high-intensity light, the PMT's operating life could be shorten much faster.
 \subsection{FAST's PMTs}
 
 \subsection{Calibration}
