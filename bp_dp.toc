@@ -3,7 +3,7 @@
 \contentsline {chapter}{\numberline {1}Astroparticle detection}{8}{chapter.1}
 \contentsline {section}{\numberline {1.1}Cosmic rays and particles}{8}{section.1.1}
 \contentsline {section}{\numberline {1.2}Ultra-high energy cosmic rays (UHECRs)}{8}{section.1.2}
-\contentsline {section}{\numberline {1.3}Detection principles}{8}{section.1.3}
+\contentsline {section}{\numberline {1.3}UHECRs detection principles}{8}{section.1.3}
 \contentsline {chapter}{\numberline {2}FAST telescope}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Principle of operation}{9}{section.2.1}
 \contentsline {section}{\numberline {2.2}Remote control and monitoring}{9}{section.2.2}
