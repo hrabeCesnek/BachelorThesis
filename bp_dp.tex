@@ -26,8 +26,14 @@
 \usepackage{float}
 
 
-\usepackage[numbers]{natbib}
+%\usepackage[numbers]{natbib}
 
+\usepackage[
+backend=biber,
+style=phys,
+sorting=ynt
+]{biblatex}
+\addbibresource{citations.bib}
 % -----------------------------------------------
 % Přepínač mezi bakalářskou a diplomovou prací, 
 % barevným a černobílým logem a mezi studentem a studentkou (vypracoval/vypracovala apod.)
@@ -238,13 +244,17 @@ We are completely f****d.
 % Literatura a prameny
 % -----------------------------------------------
 %\begin{thebibliography}{99}
-\bibliographystyle{unsrt}
+%\bibliographystyle{unsrt}
+%\nocite{*}
+%\bibliography{citations}
+%\nocite{MALACARI2020102430}
 \nocite{*}
-\bibliography{citations}
+%\nocite{Tomankova2016_1000061954}
+%\nocite{VACULA2021167169}
 %\addcontentsline{toc}{chapter}{Literatura}
 %\bibitem{gravitation} MISNER, Ch. W.; THORNE, K. S.; WHEELER, J. A. %\emph{Gravitation}. San Francisco: W. Freeman, 1973.
 %\end{thebibliography}
-
+\printbibliography[notcategory=skipbibliography]
 \newpage
 Preferované jsou citace podle norem ČSN ISO 690 a ISO 690-2, popř. styly APS (American Physical Society – u~prací zaměřených fyzikálně) nebo APA (American Psychological Association – u~prací zaměřených více didakticky a pedagogicky).
 \end{document}

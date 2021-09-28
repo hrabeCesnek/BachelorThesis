@@ -1,46 +1,15 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: bp_dp.aux
-The style file: unsrt.bst
-Database file #1: citations.bib
-You've used 4 entries,
-            1791 wiz_defined-function locations,
-            471 strings with 4654 characters,
-and the built_in function-call counts, 1021 in all, are:
-= -- 55
-> -- 105
-< -- 0
-+ -- 37
-- -- 33
-* -- 92
-:= -- 194
-add.period$ -- 10
-call.type$ -- 4
-change.case$ -- 3
-chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 30
-empty$ -- 74
-format.name$ -- 33
-if$ -- 200
-int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 2
-newline$ -- 21
-num.names$ -- 3
-pop$ -- 10
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 16
-stack$ -- 0
-substring$ -- 36
-swap$ -- 4
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 5
-width$ -- 5
-write$ -- 40
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'bp_dp.blg'
+[16] biber:313> INFO - === Út zář 28, 2021, 22:10:45
+[28] Biber.pm:371> INFO - Reading 'bp_dp.bcf'
+[66] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[74] Biber.pm:3981> INFO - Processing section 0
+[80] Biber.pm:4154> INFO - Looking for bibtex format file 'citations.bib' for section 0
+[81] bibtex.pm:1468> INFO - LaTeX decoding ...
+[86] bibtex.pm:1294> INFO - Found BibTeX data source 'citations.bib'
+[136] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[136] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[136] Biber.pm:3809> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[137] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[144] bbl.pm:617> INFO - Writing 'bp_dp.bbl' with encoding 'UTF-8'
+[147] bbl.pm:720> INFO - Output to bp_dp.bbl

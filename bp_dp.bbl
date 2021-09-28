@@ -1,29 +1,353 @@
-\begin{thebibliography}{1}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{VACULA2021167169}
-Martin Vacula, Pavel Horvath, Ladislav Chytka, Kai Daumiller, Ralph Engel,
-  Miroslav Hrabovsky, Dusan Mandat, Hermann-Josef Mathes, Stanislav Michal,
-  Miroslav Palatka, Miroslav Pech, Christoph~M. Schäfer, and Petr Schovanek.
-\newblock Use of a general purpose integrating sphere as a low intensity
-  near-uv extended uniform light source.
-\newblock {\em Optik}, 242:167169, 2021.
 
-\bibitem{MALACARI2020102430}
-M.~Malacari, J.~Farmer, T.~Fujii, J.~Albury, J.A. Bellido, L.~Chytka, P.~Hamal,
-  P.~Horvath, M.~Hrabovský, D.~Mandat, J.N. Matthews, L.~Nozka, M.~Palatka,
-  M.~Pech, P.~Privitera, P.~Schovánek, R.~Šmída, S.B. Thomas, and
-  P.~Travnicek.
-\newblock The first full-scale prototypes of the fluorescence detector array of
-  single-pixel telescopes.
-\newblock {\em Astroparticle Physics}, 119:102430, 2020.
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{Tomankova2016_1000061954}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=70311846c863df5a4676c4d6b6e593a7}{%
+           family={Tománková},
+           familyi={T\bibinitperiod},
+           given={Lenka},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Karlsruher Institut für Technologie (KIT)}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Karlsruher Institut für Technologie (KIT)}%
+      }
+      \strng{namehash}{70311846c863df5a4676c4d6b6e593a7}
+      \strng{fullhash}{70311846c863df5a4676c4d6b6e593a7}
+      \strng{bibnamehash}{70311846c863df5a4676c4d6b6e593a7}
+      \strng{authorbibnamehash}{70311846c863df5a4676c4d6b6e593a7}
+      \strng{authornamehash}{70311846c863df5a4676c4d6b6e593a7}
+      \strng{authorfullhash}{70311846c863df5a4676c4d6b6e593a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{pagetotal}{208}
+      \field{title}{Optical Properties and Calibration of the Pierre Auger Fluorescence Detector}
+      \field{type}{phdthesis}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.5445/IR/1000061954
+      \endverb
+      \keyw{cosmic rays,extensive air showers,fluorescence detector,calibration,optical properties,octocopter,Pierre Auger Observatory}
+    \endentry
+    \entry{MALACARI2020102430}{article}{}
+      \name{author}{19}{}{%
+        {{hash=eb8f7de502ca6527e29237173766dce4}{%
+           family={Malacari},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=68d26cd3997868196a4eb99051826945}{%
+           family={Farmer},
+           familyi={F\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0d2dd5c236b6ea569f09c0925102acc7}{%
+           family={Fujii},
+           familyi={F\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8ed266312506884b7aceb1f18801950f}{%
+           family={Albury},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0abbce548aef87cefd2f72708641a916}{%
+           family={Bellido},
+           familyi={B\bibinitperiod},
+           given={J.A.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2b80b2c2cf4f750af4e4d3298899bbf8}{%
+           family={Chytka},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2954ed36520faeee08766332d21f5409}{%
+           family={Hamal},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e7b8904e52ea28d57623439ec4775d39}{%
+           family={Horvath},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0120d312e101eaf01004dd396d00a547}{%
+           family={Hrabovský},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0f75cce12b7a28f77011872225671551}{%
+           family={Mandat},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c7cf348a607dfdb078bd8ff4b093ad7e}{%
+           family={Matthews},
+           familyi={M\bibinitperiod},
+           given={J.N.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2b756003fd1597d6bd9db7fa5f99c4ca}{%
+           family={Nozka},
+           familyi={N\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=244eefda9434a9df1a3939499518746a}{%
+           family={Palatka},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=98c223fa8e11df0972f83a3998d5492d}{%
+           family={Pech},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=67c052b26ac86eef28644d8cc6f82885}{%
+           family={Privitera},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f61f26257b3c444a79060cc5c3bd2676}{%
+           family={Schovánek},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=40ff49a5a41ce3c9d28294be7010b045}{%
+           family={Šmída},
+           familyi={Š\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4eca62f2bbac3aa88944808a324cc478}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={S.B.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b2b0cd5cef57aba1cb9c97fdab8884d6}{%
+           family={Travnicek},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{2396bfc349442763bcc6fe424602823d}
+      \strng{fullhash}{1e76ceae2d22b60b6197302e3a82e476}
+      \strng{bibnamehash}{1e76ceae2d22b60b6197302e3a82e476}
+      \strng{authorbibnamehash}{1e76ceae2d22b60b6197302e3a82e476}
+      \strng{authornamehash}{2396bfc349442763bcc6fe424602823d}
+      \strng{authorfullhash}{1e76ceae2d22b60b6197302e3a82e476}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Fluorescence detector Array of Single-pixel Telescopes (FAST) is a design concept for a next-generation UHECR observatory, addressing the requirements for a large-area, low-cost detector suitable for measuring the properties of ultra-high energy cosmic rays (UHECRs), having energies exceeding 30 EeV, with an unprecedented aperture. We have developed a full-scale prototype consisting of four 200 mm diameter photo-multiplier tubes at the focus of a segmented mirror of 1.6 m in diameter. In October 2016, September 2017, and September 2018 we installed three such prototypes at the Black Rock Mesa site of the Telescope Array experiment in central Utah, USA. All three telescopes have been steadily taking data since installation. We report on the design and installation of these prototypes, and present some preliminary results, including measurements of artificial light sources, distant ultraviolet lasers, and UHECRs.}
+      \field{issn}{0927-6505}
+      \field{journaltitle}{Astroparticle Physics}
+      \field{title}{The first full-scale prototypes of the fluorescence detector array of single-pixel telescopes}
+      \field{volume}{119}
+      \field{year}{2020}
+      \field{pages}{102430}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.astropartphys.2020.102430
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0927650520300037
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0927650520300037
+      \endverb
+      \keyw{Ultra-high energy cosmic rays,Air fluorescence detector,Atmosphere,Calorimetry}
+    \endentry
+    \entry{VACULA2021167169}{article}{}
+      \name{author}{13}{}{%
+        {{hash=69922c377d906a3e606d99893c758b1d}{%
+           family={Vacula},
+           familyi={V\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6401b2cea43402027a3513702bd496f4}{%
+           family={Horvath},
+           familyi={H\bibinitperiod},
+           given={Pavel},
+           giveni={P\bibinitperiod}}}%
+        {{hash=19358616bc577783448c8ba14a69021f}{%
+           family={Chytka},
+           familyi={C\bibinitperiod},
+           given={Ladislav},
+           giveni={L\bibinitperiod}}}%
+        {{hash=94bc4c687732b38c9b40212f803685b3}{%
+           family={Daumiller},
+           familyi={D\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1ded00eec1f719b1661b24fa5b3c419e}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1abaa33ff7f8b679d3e57f1c5d7f141f}{%
+           family={Hrabovsky},
+           familyi={H\bibinitperiod},
+           given={Miroslav},
+           giveni={M\bibinitperiod}}}%
+        {{hash=788f2061cb1039bf72194a9cff635b84}{%
+           family={Mandat},
+           familyi={M\bibinitperiod},
+           given={Dusan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=93ebdef8f97cc34af9520c236d8a216f}{%
+           family={Mathes},
+           familyi={M\bibinitperiod},
+           given={Hermann-Josef},
+           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=9dab07dbd0ebcb22e2a4d81989ab8faa}{%
+           family={Michal},
+           familyi={M\bibinitperiod},
+           given={Stanislav},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2ea4dc179a31014182089f776cbcd95d}{%
+           family={Palatka},
+           familyi={P\bibinitperiod},
+           given={Miroslav},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4632900ad601f56d1015ebff6671bfda}{%
+           family={Pech},
+           familyi={P\bibinitperiod},
+           given={Miroslav},
+           giveni={M\bibinitperiod}}}%
+        {{hash=778fedb7af97d6de223d51d6de618e64}{%
+           family={Schäfer},
+           familyi={S\bibinitperiod},
+           given={Christoph\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d3242c103bead634fcea62ba7544253b}{%
+           family={Schovanek},
+           familyi={S\bibinitperiod},
+           given={Petr},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{27d1b83c65a15057b7e548cedbc19660}
+      \strng{fullhash}{5ad895e5a81edef9f61bb02fad35f227}
+      \strng{bibnamehash}{5ad895e5a81edef9f61bb02fad35f227}
+      \strng{authorbibnamehash}{5ad895e5a81edef9f61bb02fad35f227}
+      \strng{authornamehash}{27d1b83c65a15057b7e548cedbc19660}
+      \strng{authorfullhash}{5ad895e5a81edef9f61bb02fad35f227}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nowadays, the need for extended uniform light sources increases in many different areas of optics. Integrating spheres show one of the best properties among them. The paper is focused on verification of the practical use of so-called general purpose integrating spheres for the purpose of the calibration of highly sensitive detectors in the near-UV spectrum. To achieve this, the summarization of the theory of the integrating spheres is given, the methodology of the measurement is described and a universal experimental setup is designed. The setup is able to measure the real spatial and angular radiance uniformity of the exit port of selected representative of integrating spheres. The results of radiance uniformity measurements are graphically presented and discussed.}
+      \field{issn}{0030-4026}
+      \field{journaltitle}{Optik}
+      \field{title}{Use of a general purpose integrating sphere as a low intensity near-UV extended uniform light source}
+      \field{volume}{242}
+      \field{year}{2021}
+      \field{pages}{167169}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ijleo.2021.167169
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0030402621008342
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0030402621008342
+      \endverb
+      \keyw{Integrating sphere,Extended uniform light source,Field of view,Spatial radiance uniformity,Angular radiance uniformity,SiPM sensor,Low intensity UV-A}
+    \endentry
+    \entry{Hamamatsu}{misc}{}
+      \list{language}{1}{%
+        {english}%
+      }
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v3aE.pdf}}
+      \field{title}{Hamamatsu: PHOTOMULTIPLIER TUBES Basics and Applications}
+    \endentry
+    \entry{Kliewer}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e5f2b17edd365ff728119d34f3db1dc2}{%
+           family={Kliewer},
+           familyi={K\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e5f2b17edd365ff728119d34f3db1dc2}
+      \strng{fullhash}{e5f2b17edd365ff728119d34f3db1dc2}
+      \strng{bibnamehash}{e5f2b17edd365ff728119d34f3db1dc2}
+      \strng{authorbibnamehash}{e5f2b17edd365ff728119d34f3db1dc2}
+      \strng{authornamehash}{e5f2b17edd365ff728119d34f3db1dc2}
+      \strng{authorfullhash}{e5f2b17edd365ff728119d34f3db1dc2}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://cosmic.lbl.gov/SKliewer/Index.htm}}
+      \field{title}{The Compact Cosmic Ray Telescope aboard the Kuiper Airborne Observatory}
+    \endentry
+    \entry{Photonis}{misc}{}
+      \list{language}{1}{%
+        {english}%
+      }
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://psec.uchicago.edu/library/photomultipliers/Photonis_PMT_basics.pdf}}
+      \field{title}{Photonis: Photomultiplier tube basics}
+    \endentry
+    \entry{Benjamin_Skuse}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=56ec3cfd016cef012567bcf401e4efbc}{%
+           family={Skuse},
+           familyi={S\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{56ec3cfd016cef012567bcf401e4efbc}
+      \strng{fullhash}{56ec3cfd016cef012567bcf401e4efbc}
+      \strng{bibnamehash}{56ec3cfd016cef012567bcf401e4efbc}
+      \strng{authorbibnamehash}{56ec3cfd016cef012567bcf401e4efbc}
+      \strng{authornamehash}{56ec3cfd016cef012567bcf401e4efbc}
+      \strng{authorfullhash}{56ec3cfd016cef012567bcf401e4efbc}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://physicsworld.com/a/the-riddle-of-ultrahigh-energy-cosmic-rays/}}
+      \field{title}{The riddle of ultrahigh-energy cosmic rays}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem{Tomankova2016_1000061954}
-Lenka Tománková.
-\newblock {\em Optical Properties and Calibration of the Pierre Auger
-  Fluorescence Detector}.
-\newblock PhD thesis, Karlsruher Institut für Technologie (KIT), 2016.
-
-\bibitem{Photonis}
-Photonis: Photomultiplier tube basics.
-
-\end{thebibliography}
