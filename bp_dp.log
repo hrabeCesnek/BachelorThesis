@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  23 OCT 2021 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  24 OCT 2021 00:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1004,13 +1004,32 @@ Underfull \hbox (badness 6542) in paragraph at lines 43--45
 Chapter 1.
 [8
 
-]) (./Chapter2.tex [9]
+]
+File: up_logo_bw.pdf Graphic file (type pdf)
+<use up_logo_bw.pdf>
+Package pdftex.def Info: up_logo_bw.pdf  used on input line 39.
+(pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
+
+
+LaTeX Warning: Reference `nevimco' on page 9 undefined on input line 40.
+
+
+LaTeX Warning: Reference `Tomankova2016_1000061954' on page 9 undefined on inpu
+t line 47.
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.64 \subsection
+                {Surface particle detection}]) (./Chapter2.tex [10]
 Chapter 2.
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 27.
 (pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
-[10
+[11
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
@@ -1028,7 +1047,7 @@ File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 52.
 (pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
-) (./calibration.tex [11pdfTeX warning (ext4): destination with the same identi
+) (./calibration.tex [12pdfTeX warning (ext4): destination with the same identi
 fier (name{figure.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1043,7 +1062,7 @@ icate ignored
 l.6 \chapter
             {Calibration of astroparticle detectors}]
 Chapter 3.
-) (./Chapter3.tex [12
+) (./Chapter3.tex [13
 
 ]
 Chapter 4.
@@ -1051,7 +1070,7 @@ File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 16.
 (pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
-[13
+[14
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
@@ -1068,7 +1087,7 @@ File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 48.
 (pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1082,30 +1101,30 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.59 O
       ne of the basic adjustable characteristic of PMT is its gain. The gain...
-] [15] [16]) (./Chapter4.tex [17] [18]
+] [16] [17]) (./Chapter4.tex [18] [19]
 Chapter 5.
-) (./Chapter5.tex [19
+) (./Chapter5.tex [20
 
 ]
 Chapter 6.
-) [20
-
-] [21
+) [21
 
 ] [22
 
+] [23
+
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
- [23]
+ [24]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
  (./bp_dp.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
 Package rerunfilecheck Info: File `bp_dp.out' has not changed.
-(rerunfilecheck)             Checksum: 74A6D053C4C26920B8E111081ABB3361;8859.
+(rerunfilecheck)             Checksum: 9F6251F6192E5209E40B88538D83A895;8859.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'bp_dp.run.xml'.
 \openout1 = `bp_dp.run.xml'.
@@ -1113,10 +1132,10 @@ Package logreq Info: Writing requests to 'bp_dp.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 17443 strings out of 494848
- 269692 string characters out of 6178430
- 695803 words of memory out of 5000000
- 20477 multiletter control sequences out of 15000+600000
+ 17448 strings out of 494848
+ 269753 string characters out of 6178430
+ 695935 words of memory out of 5000000
+ 20480 multiletter control sequences out of 15000+600000
  11832 words of font info for 44 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
  42i,9n,41p,1037b,1937s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1129,10 +1148,10 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on bp_dp.pdf (23 pages, 152671 bytes).
+Output written on bp_dp.pdf (24 pages, 155934 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 451 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 458 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
  438 words of extra memory for PDF output out of 10000 (max. 10000000)
 
