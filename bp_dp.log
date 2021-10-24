@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  24 OCT 2021 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  24 OCT 2021 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,7 +978,7 @@ Package biblatex Info: ... file 'bp_dp.bbl' found.
  (./bp_dp.bbl)
 Package biblatex Info: Reference section=0 on input line 135.
 Package biblatex Info: Reference segment=0 on input line 135.
-<up_logo_bw.pdf, id=221, 96.36pt x 98.3675pt>
+<up_logo_bw.pdf, id=225, 96.36pt x 98.3675pt>
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 159.
@@ -1022,9 +1022,8 @@ t line 47.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.61 H
-      owever, the intensity of this light is very low, and thus the measurem...
-]) (./Chapter2.tex [10]
+l.60 \par
+         ]) (./Chapter2.tex [10]
 Chapter 2.
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
@@ -1122,7 +1121,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
 Package rerunfilecheck Info: File `bp_dp.out' has not changed.
-(rerunfilecheck)             Checksum: 9F6251F6192E5209E40B88538D83A895;8859.
+(rerunfilecheck)             Checksum: A9C137AEB07319C448D61E5F93DAB2A0;9003.
 
 
 LaTeX Warning: There were undefined references.
@@ -1133,10 +1132,10 @@ Package logreq Info: Writing requests to 'bp_dp.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 17448 strings out of 494848
- 269753 string characters out of 6178430
+ 17450 strings out of 494848
+ 269787 string characters out of 6178430
  695935 words of memory out of 5000000
- 20480 multiletter control sequences out of 15000+600000
+ 20481 multiletter control sequences out of 15000+600000
  11832 words of font info for 44 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
  42i,9n,41p,1037b,1937s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1149,10 +1148,10 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on bp_dp.pdf (24 pages, 156543 bytes).
+Output written on bp_dp.pdf (24 pages, 157262 bytes).
 PDF statistics:
- 499 PDF objects out of 1000 (max. 8388607)
- 458 compressed objects within 5 object streams
- 110 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 463 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 

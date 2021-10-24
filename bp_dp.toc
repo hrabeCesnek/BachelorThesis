@@ -21,6 +21,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.3}Cherenkov light detection}{10}{subsection.1.3.3}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.4}Hybrid detection}{10}{subsection.1.3.4}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}UHECRs observatories}{10}{section.1.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.4.1}Pierre Auger observatory}{10}{subsection.1.4.1}
