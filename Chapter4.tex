@@ -16,7 +16,7 @@ Blah blah we need it.
 % -----------------------------------------------
 For calibration UV source, the longtime stability of optical power and pulse geometry is very important. Because there were no specialized apparatus for this measurement, we had to built and program one by ourselves.
 \subsection{Measuring apparatus}
-For measuring the optical power we use PM16 power meter and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb osciloscope.
+For measuring the optical power we use PM16 power meter (PM) and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb osciloscope.
 \par
 We also use DS18B20 thermometer for PMT temperature monitoring and keysight 34461a multimeter for checking voltages.
 
@@ -32,14 +32,14 @@ The apparatus could be seen on fig. \ref{aparature1} and \ref{aparature2}.
 
 \begin{figure}[H]
  \centering
- \includegraphics[width=150mm,angle=180,origin=c]{./pictures/aprature1}
+ \includegraphics[width=150mm]{./pictures/aprature1b}
  \caption{Measuring apparatus.}
  \label{aparature1}
 \end{figure}
 
 \begin{figure}[H]
  \centering
- \includegraphics[width=150mm,angle=270,origin=c]{./pictures/aparature2}
+ \includegraphics[scale = 0.09]{./pictures/aparature2b}
  \caption{PMT mounting and HV source.}
  \label{aparature2}
 \end{figure}
@@ -48,12 +48,12 @@ The apparatus could be seen on fig. \ref{aparature1} and \ref{aparature2}.
 \subsection{Data acquisition and analysis}
 All the data are taken in specified interval (15 or 30 minutes). Two files are produced - osciloscope waveform file and a file with 30 samples of power meter, multimeter and a thermometer readings.
 \par
-The data from osciloscope contains the square pulses with noise (fig. \ref{pulse}). From them we need to extract the information of pulses height, 
+The data from osciloscope contains the square pulses with noise (fig. \ref{pulse}). From them we need to extract the information of pulses height, slope and time of the rising edge.
 
  \begin{figure}[H]
  \centering
- \includegraphics[width=150mm]{./pictures/PMTPulse}
- \caption{Apparatus for .}
+ \includegraphics[scale=0.65]{./pictures/PMTPulse}
+ \caption{Determining the pulse properties from average, low and high levels of signal.}
  \label{pulse}
 \end{figure}
 
