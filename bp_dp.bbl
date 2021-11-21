@@ -347,6 +347,30 @@
       \field{note}{\url{https://physicsworld.com/a/the-riddle-of-ultrahigh-energy-cosmic-rays/}}
       \field{title}{The riddle of ultrahigh-energy cosmic rays}
     \endentry
+    \entry{PicoScope}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5574f4a31acdbeba0f1e5dde3cbf5254}{%
+           family={Technology},
+           familyi={T\bibinitperiod},
+           given={Pico},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{5574f4a31acdbeba0f1e5dde3cbf5254}
+      \strng{fullhash}{5574f4a31acdbeba0f1e5dde3cbf5254}
+      \strng{bibnamehash}{5574f4a31acdbeba0f1e5dde3cbf5254}
+      \strng{authorbibnamehash}{5574f4a31acdbeba0f1e5dde3cbf5254}
+      \strng{authornamehash}{5574f4a31acdbeba0f1e5dde3cbf5254}
+      \strng{authorfullhash}{5574f4a31acdbeba0f1e5dde3cbf5254}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.picotech.com/download/manuals/picoscope-2000-series-a-api-programmers-guide.pdf}}
+      \field{title}{PicoScope ® 2000 Series (A API) PC Oscilloscopes and MSOs Programmer's Guide}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
