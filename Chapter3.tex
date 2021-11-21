@@ -13,7 +13,7 @@ The Integration sphere (IS) is a special optical equipment, which can be used ei
 
 \begin{figure}[H]
  \centering
- \includegraphics{up_logo_bw}
+ \includegraphics{./pictures/IntegrationSphere}
  \caption{General purpose Labsphere.}
  \label{Labsphere}
  
@@ -27,7 +27,7 @@ Using optical source with IS requires baffle to prevent source's light flux or i
 \par
 More deeper explanation of IS working principles and characterization of optical properties of the identical IS, which we use, can be found in \cite{VACULA2021167169}.
 \par
-For our pusrposes, in case of FAST calibration, we use IS as EULS in UV spectre. In case of testing optical calibration source, we don't even care about homegenity. The reason why we use IS in this case is that it focuses the entire optical power of the source into output ports, where  our detectors are mounted, and blocks any other external light source, which could affect our detectors.
+For our pusrposes, in case of FAST calibration, we use IS as EULS in UV spectre. In case of testing optical calibration source, we don't even care about homegenity. The reason why we use IS in this case is that it focuses the optical power of the source into output ports, where  our detectors are mounted, and blocks any other external light source, which could affect our detectors.
 % -----------------------------------------------
 
 \section{Photomultiplier tube}
@@ -67,6 +67,7 @@ In case of ideal, noiseless PMT, we can adjust gain by variing the supply voltag
 
 \begin{equation}
 \frac{G_2}{G_1} = (\frac{V_2}{V_1})^{\alpha N},
+\label{gainVolt}
 \end{equation}
 where $G_2$ and $G_1$ are gains at supply voltages $V_2$ and $V_1$. $\alpha$ is coefficient given by dynode material and $N$ is the number of dynodes.
 \par

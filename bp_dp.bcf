@@ -1932,6 +1932,7 @@
     <bcf:citekey order="3">VACULA2021167169</bcf:citekey>
     <bcf:citekey order="4">Photonis</bcf:citekey>
     <bcf:citekey order="4">Hamamatsu</bcf:citekey>
+    <bcf:citekey order="5">PicoScope</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

@@ -25,9 +25,9 @@ Our main task was to test this UV source's longtime stability and develop possib
 
 \section{Testing and measurement of UV source}
 % -----------------------------------------------
-For calibration UV source, the longtime stability of optical power and pulse geometry is very important. Because there were no specialized apparatus for this measurement, we had to built and program one by ourselves.
+For calibration UV source, the longtime stability of optical power and pulse geometry is very important. Because there were no specialized apparatus for this measurement, we had to built and program one by ourselves. For these measurements, we use UV source with LED current $I_{\textrm{d}}$ = 2.5 mA, 50$\%$ duty cycle and frequency $f = 50$ kHz. 
 \subsection{Measuring apparatus}
-For measuring the optical power we use PM16 power meter (PM) and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb osciloscope. XP2262 PMT is held on $U \approx -680$ V by HV voltage source.
+For measuring the optical power we use PM16 power meter (PM) and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb osciloscope. XP2262 PMT is held on $U \approx -680$ V by HV voltage source. The PMT's gain may drift over time, but we use PMT mainly for geometry analysis and measurement of absolute optical power is left to PM16.
 \par
 We also use DS18B20 thermometer for PMT temperature monitoring and keysight 34461a multimeter for checking voltages.
 
@@ -36,8 +36,9 @@ The PMT, power meter and the optical head of UV source are mounted in the IS's p
 \par
 The entire apparatus is driven by Raspberry Pi (RPi). The RPi takes care of data acquisiton and could be used to set the parameters of the UV source. It could be easilly accessed over internet for data download or for user to control the experiment.
 \par
-Osciloscope was programmed in C language according to its programmer's manual \ref{PicoScope}. It is capable of 2ns sampling which is enough to capture rising edges of the pulses. The RPi sets basic parameters (DC coupling, range etc.) and then activates osciloscope's trigger (rising edge). After sampling, RPi receives all samples from osciloscope's memory.
-
+Osciloscope was programmed in C language according to its programmer's manual \cite{PicoScope}. It is capable of 2ns sampling which is enough to capture rising edges of the pulses. The RPi sets basic parameters (DC coupling, range etc.) and then activates osciloscope's trigger (rising edge). After sampling, RPi receives all samples from osciloscope's memory.
+\par
+The multimeter is controlled by VISA commands using python USBTMC library. For thermometer we use RPi's 1-Wire.
 \par
 Main component (IS,PW, PMT with HV source, UV source) are situated in protection box to prevent unwanted manipulations and touching the HV parts.The apparatus could be seen on fig. \ref{aparature1} and \ref{aparature2}.
 
@@ -57,7 +58,7 @@ Main component (IS,PW, PMT with HV source, UV source) are situated in protection
 
 
 \subsection{Data acquisition and analysis}
-All the data are taken in specified interval (15 or 30 minutes). Two files are produced - osciloscope waveform file and a file with 30 samples of power meter, multimeter and a thermometer readings.
+All the data are taken in specified interval (15 or 30 minutes). Two files are produced - osciloscope waveform file and a file with 30 samples of power meter, multimeter and a thermometer readings. From these 30 samples we calculate average and error.
 \par
 The data from osciloscope contains the square pulses with noise (fig. \ref{pulse}). From them we need to extract the information of pulses height, slope and time of the rising edge.
 
@@ -83,13 +84,81 @@ The properties the rising edge could be specified by two parameters, which we ar
 
 
 \subsection{Results}
+First data taking sequence ran about two weeks. Taken data was analyzed by methods described in previous chapter and results are presented in the following graphs. The first two graphs describe 
+optical power with respect to time (first from PM and second is the PMT pulse height).
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.3]{./pictures/powers}
+ \caption{Time evolution of optical power.}
+ \label{pow1}
+\end{figure}
+
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.3]{./pictures/Height}
+ \caption{Time evolution of the pulse's height.}
+ \label{height1}
+\end{figure}
+
+In the next two graphs we present calculated heights and slopes.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.3]{./pictures/rise}
+ \caption{Time evolution of the pulse's edge rise time.}
+ \label{rise1}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.3]{./pictures/Slope}
+ \caption{Time evolution of the pulse's edge slope.}
+ \label{slope1}
+\end{figure}
+
+We also measured PMT's temperature for potential gain changes.
+ 
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.3]{./pictures/temperatures}
+ \caption{Time evolution of the PMT's temperature.}
+ \label{temp1}
+\end{figure}
+
+From analyzed data we may observe that the power is rising over time. This fact is confirmed by two sensors - both PM and PMT. In case of PMT there may be the drift in gain over time. Gain drift may be caused by changes in voltage (euqation \ref{gainVolt}) or in temperature. In case of temperature, the trend is not only rising as $U_{H}$'s trend does, so the $2_{\circ}$ change in temperature may play little role in $U_{H}$ increase, but it is not propably the main cause of this effect.
+The graphs \ref{rise1} and \ref{slope1} shows that pulse is not deforming over time.
+\par
+The optical power instability may be caused by failures in LED driving circuit (changes in current flowing by diode) or by aging processes in the UV diodes. 
+\par
+To confirm this measured fact and check for possible causes of the optical power instability we repeated this measurement by few times with similar results. But during these measurements we used multimeter to monitor PMT's voltage. For measuring the current flowing by the diode in the internal current source circuit, we used the second channel of the osciloscope.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.5]{./pictures/voltage}
+ \caption{Time evolution of the PMT's voltage.}
+ \label{PMTVolt}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.5]{./pictures/Current}
+ \caption{Time evolution of the UV LED's current.}
+ \label{LEDCurrent}
+\end{figure}
+
+Other measurements of optical power have ended in similar way. But by using the multimeter we can see that PMT's voltage is stable (fig. \ref{PMTVolt}). It is varyiing only about 0.4 V at the beginning.
+\par
+The measurement of current by osciloscope was done and analyzed in similar way as was done for the PMT's pulses. Both of them are PWM square pulses by shape. The osciloscope's probe was connected to the 100$\Omega$ resistor, which is in serial to the LED and the current source and acted as a simple $U/I$ converter. As we can see in fig. \ref{LEDCurrent}, the current varies only a little over the value which was set ($I_\textrm{d} = 2.5$ mA), and thus the rising trend of optical power is definitely not caused by the current variations.
+
 
 \section{UV LED diode aging}
-
+As was seen in results of previous measurements, the diode aging process is the most propable cause of the changes in optical power. We tried to confirm this fact by aging the similar UV LED. 
 %------------------------------------------------
 \section{Optical feedback - potential fix}
 % -----------------------------------------------
-One way to handle the aging process of UV LED diodes is to monitor the power and according to the changes set the diode current. 
+One way to handle the aging process of UV LED diodes is to monitor the power and according to the changes set the diode current $I_\textrm{d}$. 
 
 
 %------------------------------------------------
