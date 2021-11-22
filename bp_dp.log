@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  21 NOV 2021 07:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  22 NOV 2021 01:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,7 +978,7 @@ Package biblatex Info: ... file 'bp_dp.bbl' found.
  (./bp_dp.bbl)
 Package biblatex Info: Reference section=0 on input line 134.
 Package biblatex Info: Reference segment=0 on input line 134.
-<up_logo_bw.pdf, id=257, 96.36pt x 98.3675pt>
+<up_logo_bw.pdf, id=261, 96.36pt x 98.3675pt>
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 158.
@@ -1066,30 +1066,22 @@ Chapter 3.
 
 ]
 Chapter 4.
-<./pictures/IntegrationSphere.jpg, id=403, 4143.48pt x 3107.61pt>
+<./pictures/IntegrationSphere.jpg, id=408, 4143.48pt x 3107.61pt>
 File: ./pictures/IntegrationSphere.jpg Graphic file (type jpg)
 <use ./pictures/IntegrationSphere.jpg>
 Package pdftex.def Info: ./pictures/IntegrationSphere.jpg  used on input line 1
 6.
-(pdftex.def)             Requested size: 4143.46994pt x 3107.60246pt.
-
-Overfull \hbox (3702.45221pt too wide) in paragraph at lines 16--17
- [][] 
- []
-
+(pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
 [14
 
-]
-Overfull \vbox (2431.92632pt too high) has occurred while \output is active []
-
-
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
-}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.21 \par
-          <./pictures/IntegrationSphere.jpg>]
+l.24 T
+      he inner surface is part where light intergration happens. The effect ...
+ <./pictures/IntegrationSphere.jpg>]
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 41.
@@ -1098,26 +1090,26 @@ File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 48.
 (pdftex.def)             Requested size: 96.35974pt x 98.36723pt.
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.52 
-     ] [17pdfTeX warning (ext4): destination with the same identifier (name{fig
+     ] [16pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.82 
-     ] [18] [19]) (./Chapter4.tex [20]
+     ] [17] [18]) (./Chapter4.tex [19]
 Chapter 5.
-<./pictures/KarlsRuhe.jpg, id=458, 4143.48pt x 3107.61pt>
+<./pictures/KarlsRuhe.jpg, id=459, 4143.48pt x 3107.61pt>
 File: ./pictures/KarlsRuhe.jpg Graphic file (type jpg)
 <use ./pictures/KarlsRuhe.jpg>
 Package pdftex.def Info: ./pictures/KarlsRuhe.jpg  used on input line 16.
 (pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
-[21
+[20
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
@@ -1126,25 +1118,25 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.29 \subsection
                 {Measuring apparatus} <./pictures/KarlsRuhe.jpg>]
-<./pictures/aprature1b.png, id=467, 4143.48pt x 3107.61pt>
+<./pictures/aprature1b.png, id=468, 4143.48pt x 3107.61pt>
 File: ./pictures/aprature1b.png Graphic file (type png)
 <use ./pictures/aprature1b.png>
 Package pdftex.def Info: ./pictures/aprature1b.png  used on input line 47.
 (pdftex.def)             Requested size: 426.79134pt x 320.07318pt.
- [22]
-<./pictures/aparature2b.png, id=477, 3107.61pt x 4143.48pt>
+ [21]
+<./pictures/aparature2b.png, id=478, 3107.61pt x 4143.48pt>
 File: ./pictures/aparature2b.png Graphic file (type png)
 <use ./pictures/aparature2b.png>
 Package pdftex.def Info: ./pictures/aparature2b.png  used on input line 54.
 (pdftex.def)             Requested size: 279.67284pt x 372.89711pt.
- [23pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.58 
       <./pictures/aprature1b.png>]
-<./pictures/PMTPulse.png, id=484, 698.61pt x 473.77pt>
+<./pictures/PMTPulse.png, id=485, 698.61pt x 473.77pt>
 File: ./pictures/PMTPulse.png Graphic file (type png)
 <use ./pictures/PMTPulse.png>
 Package pdftex.def Info: ./pictures/PMTPulse.png  used on input line 67.
@@ -1154,19 +1146,19 @@ Overfull \hbox (13.0734pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.71 
       <./pictures/aparature2b.png>]
-<./pictures/linFit.png, id=493, 356.33125pt x 389.455pt>
+<./pictures/linFit.png, id=494, 356.33125pt x 389.455pt>
 File: ./pictures/linFit.png Graphic file (type png)
 <use ./pictures/linFit.png>
 Package pdftex.def Info: ./pictures/linFit.png  used on input line 80.
 (pdftex.def)             Requested size: 231.61256pt x 253.14275pt.
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [24pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1178,24 +1170,24 @@ File: ./pictures/powers.png Graphic file (type png)
 <use ./pictures/powers.png>
 Package pdftex.def Info: ./pictures/powers.png  used on input line 91.
 (pdftex.def)             Requested size: 420.37375pt x 262.58302pt.
- [26pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.95 
       <./pictures/linFit.png>]
-<./pictures/Height.png, id=507, 1401.235pt x 875.27pt>
+<./pictures/Height.png, id=508, 1401.235pt x 875.27pt>
 File: ./pictures/Height.png Graphic file (type png)
 <use ./pictures/Height.png>
 Package pdftex.def Info: ./pictures/Height.png  used on input line 100.
 (pdftex.def)             Requested size: 420.37375pt x 262.58302pt.
-<./pictures/rise.png, id=508, 1401.235pt x 875.27pt>
+<./pictures/rise.png, id=509, 1401.235pt x 875.27pt>
 File: ./pictures/rise.png Graphic file (type png)
 <use ./pictures/rise.png>
 Package pdftex.def Info: ./pictures/rise.png  used on input line 109.
 (pdftex.def)             Requested size: 420.37375pt x 262.58302pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [26pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1208,17 +1200,17 @@ l.113
                                                   \fi \fi 
 l.113 
        <./pictures/powers.png> <./pictures/Height.png>]
-<./pictures/Slope.png, id=515, 1401.235pt x 875.27pt>
+<./pictures/Slope.png, id=516, 1401.235pt x 875.27pt>
 File: ./pictures/Slope.png Graphic file (type png)
 <use ./pictures/Slope.png>
 Package pdftex.def Info: ./pictures/Slope.png  used on input line 116.
 (pdftex.def)             Requested size: 420.37375pt x 262.58302pt.
-<./pictures/temperatures.png, id=516, 1401.235pt x 875.27pt>
+<./pictures/temperatures.png, id=517, 1401.235pt x 875.27pt>
 File: ./pictures/temperatures.png Graphic file (type png)
 <use ./pictures/temperatures.png>
 Package pdftex.def Info: ./pictures/temperatures.png  used on input line 125.
 (pdftex.def)             Requested size: 420.37375pt x 262.58302pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1231,24 +1223,24 @@ l.129
                                                   \fi \fi 
 l.129 
        <./pictures/rise.png> <./pictures/Slope.png>]
-<./pictures/voltage.png, id=526, 698.61pt x 473.77pt>
+<./pictures/voltage.png, id=527, 698.61pt x 473.77pt>
 File: ./pictures/voltage.png Graphic file (type png)
 <use ./pictures/voltage.png>
 Package pdftex.def Info: ./pictures/voltage.png  used on input line 139.
 (pdftex.def)             Requested size: 349.30414pt x 236.88441pt.
- [29pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.143 
        <./pictures/temperatures.png>]
-<./pictures/Current.png, id=532, 698.61pt x 473.77pt>
+<./pictures/Current.png, id=533, 698.61pt x 473.77pt>
 File: ./pictures/Current.png Graphic file (type png)
 <use ./pictures/Current.png>
 Package pdftex.def Info: ./pictures/Current.png  used on input line 146.
 (pdftex.def)             Requested size: 349.30414pt x 236.88441pt.
- [30pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1262,15 +1254,74 @@ te ignored
                                                   \fi \fi 
 l.159 \section
               {Optical feedback - potential fix} <./pictures/voltage.png> <./pi
-ctures/Current.png>]) (./monitoring.tex [31]
+ctures/Current.png>]
+<./pictures/DiodeHeat.jpg, id=542, 4143.48pt x 3107.61pt>
+File: ./pictures/DiodeHeat.jpg Graphic file (type jpg)
+<use ./pictures/DiodeHeat.jpg>
+Package pdftex.def Info: ./pictures/DiodeHeat.jpg  used on input line 173.
+(pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
+ [30]
+<./pictures/heating.jpg, id=548, 4143.48pt x 3107.61pt>
+File: ./pictures/heating.jpg Graphic file (type jpg)
+<use ./pictures/heating.jpg>
+Package pdftex.def Info: ./pictures/heating.jpg  used on input line 181.
+(pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
+<./pictures/01V.png, id=549, 698.61pt x 473.77pt>
+File: ./pictures/01V.png Graphic file (type png)
+<use ./pictures/01V.png>
+Package pdftex.def Info: ./pictures/01V.png  used on input line 190.
+(pdftex.def)             Requested size: 349.30414pt x 236.88441pt.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.194 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.194 
+       <./pictures/DiodeHeat.jpg> <./pictures/heating.jpg>]
+<./pictures/1V.png, id=558, 698.61pt x 473.77pt>
+File: ./pictures/1V.png Graphic file (type png)
+<use ./pictures/1V.png>
+Package pdftex.def Info: ./pictures/1V.png  used on input line 197.
+(pdftex.def)             Requested size: 349.30414pt x 236.88441pt.
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.212 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.212 
+       <./pictures/01V.png> <./pictures/1V.png>]
+<./pictures/pulse.png, id=567, 807.015pt x 484.81125pt>
+File: ./pictures/pulse.png Graphic file (type png)
+<use ./pictures/pulse.png>
+Package pdftex.def Info: ./pictures/pulse.png  used on input line 215.
+(pdftex.def)             Requested size: 403.50652pt x 242.40503pt.
+) (./monitoring.tex [33pdfTeX warning (ext4): destination with the same identif
+ier (name{figure.5.17}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.6 \chapter
+            {Monitoring system} <./pictures/pulse.png>]
 Chapter 6.
-) (./Chapter5.tex [32
+) (./Chapter5.tex [34
 
 ]
 Chapter 7.
-) [33
+) [35
 
-] [34
+] [36
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 258.
@@ -1282,21 +1333,24 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 258.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 258.
- [35
+ [37
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
 
-[36]
+[38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
  (./bp_dp.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `bp_dp.out' has not changed.
-(rerunfilecheck)             Checksum: 5D6B7AB053512170C27BF4B522CAF09C;10219.
+(rerunfilecheck)             Checksum: 22DC63932E6C3629C6C95B91D5861518;10383.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'bp_dp.run.xml'.
 \openout1 = `bp_dp.run.xml'.
@@ -1304,13 +1358,13 @@ Package logreq Info: Writing requests to 'bp_dp.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 17596 strings out of 494848
- 272432 string characters out of 6178430
- 696855 words of memory out of 5000000
- 20572 multiletter control sequences out of 15000+600000
+ 17638 strings out of 494848
+ 273152 string characters out of 6178430
+ 697359 words of memory out of 5000000
+ 20598 multiletter control sequences out of 15000+600000
  11832 words of font info for 44 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
- 42i,9n,41p,1565b,1937s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,41p,1591b,1937s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
@@ -1322,10 +1376,10 @@ ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb>
-Output written on bp_dp.pdf (36 pages, 50525004 bytes).
+Output written on bp_dp.pdf (38 pages, 57414357 bytes).
 PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 579 compressed objects within 6 object streams
- 144 named destinations out of 1000 (max. 500000)
- 575 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 686 PDF objects out of 1000 (max. 8388607)
+ 605 compressed objects within 7 object streams
+ 155 named destinations out of 1000 (max. 500000)
+ 608 words of extra memory for PDF output out of 10000 (max. 10000000)
 

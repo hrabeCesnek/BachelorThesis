@@ -57,88 +57,96 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Integration sphere}{14}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Photomultiplier tube}{16}{section.4.2}
+\contentsline {section}{\numberline {4.2}Photomultiplier tube}{15}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Operating principle}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Operating principle}{15}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Window}{18}{section*.5}
+\contentsline {subsubsection}{Window}{17}{section*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Photocathode}{18}{section*.6}
+\contentsline {subsubsection}{Photocathode}{17}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Electron multiplier}{18}{section*.7}
+\contentsline {subsubsection}{Electron multiplier}{17}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Voltage divider and voltage adjustement}{18}{section*.8}
+\contentsline {subsubsection}{Voltage divider and voltage adjustement}{17}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Dark current}{19}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Dark current}{18}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ohmical leakage}{19}{section*.9}
+\contentsline {subsubsection}{Ohmical leakage}{18}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Thermionic emission}{19}{section*.10}
+\contentsline {subsubsection}{Thermionic emission}{18}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Field emission}{19}{section*.11}
+\contentsline {subsubsection}{Field emission}{18}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Radioactivity}{19}{section*.12}
+\contentsline {subsubsection}{Radioactivity}{18}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Timing and response}{19}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Timing and response}{18}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Operating life and degradation}{20}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.4}Operating life and degradation}{19}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}FAST's PMTs}{20}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.5}FAST's PMTs}{19}{subsection.4.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.6}Calibration}{20}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.6}Calibration}{19}{subsection.4.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Silicon PM}{20}{section.4.3}
+\contentsline {section}{\numberline {4.3}Silicon PM}{19}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Hardware for experiment control}{20}{section.4.4}
+\contentsline {section}{\numberline {4.4}Hardware for experiment control}{19}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Raspberry Pi}{20}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Raspberry Pi}{19}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}STM32 based microcontrolers}{20}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}STM32 based microcontrolers}{19}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}USB osciloscope}{20}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.3}USB osciloscope}{19}{subsection.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.4}PM16 optical Power meter }{20}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.4}PM16 optical Power meter }{19}{subsection.4.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Sensors and other electronics components}{20}{section.4.5}
+\contentsline {section}{\numberline {4.5}Sensors and other electronics components}{19}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}MPU6050}{20}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.1}MPU6050}{19}{subsection.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}servo motors}{20}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.2}servo motors}{19}{subsection.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}Dallas DS18B20 thermometer}{20}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.3}Dallas DS18B20 thermometer}{19}{subsection.4.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Calibration UV optical source}{21}{chapter.5}
+\contentsline {chapter}{\numberline {5}Calibration UV optical source}{20}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Karlsruhe UV source}{21}{section.5.1}
+\contentsline {section}{\numberline {5.1}Karlsruhe UV source}{20}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Testing and measurement of UV source}{22}{section.5.2}
+\contentsline {section}{\numberline {5.2}Testing and measurement of UV source}{21}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Measuring apparatus}{22}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Measuring apparatus}{21}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Data acquisition and analysis}{24}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Data acquisition and analysis}{23}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Results}{26}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Results}{25}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}UV LED diode aging}{31}{section.5.3}
+\contentsline {section}{\numberline {5.3}UV LED diode aging}{30}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Optical feedback - potential fix}{31}{section.5.4}
+\contentsline {section}{\numberline {5.4}Optical feedback - potential fix}{30}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Modified UV source for drone mounting}{31}{section.5.5}
+\contentsline {subsection}{\numberline {5.4.1}Detection photodiode}{30}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Monitoring system}{32}{chapter.6}
+\contentsline {subsubsection}{Dark current}{30}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Photomultiplier relative calibration}{32}{section.6.1}
+\contentsline {subsubsection}{Signal responsivity}{32}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}}{32}{section.6.2}
+\contentsline {subsubsection}{Artificial aging}{33}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}}{32}{section.6.3}
+\contentsline {section}{\numberline {5.5}Modified UV source for drone mounting}{33}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}FAST Calibration data analysis}{33}{chapter.7}
+\contentsline {chapter}{\numberline {6}Monitoring system}{34}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Photomultiplier relative calibration}{33}{section.7.1}
+\contentsline {section}{\numberline {6.1}Photomultiplier relative calibration}{34}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}}{33}{section.7.2}
+\contentsline {section}{\numberline {6.2}}{34}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}}{33}{section.7.3}
+\contentsline {section}{\numberline {6.3}}{34}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusion}{34}{chapter*.13}
+\contentsline {chapter}{\numberline {7}FAST Calibration data analysis}{35}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Photomultiplier relative calibration}{35}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}}{35}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}}{35}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Conclusion}{36}{chapter*.16}
