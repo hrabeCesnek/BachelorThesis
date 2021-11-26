@@ -135,18 +135,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Monitoring system}{34}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Photomultiplier relative calibration}{34}{section.6.1}
+\contentsline {section}{\numberline {6.1}Monitoring of multiple FAST telescopes}{34}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}}{34}{section.6.2}
+\contentsline {section}{\numberline {6.2}Control units and sensors}{34}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}}{34}{section.6.3}
+\contentsline {section}{\numberline {6.3}Software system}{35}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}FAST Calibration data analysis}{35}{chapter.7}
+\contentsline {chapter}{\numberline {7}FAST Calibration data analysis}{37}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Photomultiplier relative calibration}{35}{section.7.1}
+\contentsline {section}{\numberline {7.1}Photomultiplier relative calibration}{37}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}}{35}{section.7.2}
+\contentsline {section}{\numberline {7.2}}{37}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}}{35}{section.7.3}
+\contentsline {section}{\numberline {7.3}}{37}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusion}{36}{chapter*.16}
+\contentsline {chapter}{Conclusion}{38}{chapter*.16}
