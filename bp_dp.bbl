@@ -55,6 +55,123 @@
       \endverb
       \keyw{cosmic rays,extensive air showers,fluorescence detector,calibration,optical properties,octocopter,Pierre Auger Observatory}
     \endentry
+    \entry{Cascades}{article}{}
+      \name{author}{20}{}{%
+        {{hash=35cb67d5ba69ebe516de5c6673141881}{%
+           family={Haungs},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dfb2db0372fedf8b762dfc1b0e0838eb}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Dongyun},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7f664da1921799b024a8bcb6d75409b2}{%
+           family={Schoo},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e156d9676a8f86a69121d0cad96115ef}{%
+           family={Wochele},
+           familyi={W\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=01f56deda749a77823430bd6d30182f8}{%
+           family={Wochele},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f146e914bfb63073205375503746a38a}{%
+           family={Apel},
+           familyi={A\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d328be40f54e446bed0517289bb193fd}{%
+           family={Arteaga-Velázquez},
+           familyi={A\bibinithyphendelim V\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=279770b2b2cf72cf7205fecfc61d5d97}{%
+           family={Bekk},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=331d06a9d31e7b816225a9a31cba3e63}{%
+           family={Bertaina},
+           familyi={B\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=72b28ff812c0fe3ebac4fc99f649534b}{%
+           family={Blümer},
+           familyi={B\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=163f223cb89ca8d989d36a40d528bb69}{%
+           family={Bozdog},
+           familyi={B\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=43fc0b158783f6709e15ef45e36c9b9f}{%
+           family={Brancus},
+           familyi={B\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=833e620db76c5c3b49891a6f3a479e92}{%
+           family={Cantoni},
+           familyi={C\bibinitperiod},
+           given={Elena\bibnamedelima Carla},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=79cf403a1dd278d81b9105acfdf319e4}{%
+           family={Chiavassa},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=563d8e2ed666f29548fd219409ddce41}{%
+           family={Cossavella},
+           familyi={C\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=30fa305ae00ea1388f66c72246cccdd3}{%
+           family={Daumiller},
+           familyi={D\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=726563b47986ba5ea61a8275968d653b}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={Vanet},
+           giveni={V\bibinitperiod}}}%
+        {{hash=42cd47ff0f08bcaa48c9a228210f8375}{%
+           family={Di\bibnamedelima Pierro},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e91fd15d0b888b0b8a70ff5dd47ef62f}{%
+           family={Doll},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=40aa20394b5654c1a4e96696d69e6db2}{%
+           family={Zabierowski},
+           familyi={Z\bibinitperiod},
+           given={Janusz},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e1844fe276793696b8fd011287adda5}
+      \strng{fullhash}{d628e2c3fc68ebef6634893229489bf7}
+      \strng{bibnamehash}{d628e2c3fc68ebef6634893229489bf7}
+      \strng{authorbibnamehash}{d628e2c3fc68ebef6634893229489bf7}
+      \strng{authornamehash}{9e1844fe276793696b8fd011287adda5}
+      \strng{authorfullhash}{d628e2c3fc68ebef6634893229489bf7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{The KASCADE Cosmic-ray Data Centre KCDC: Granting Open Access to Astroparticle Physics Research Data}
+      \field{year}{2018}
+    \endentry
     \entry{MALACARI2020102430}{article}{}
       \name{author}{19}{}{%
         {{hash=eb8f7de502ca6527e29237173766dce4}{%
@@ -322,6 +439,34 @@
       \field{labeltitlesource}{title}
       \field{note}{\url{https://psec.uchicago.edu/library/photomultipliers/Photonis_PMT_basics.pdf}}
       \field{title}{Photonis: Photomultiplier tube basics}
+    \endentry
+    \entry{intro}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ffa66292c9972ac4caae14b20ca5f10f}{%
+           family={RNDr.\bibnamedelimi Pavel\bibnamedelima Kolář},
+           familyi={R\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={CSc.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {czech}%
+      }
+      \strng{namehash}{ffa66292c9972ac4caae14b20ca5f10f}
+      \strng{fullhash}{ffa66292c9972ac4caae14b20ca5f10f}
+      \strng{bibnamehash}{ffa66292c9972ac4caae14b20ca5f10f}
+      \strng{authorbibnamehash}{ffa66292c9972ac4caae14b20ca5f10f}
+      \strng{authornamehash}{ffa66292c9972ac4caae14b20ca5f10f}
+      \strng{authorfullhash}{ffa66292c9972ac4caae14b20ca5f10f}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.fzu.cz/aktuality/z-velmi-vzdalenych-galaxii}}
+      \field{title}{Z velmi vzdálených galaxií}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
     \endentry
     \entry{Benjamin_Skuse}{misc}{}
       \name{author}{1}{}{%
