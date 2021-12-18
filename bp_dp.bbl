@@ -440,6 +440,34 @@
       \field{note}{\url{https://psec.uchicago.edu/library/photomultipliers/Photonis_PMT_basics.pdf}}
       \field{title}{Photonis: Photomultiplier tube basics}
     \endentry
+    \entry{Array}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c4c0f48d7ade02ece3e3fc0ae5e6ce17}{%
+           family={project},
+           familyi={p\bibinitperiod},
+           given={Telescope\bibnamedelima Array},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c4c0f48d7ade02ece3e3fc0ae5e6ce17}
+      \strng{fullhash}{c4c0f48d7ade02ece3e3fc0ae5e6ce17}
+      \strng{bibnamehash}{c4c0f48d7ade02ece3e3fc0ae5e6ce17}
+      \strng{authorbibnamehash}{c4c0f48d7ade02ece3e3fc0ae5e6ce17}
+      \strng{authornamehash}{c4c0f48d7ade02ece3e3fc0ae5e6ce17}
+      \strng{authorfullhash}{c4c0f48d7ade02ece3e3fc0ae5e6ce17}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://http://www.telescopearray.org}}
+      \field{title}{Telescope Array project}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+    \endentry
     \entry{intro}{misc}{}
       \name{author}{1}{}{%
         {{hash=ffa66292c9972ac4caae14b20ca5f10f}{%

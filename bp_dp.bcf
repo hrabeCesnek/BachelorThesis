@@ -1933,11 +1933,13 @@
     <bcf:citekey order="4">Benjamin_Skuse</bcf:citekey>
     <bcf:citekey order="5">Cascades</bcf:citekey>
     <bcf:citekey order="6">Tomankova2016_1000061954</bcf:citekey>
-    <bcf:citekey order="7">VACULA2021167169</bcf:citekey>
-    <bcf:citekey order="8">Photonis</bcf:citekey>
-    <bcf:citekey order="8">Hamamatsu</bcf:citekey>
-    <bcf:citekey order="9">PicoScope</bcf:citekey>
-    <bcf:citekey order="10">MqttServ</bcf:citekey>
+    <bcf:citekey order="7">Tomankova2016_1000061954</bcf:citekey>
+    <bcf:citekey order="8">Array</bcf:citekey>
+    <bcf:citekey order="9">VACULA2021167169</bcf:citekey>
+    <bcf:citekey order="10">Photonis</bcf:citekey>
+    <bcf:citekey order="10">Hamamatsu</bcf:citekey>
+    <bcf:citekey order="11">PicoScope</bcf:citekey>
+    <bcf:citekey order="12">MqttServ</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
