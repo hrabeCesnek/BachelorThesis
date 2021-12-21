@@ -41,11 +41,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}FAST calibration}{16}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Flasher}{16}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Flasher}{17}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}YAP pulser}{17}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}Homogenous light source}{17}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Drone with light source}{17}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Instrumentalization and measurement preparation}{18}{chapter.4}
 \defcounter {refsection}{0}\relax 

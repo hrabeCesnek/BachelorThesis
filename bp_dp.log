@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  18 DEC 2021 07:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.6)  21 DEC 2021 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -985,7 +985,7 @@ Package biblatex Info: ... file 'bp_dp.bbl' found.
  (./bp_dp.bbl)
 Package biblatex Info: Reference section=0 on input line 134.
 Package biblatex Info: Reference segment=0 on input line 134.
-<up_logo_bw.pdf, id=249, 96.36pt x 98.3675pt>
+<up_logo_bw.pdf, id=253, 96.36pt x 98.3675pt>
 File: up_logo_bw.pdf Graphic file (type pdf)
 <use up_logo_bw.pdf>
 Package pdftex.def Info: up_logo_bw.pdf  used on input line 158.
@@ -1009,7 +1009,7 @@ Underfull \hbox (badness 6542) in paragraph at lines 43--45
 
 ]
 Chapter 1.
-<./pictures/rays.jpg, id=353, 526.96875pt x 240.14719pt>
+<./pictures/rays.jpg, id=358, 526.96875pt x 240.14719pt>
 File: ./pictures/rays.jpg Graphic file (type jpg)
 <use ./pictures/rays.jpg>
 Package pdftex.def Info: ./pictures/rays.jpg  used on input line 17.
@@ -1024,7 +1024,7 @@ has been already used, duplicate ignored
 l.28 N
       eutrinos are also a part of cosmic radiation, but their interaction wi...
  <./pictures/rays.jpg>]
-<./pictures/cascade.png, id=366, 1334.9875pt x 1034.86626pt>
+<./pictures/cascade.png, id=371, 1334.9875pt x 1034.86626pt>
 File: ./pictures/cascade.png Graphic file (type png)
 <use ./pictures/cascade.png>
 Package pdftex.def Info: ./pictures/cascade.png  used on input line 47.
@@ -1038,13 +1038,13 @@ l.69 H
       owever, the intensity of this light is very low, and thus the measurem...
  <./pictures/cascade.png>] [11]) (./Chapter2.tex [12]
 Chapter 2.
-<./pictures/fastTheoretical.png, id=397, 466.74374pt x 449.68pt>
+<./pictures/fastTheoretical.png, id=402, 466.74374pt x 449.68pt>
 File: ./pictures/fastTheoretical.png Graphic file (type png)
 <use ./pictures/fastTheoretical.png>
 Package pdftex.def Info: ./pictures/fastTheoretical.png  used on input line 17.
 
 (pdftex.def)             Requested size: 233.37129pt x 224.83945pt.
-<./pictures/FASTReal.jpg, id=399, 1003.75pt x 1510.64375pt>
+<./pictures/FASTReal.jpg, id=404, 1003.75pt x 1510.64375pt>
 File: ./pictures/FASTReal.jpg Graphic file (type jpg)
 <use ./pictures/FASTReal.jpg>
 Package pdftex.def Info: ./pictures/FASTReal.jpg  used on input line 26.
@@ -1068,7 +1068,7 @@ re.2.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.50 
       <./pictures/FASTReal.jpg>]
-<./pictures/operatinFast.png, id=414, 642.4pt x 361.35pt>
+<./pictures/operatinFast.png, id=419, 642.4pt x 361.35pt>
 File: ./pictures/operatinFast.png Graphic file (type png)
 <use ./pictures/operatinFast.png>
 Package pdftex.def Info: ./pictures/operatinFast.png  used on input line 53.
@@ -1082,11 +1082,11 @@ l.6 \chapter
             {Calibration of astroparticle detectors} <./pictures/operatinFast.p
 ng>]
 Chapter 3.
-) (./Chapter3.tex [16
+[16
 
-] [17]
+]) (./Chapter3.tex [17]
 Chapter 4.
-<./pictures/IntegrationSphere.jpg, id=429, 4143.48pt x 3107.61pt>
+<./pictures/IntegrationSphere.jpg, id=434, 4143.48pt x 3107.61pt>
 File: ./pictures/IntegrationSphere.jpg Graphic file (type jpg)
 <use ./pictures/IntegrationSphere.jpg>
 Package pdftex.def Info: ./pictures/IntegrationSphere.jpg  used on input line 1
@@ -1124,7 +1124,7 @@ ure.4.3}) has been already used, duplicate ignored
 l.82 
      ] [21] [22]) (./Chapter4.tex [23]
 Chapter 5.
-<./pictures/KarlsRuhe.jpg, id=480, 4143.48pt x 3107.61pt>
+<./pictures/KarlsRuhe.jpg, id=485, 4143.48pt x 3107.61pt>
 File: ./pictures/KarlsRuhe.jpg Graphic file (type jpg)
 <use ./pictures/KarlsRuhe.jpg>
 Package pdftex.def Info: ./pictures/KarlsRuhe.jpg  used on input line 16.
@@ -1138,13 +1138,13 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.29 \subsection
                 {Measuring apparatus} <./pictures/KarlsRuhe.jpg>]
-<./pictures/aprature1b.png, id=489, 4143.48pt x 3107.61pt>
+<./pictures/aprature1b.png, id=494, 4143.48pt x 3107.61pt>
 File: ./pictures/aprature1b.png Graphic file (type png)
 <use ./pictures/aprature1b.png>
 Package pdftex.def Info: ./pictures/aprature1b.png  used on input line 47.
 (pdftex.def)             Requested size: 426.79134pt x 320.07318pt.
  [25]
-<./pictures/aparature2b.png, id=499, 3107.61pt x 4143.48pt>
+<./pictures/aparature2b.png, id=504, 3107.61pt x 4143.48pt>
 File: ./pictures/aparature2b.png Graphic file (type png)
 <use ./pictures/aparature2b.png>
 Package pdftex.def Info: ./pictures/aparature2b.png  used on input line 54.
@@ -1156,7 +1156,7 @@ Package pdftex.def Info: ./pictures/aparature2b.png  used on input line 54.
                                                   \fi \fi 
 l.58 
       <./pictures/aprature1b.png>]
-<./pictures/PMTPulse.png, id=506, 698.61pt x 473.77pt>
+<./pictures/PMTPulse.png, id=511, 698.61pt x 473.77pt>
 File: ./pictures/PMTPulse.png Graphic file (type png)
 <use ./pictures/PMTPulse.png>
 Package pdftex.def Info: ./pictures/PMTPulse.png  used on input line 67.
@@ -1173,7 +1173,7 @@ Overfull \hbox (13.0734pt too wide) in paragraph at lines 67--68
                                                   \fi \fi 
 l.71 
       <./pictures/aparature2b.png>]
-<./pictures/linFit.png, id=515, 356.33125pt x 389.455pt>
+<./pictures/linFit.png, id=520, 356.33125pt x 389.455pt>
 File: ./pictures/linFit.png Graphic file (type png)
 <use ./pictures/linFit.png>
 Package pdftex.def Info: ./pictures/linFit.png  used on input line 80.
@@ -1185,7 +1185,7 @@ Package pdftex.def Info: ./pictures/linFit.png  used on input line 80.
                                                   \fi \fi 
 l.83 \end{figure}
                   <./pictures/PMTPulse.png>]
-<./pictures/powers.png, id=521, 1401.235pt x 875.27pt>
+<./pictures/powers.png, id=526, 1401.235pt x 875.27pt>
 File: ./pictures/powers.png Graphic file (type png)
 <use ./pictures/powers.png>
 Package pdftex.def Info: ./pictures/powers.png  used on input line 91.
@@ -1197,12 +1197,12 @@ Package pdftex.def Info: ./pictures/powers.png  used on input line 91.
                                                   \fi \fi 
 l.95 
       <./pictures/linFit.png>]
-<./pictures/Height.png, id=528, 1401.235pt x 875.27pt>
+<./pictures/Height.png, id=533, 1401.235pt x 875.27pt>
 File: ./pictures/Height.png Graphic file (type png)
 <use ./pictures/Height.png>
 Package pdftex.def Info: ./pictures/Height.png  used on input line 100.
 (pdftex.def)             Requested size: 420.37375pt x 262.58302pt.
-<./pictures/rise.png, id=529, 1401.235pt x 875.27pt>
+<./pictures/rise.png, id=534, 1401.235pt x 875.27pt>
 File: ./pictures/rise.png Graphic file (type png)
 <use ./pictures/rise.png>
 Package pdftex.def Info: ./pictures/rise.png  used on input line 109.
@@ -1220,12 +1220,12 @@ l.113
                                                   \fi \fi 
 l.113 
        <./pictures/powers.png> <./pictures/Height.png>]
-<./pictures/Slope.png, id=536, 1401.235pt x 875.27pt>
+<./pictures/Slope.png, id=541, 1401.235pt x 875.27pt>
 File: ./pictures/Slope.png Graphic file (type png)
 <use ./pictures/Slope.png>
 Package pdftex.def Info: ./pictures/Slope.png  used on input line 116.
 (pdftex.def)             Requested size: 420.37375pt x 262.58302pt.
-<./pictures/temperatures.png, id=537, 1401.235pt x 875.27pt>
+<./pictures/temperatures.png, id=542, 1401.235pt x 875.27pt>
 File: ./pictures/temperatures.png Graphic file (type png)
 <use ./pictures/temperatures.png>
 Package pdftex.def Info: ./pictures/temperatures.png  used on input line 125.
@@ -1243,7 +1243,7 @@ l.129
                                                   \fi \fi 
 l.129 
        <./pictures/rise.png> <./pictures/Slope.png>]
-<./pictures/voltage.png, id=548, 698.61pt x 473.77pt>
+<./pictures/voltage.png, id=553, 698.61pt x 473.77pt>
 File: ./pictures/voltage.png Graphic file (type png)
 <use ./pictures/voltage.png>
 Package pdftex.def Info: ./pictures/voltage.png  used on input line 139.
@@ -1255,7 +1255,7 @@ Package pdftex.def Info: ./pictures/voltage.png  used on input line 139.
                                                   \fi \fi 
 l.143 
        <./pictures/temperatures.png>]
-<./pictures/Current.png, id=554, 698.61pt x 473.77pt>
+<./pictures/Current.png, id=559, 698.61pt x 473.77pt>
 File: ./pictures/Current.png Graphic file (type png)
 <use ./pictures/Current.png>
 Package pdftex.def Info: ./pictures/Current.png  used on input line 146.
@@ -1275,18 +1275,18 @@ te ignored
 l.159 \section
               {Optical feedback - potential fix} <./pictures/voltage.png> <./pi
 ctures/Current.png>]
-<./pictures/DiodeHeat.jpg, id=563, 4143.48pt x 3107.61pt>
+<./pictures/DiodeHeat.jpg, id=569, 4143.48pt x 3107.61pt>
 File: ./pictures/DiodeHeat.jpg Graphic file (type jpg)
 <use ./pictures/DiodeHeat.jpg>
 Package pdftex.def Info: ./pictures/DiodeHeat.jpg  used on input line 173.
 (pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
  [34]
-<./pictures/heating.jpg, id=570, 4143.48pt x 3107.61pt>
+<./pictures/heating.jpg, id=575, 4143.48pt x 3107.61pt>
 File: ./pictures/heating.jpg Graphic file (type jpg)
 <use ./pictures/heating.jpg>
 Package pdftex.def Info: ./pictures/heating.jpg  used on input line 181.
 (pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
-<./pictures/01V.png, id=571, 698.61pt x 473.77pt>
+<./pictures/01V.png, id=576, 698.61pt x 473.77pt>
 File: ./pictures/01V.png Graphic file (type png)
 <use ./pictures/01V.png>
 Package pdftex.def Info: ./pictures/01V.png  used on input line 190.
@@ -1304,7 +1304,7 @@ l.194
                                                   \fi \fi 
 l.194 
        <./pictures/DiodeHeat.jpg> <./pictures/heating.jpg>]
-<./pictures/1V.png, id=578, 698.61pt x 473.77pt>
+<./pictures/1V.png, id=583, 698.61pt x 473.77pt>
 File: ./pictures/1V.png Graphic file (type png)
 <use ./pictures/1V.png>
 Package pdftex.def Info: ./pictures/1V.png  used on input line 197.
@@ -1322,7 +1322,7 @@ l.212
                                                   \fi \fi 
 l.212 
        <./pictures/01V.png> <./pictures/1V.png>]
-<./pictures/pulse.png, id=587, 807.015pt x 484.81125pt>
+<./pictures/pulse.png, id=592, 807.015pt x 484.81125pt>
 File: ./pictures/pulse.png Graphic file (type png)
 <use ./pictures/pulse.png>
 Package pdftex.def Info: ./pictures/pulse.png  used on input line 215.
@@ -1402,7 +1402,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `bp_dp.out' has not changed.
-(rerunfilecheck)             Checksum: DBB4F797890CE49E3D280B7D0A6B08E7;10212.
+(rerunfilecheck)             Checksum: 6C0B1FFC16394EF34D89F10A297045F0;10397.
 
 
 LaTeX Warning: There were undefined references.
@@ -1421,10 +1421,10 @@ Package logreq Info: Writing requests to 'bp_dp.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 17676 strings out of 494848
- 274037 string characters out of 6178430
+ 17678 strings out of 494848
+ 274071 string characters out of 6178430
  697700 words of memory out of 5000000
- 20621 multiletter control sequences out of 15000+600000
+ 20622 multiletter control sequences out of 15000+600000
  11832 words of font info for 44 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
  42i,9n,41p,1591b,1937s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1439,10 +1439,10 @@ ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb>
-Output written on bp_dp.pdf (44 pages, 58206754 bytes).
+Output written on bp_dp.pdf (44 pages, 58207419 bytes).
 PDF statistics:
- 723 PDF objects out of 1000 (max. 8388607)
- 628 compressed objects within 7 object streams
- 165 named destinations out of 1000 (max. 500000)
- 609 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 728 PDF objects out of 1000 (max. 8388607)
+ 633 compressed objects within 7 object streams
+ 166 named destinations out of 1000 (max. 500000)
+ 617 words of extra memory for PDF output out of 10000 (max. 10000000)
 
