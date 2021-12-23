@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.6)  21 DEC 2021 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  23 DEC 2021 07:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1066,12 +1066,13 @@ re.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.50 
-      <./pictures/FASTReal.jpg>]
+l.57 T
+      esting measurements, sometimes refered as shifts, are performed in the...
+ <./pictures/FASTReal.jpg>]
 <./pictures/operatinFast.png, id=419, 642.4pt x 361.35pt>
 File: ./pictures/operatinFast.png Graphic file (type png)
 <use ./pictures/operatinFast.png>
-Package pdftex.def Info: ./pictures/operatinFast.png  used on input line 53.
+Package pdftex.def Info: ./pictures/operatinFast.png  used on input line 62.
 (pdftex.def)             Requested size: 321.19922pt x 180.67456pt.
 ) (./calibration.tex [15pdfTeX warning (ext4): destination with the same identi
 fier (name{figure.2.3}) has been already used, duplicate ignored
@@ -1439,7 +1440,7 @@ ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb>
-Output written on bp_dp.pdf (44 pages, 58207419 bytes).
+Output written on bp_dp.pdf (44 pages, 58209425 bytes).
 PDF statistics:
  728 PDF objects out of 1000 (max. 8388607)
  633 compressed objects within 7 object streams

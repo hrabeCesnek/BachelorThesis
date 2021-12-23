@@ -31,7 +31,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Protection hut}{14}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Remote control and monitoring}{14}{section.2.3}
+\contentsline {section}{\numberline {2.3}Remote control and monitoring}{15}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Calibration of astroparticle detectors}{16}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -39,7 +39,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Relative calibration}{16}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}FAST calibration}{16}{section.3.3}
+\contentsline {section}{\numberline {3.3}FAST calibration}{17}{section.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Flasher}{17}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
