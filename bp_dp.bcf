@@ -1937,11 +1937,14 @@
     <bcf:citekey order="8">Array</bcf:citekey>
     <bcf:citekey order="9">MALACARI2020102430</bcf:citekey>
     <bcf:citekey order="10">Project</bcf:citekey>
-    <bcf:citekey order="11">VACULA2021167169</bcf:citekey>
-    <bcf:citekey order="12">Photonis</bcf:citekey>
-    <bcf:citekey order="12">Hamamatsu</bcf:citekey>
-    <bcf:citekey order="13">PicoScope</bcf:citekey>
-    <bcf:citekey order="14">MqttServ</bcf:citekey>
+    <bcf:citekey order="11">Mandat_2017</bcf:citekey>
+    <bcf:citekey order="12">MALACARI2020102430</bcf:citekey>
+    <bcf:citekey order="13">Mandat_2017</bcf:citekey>
+    <bcf:citekey order="14">VACULA2021167169</bcf:citekey>
+    <bcf:citekey order="15">Photonis</bcf:citekey>
+    <bcf:citekey order="15">Hamamatsu</bcf:citekey>
+    <bcf:citekey order="16">PicoScope</bcf:citekey>
+    <bcf:citekey order="17">MqttServ</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

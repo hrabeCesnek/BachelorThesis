@@ -55,6 +55,136 @@
       \endverb
       \keyw{cosmic rays,extensive air showers,fluorescence detector,calibration,optical properties,octocopter,Pierre Auger Observatory}
     \endentry
+    \entry{Mandat_2017}{article}{}
+      \name{author}{19}{}{%
+        {{hash=0f75cce12b7a28f77011872225671551}{%
+           family={Mandat},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=244eefda9434a9df1a3939499518746a}{%
+           family={Palatka},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=98c223fa8e11df0972f83a3998d5492d}{%
+           family={Pech},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3bc28d739cc75c2038dad739faa27f47}{%
+           family={Schovanek},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b2b0cd5cef57aba1cb9c97fdab8884d6}{%
+           family={Travnicek},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2b756003fd1597d6bd9db7fa5f99c4ca}{%
+           family={Nozka},
+           familyi={N\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f12a1f5e5892de5bc30bd6e6957b9d50}{%
+           family={Hrabovsky},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7b8904e52ea28d57623439ec4775d39}{%
+           family={Horvath},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0d2dd5c236b6ea569f09c0925102acc7}{%
+           family={Fujii},
+           familyi={F\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=67c052b26ac86eef28644d8cc6f82885}{%
+           family={Privitera},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=eb8f7de502ca6527e29237173766dce4}{%
+           family={Malacari},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=68d26cd3997868196a4eb99051826945}{%
+           family={Farmer},
+           familyi={F\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5f84511e90d00c27d2c0a2e77bf6f45c}{%
+           family={Galimova},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a5d64586843ac164d7033cc2fc2041e4}{%
+           family={Matalon},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=280a378fbb51ebefc2cedaab0bb5e294}{%
+           family={Merolle},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=436a429b795a647e739ce7789c4f4a3a}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=0abbce548aef87cefd2f72708641a916}{%
+           family={Bellido},
+           familyi={B\bibinitperiod},
+           given={J.A.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c7cf348a607dfdb078bd8ff4b093ad7e}{%
+           family={Matthews},
+           familyi={M\bibinitperiod},
+           given={J.N.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4eca62f2bbac3aa88944808a324cc478}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={S.B.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{cb1f5ae12a4da1e733d67632a17dcc95}
+      \strng{fullhash}{df72c23d6eb5f645e78caa432c145dbe}
+      \strng{bibnamehash}{df72c23d6eb5f645e78caa432c145dbe}
+      \strng{authorbibnamehash}{df72c23d6eb5f645e78caa432c145dbe}
+      \strng{authornamehash}{cb1f5ae12a4da1e733d67632a17dcc95}
+      \strng{authorfullhash}{df72c23d6eb5f645e78caa432c145dbe}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Fluorescence detector Array of Single-pixel Telescopes is a proposed low-cost, large-area, next-generation experiment for the detection of ultrahigh-energy cosmic rays via the atmospheric fluorescence technique. The proposed design involves the deployment of several hundred large field-of-view fluorescence telescopes on a regular grid of several thousand square kilometers in ground area. This paper describes the optical design of the prototype telescope, as well as its mechanical support structure.}
+      \field{journaltitle}{Journal of Instrumentation}
+      \field{month}{7}
+      \field{number}{07}
+      \field{title}{The prototype opto-mechanical system for the Fluorescence detector Array of Single-pixel Telescopes}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{T07001\bibrangedash T07001}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/12/07/t07001
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/1748-0221/12/07/t07001
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/1748-0221/12/07/t07001
+      \endverb
+    \endentry
     \entry{Cascades}{article}{}
       \name{author}{20}{}{%
         {{hash=35cb67d5ba69ebe516de5c6673141881}{%
@@ -396,6 +526,34 @@
       \endverb
       \keyw{Integrating sphere,Extended uniform light source,Field of view,Spatial radiance uniformity,Angular radiance uniformity,SiPM sensor,Low intensity UV-A}
     \endentry
+    \entry{Project}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cddb2a39ab3bb9e0db7fbdbe0ad4dcca}{%
+           family={collaboration},
+           familyi={c\bibinitperiod},
+           given={FAST},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{cddb2a39ab3bb9e0db7fbdbe0ad4dcca}
+      \strng{fullhash}{cddb2a39ab3bb9e0db7fbdbe0ad4dcca}
+      \strng{bibnamehash}{cddb2a39ab3bb9e0db7fbdbe0ad4dcca}
+      \strng{authorbibnamehash}{cddb2a39ab3bb9e0db7fbdbe0ad4dcca}
+      \strng{authornamehash}{cddb2a39ab3bb9e0db7fbdbe0ad4dcca}
+      \strng{authorfullhash}{cddb2a39ab3bb9e0db7fbdbe0ad4dcca}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.fast-project.org}}
+      \field{title}{project}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+    \endentry
     \entry{Hamamatsu}{misc}{}
       \list{language}{1}{%
         {english}%
@@ -461,7 +619,7 @@
       \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{\url{https://http://www.telescopearray.org}}
+      \field{note}{\url{https://www.telescopearray.org}}
       \field{title}{Telescope Array project}
       \field{urlday}{17}
       \field{urlmonth}{12}

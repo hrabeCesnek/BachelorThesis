@@ -5,16 +5,30 @@
 % -----------------------------------------------
 \chapter{Calibration UV optical source}
 % -----------------------------------------------
-Blah blah we need it.
+As was mentioned before, the calibration UV optical source is a essential instrument to perform calibrations. Its main purpose is to deliver stable intensity which does not vary over time or due to the changes in outer conditions.
+\par
+In case of FAST the process of calibration requires low-intensity UV light to be delivered in microsecond square pulses. This is because FAST is a low-intensity detector and its PMTs may be easilly saturated.
+
 % -----------------------------------------------
-\section{Karlsruhe UV source}
+\section{UV source}
 % -----------------------------------------------
+For the calibration purposes was developed a prototype of pulse UV source based on the current-driven LEDs inspired by the Karlsruhe Institute of Technology (KIT) concept. The active parts - LED drive circuit and 3 LEDs are situated in temperature stabilized head. 
+\par
+The source is driven by STM32 board, which allows us to set parameters - LED current, PWM duty and frequency.
+ 
 
 
  \begin{figure}[H]
  \centering
  \includegraphics[scale=0.09, angle = 270, origin = c]{./pictures/KarlsRuhe}
- \caption{UV source conctructed by Vladimír Urbášek from SLO according to KIT's template.}
+ \caption{UV source conctructed by Vladimír Urbášek from SLO.}
+ \label{UVsource}
+\end{figure}
+
+ \begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.09, angle = 270, origin = c]{./pictures/KarlsRuhe}
+ \caption{UV source schematic.}
  \label{UVsource}
 \end{figure}
 

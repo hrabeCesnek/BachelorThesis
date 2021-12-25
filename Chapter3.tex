@@ -3,13 +3,13 @@
 % -----------------------------------------------
 
 % -----------------------------------------------
-\chapter{Instrumentalization and measurement preparation}
+\chapter{Instrumentation and measurement methodology}
 % -----------------------------------------------
 To perform all of neccesary measurements we need to use various types of optical and electronical equipment.
 % -----------------------------------------------
 \section{Integration sphere}
 % -----------------------------------------------
-The Integration sphere (IS) is a special optical equipment, which can be used either as extended uniform light source (EULS) or with spectrometer in determining the material reflectance. In our experiments we use general purpose Labsphere (Fig. \ref{Labsphere}).
+The Integration sphere (IS) is a special optical equipment, which can be used either as extended uniform light source (EULS) e.g. with spectrometer in determining the material reflectance. In our experiments we use general purpose Labsphere (Fig. \ref{Labsphere}).
 
 \begin{figure}[H]
  \centering
@@ -19,7 +19,7 @@ The Integration sphere (IS) is a special optical equipment, which can be used ei
  
 \end{figure}
 \par
-The IS inner surface consist of white optical diffusive material (BaSO$_4$ and Polytetrafluoroethylene). The IS also contains several circular apertures, which are called input/output ports. They can be used to mount detectors or optical sources or left free to let light flux enter or exit IS. 
+The IS inner surface consist of white optical diffusive material (BaSO$_4$ and Polytetrafluoroethylene). The IS also contains several circular apertures, which are called input/output ports. These can be used to mount detectors or optical sources or left free to let light flux enter or exit IS. 
 \par
 The inner surface is part where light intergration happens. The effect which takes place here is known as Lambertian scattering. After one spot of inner surface is hit by a ray, the energy should be uniformly radialy distributed. In output port this produces a homogenous light source. The homogenity decreases with increasing number and sizes of input/output ports.
 \par
@@ -27,7 +27,7 @@ Using optical source with IS requires baffle to prevent source's light flux or i
 \par
 More deeper explanation of IS working principles and characterization of optical properties of the identical IS, which we use, can be found in \cite{VACULA2021167169}.
 \par
-For our pusrposes, in case of FAST calibration, we use IS as EULS in UV spectre. In case of testing optical calibration source, we don't even care about homegenity. The reason why we use IS in this case is that it focuses the optical power of the source into output ports, where  our detectors are mounted, and blocks any other external light source, which could affect our detectors.
+For our purposes, in case of FAST calibration, we use IS as an UV EULS. In case of testing optical UV calibration source, we use IS mainly to block the possible incoming external light and to distribute the optical power of the UV source between mounted detectors.
 % -----------------------------------------------
 
 \section{Photomultiplier tube}
@@ -38,8 +38,8 @@ PMT consists of 6 main elements, which can be seen on scheme \ref{PMT scheme}.
 
 \begin{figure}[H]
  \centering
- \includegraphics{up_logo_bw}
- \caption{Photomultiplier tube scheme.}
+ \includegraphics[scale = 0.5]{./pictures/PMTscheme}
+ \caption{Photomultiplier tube scheme\cite{Photonis}.}
  \label{PMT scheme}
 \end{figure}
 
@@ -78,7 +78,7 @@ For proper functionality of the PMT, the charge and current linearity should be 
 
 \subsubsection{Window}
 
-The photocathode is superimposed by glass window, whose main purpose is to admit light of certain wavelengths. Glass materials are characterized by the spectral sensitivity to wavelengths. For transparency in UV spectre, it is advised to use borosilicate or fused silica glasses.
+The photocathode is coated on glass window, whose main purpose is to admit light of certain wavelengths. Glass materials are characterized by the spectral sensitivity to wavelengths. For transparency in UV spectre, it is advised to use borosilicate or fused silica glasses.
 
 
 \subsubsection{Photocathode}
@@ -116,12 +116,12 @@ Dark current is anode current produced by photomultiplier in total darkness. It 
 \subsubsection{Ohmical leakage}
 Insufficent insulation of electrodes, dynodes and all other parts which are under high voltage may lead to surface current over glass and tube. Dirt and humidity are in most cases the reason of Ohmical leakage.
 
-\subsubsection{Thermionic emission}
-Temperature causes emission of photocathode's electrons, which are at medium gains the major part of dark current.  Due to this effect, some PMTs may need to be cooled during operation.
-\subsubsection{Field emission}
-At high gains the electrostatic field is so strong that it can rip the electrons out of the electrodes and accelerate them onto other surfaces, where they cause secondary emission. Field emission rapidly increases with supply voltage. In some literature it is also refered as cold emission.
-\subsubsection{Radioactivity}
-The radioactivity of PMT's components depends only on the material composition. In some aplications, such as astroparticle detection, it is neccessary to decrease radiation as possible. In astroparticle detection the radioactivity could be a source of false events. Only way to prevent this is to use materials with a very low concentration of radioactive isotopes.
+%\subsubsection{Thermionic emission}
+%Temperature causes emission of photocathode's electrons, which are at medium gains the major part of dark current.  Due to this effect, some PMTs may need to be cooled during operation.
+%\subsubsection{Field emission}
+%At high gains the electrostatic field is so strong that it can rip the electrons out of the electrodes and accelerate them onto other surfaces, where they cause secondary emission. Field emission rapidly increases with supply voltage. In some literature it is also refered as cold emission.
+%\subsubsection{Radioactivity}
+%The radioactivity of PMT's components depends only on the material composition. In some aplications, such as astroparticle detection, it is neccessary to decrease radiation as possible. In astroparticle detection the radioactivity could be a source of false events. Only way to prevent this is to use materials with a very low concentration of radioactive isotopes.
 
 \subsection{Timing and response}
 Differences of photoelectrons' trajectories from the cathode to the first dynode lead into time distorsion of signal. For example if we were able to produce delta-function pulse, the PMT would detect pulse with some response width time $t_\textrm{w}$.
@@ -139,25 +139,18 @@ The operating life of PMT is defined as the time required for anode sensitivity 
 Degradation processes start to show themselves at currents higher than 10 $\mu$A. Aging is accompanied by increasing or decreasing gain at stable voltage. Operating life of PMT is measured in thousands of operating hours.
 \par
 By exposuring PMT to bad conditions, such as humidity, mechanical stress, high temperatures or the high-intensity light, the PMT's operating life could be shorten much faster.
-\subsection{FAST's PMTs}
-
-\subsection{Calibration}
-
 %------------------------------------------------
-
-\section{Silicon PM}
-% -----------------------------------------------
-
 %------------------------------------------------
 
 \section{Hardware for experiment control}
 % -----------------------------------------------
 
 \subsection{Raspberry Pi}
-
+Raspberry Pi (RPi) is a single board computer which we use mainly for the experiment control. The linux-based Raspbian or DietPi operating system allows us to easilly run various scripts and programs written in multiple languages. By having wifi and an ethernet port, the RPi can be easilly accessed over internet. It can be used to control instruments and data acquisition over its USBs,1-Wire and I2C etc. However, it doesn't have any analog inputs/outputs such as ADCs and DACs.
 \subsection{STM32 based microcontrolers}
-
-\subsection{USB osciloscope}
+For other types of tasks, which do not require data storage and remote control, but require for example an analog sampling, setting up the voltage levels or generating well defined PWM pulses, we use STM32 based microcontrolers. 
+\par
+For this thesis purposes we use the STM32 nucleo F411RE and the STM32 nucleo F446RE with better analog inputs/outputs. 
 
 \subsection{PM16 optical Power meter }
 
