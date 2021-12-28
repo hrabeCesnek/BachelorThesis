@@ -548,7 +548,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{\url{https://www.fast-project.org}}
-      \field{title}{project}
+      \field{title}{FAST project}
       \field{urlday}{17}
       \field{urlmonth}{12}
       \field{urlyear}{2021}
@@ -649,6 +649,34 @@
       \field{labeltitlesource}{title}
       \field{note}{\url{https://www.fzu.cz/aktuality/z-velmi-vzdalenych-galaxii}}
       \field{title}{Z velmi vzdálených galaxií}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{MqttServ}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d97486ef3495d0397d5aca2f0adb3565}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d97486ef3495d0397d5aca2f0adb3565}
+      \strng{fullhash}{d97486ef3495d0397d5aca2f0adb3565}
+      \strng{bibnamehash}{d97486ef3495d0397d5aca2f0adb3565}
+      \strng{authorbibnamehash}{d97486ef3495d0397d5aca2f0adb3565}
+      \strng{authornamehash}{d97486ef3495d0397d5aca2f0adb3565}
+      \strng{authorfullhash}{d97486ef3495d0397d5aca2f0adb3565}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://randomnerdtutorials.com/what-is-mqtt-and-how-it-works/}}
+      \field{title}{What is MQTT and How It Works}
       \field{urlday}{17}
       \field{urlmonth}{12}
       \field{urlyear}{2021}

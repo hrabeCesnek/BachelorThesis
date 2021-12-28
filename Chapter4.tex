@@ -39,22 +39,22 @@ Our main task was to test this UV source's longtime stability and develop possib
 
 \section{Testing and measurement of UV source}
 % -----------------------------------------------
-For calibration UV source, the longtime stability of optical power and pulse geometry is very important. Because there were no specialized apparatus for this measurement, we had to built and program one by ourselves. For these measurements, we use UV source with LED current $I_{\textrm{d}}$ = 2.5 mA, 50$\%$ duty cycle and frequency $f = 50$ kHz. 
+For calibration UV source, the longtime stability of optical power and pulse geometry is very important. Because there was no specialized apparatus for this measurement, we had to make our own. For these measurements, we use UV source with LED current $I_{\textrm{d}}$ = 2.5 mA, 50$\%$ duty cycle and frequency $f = 50$ kHz. 
 \subsection{Measuring apparatus}
 For measuring the optical power we use PM16 power meter (PM) and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb osciloscope. XP2262 PMT is held on $U \approx -680$ V by HV voltage source. The PMT's gain may drift over time, but we use PMT mainly for geometry analysis and measurement of absolute optical power is left to PM16.
 \par
-We also use DS18B20 thermometer for PMT temperature monitoring and keysight 34461a multimeter for checking voltages.
+We also use DS18B20 thermometer for PMT temperature monitoring and keysight 34461a multimeter for readout voltages.
 
 \par
 The PMT, power meter and the optical head of UV source are mounted in the IS's ports. The IS stops the unwanted external light and distributes the optical power to PMT and power meter. 
 \par
-The entire apparatus is driven by Raspberry Pi (RPi). The RPi takes care of data acquisiton and could be used to set the parameters of the UV source. It could be easilly accessed over internet for data download or for user to control the experiment.
+The entire apparatus is driven by Raspberry Pi (RPi). The RPi takes care of data acquisiton and can be used to set the parameters of the UV source. It can be easilly accessed over internet for data download or for user to control the experiment.
 \par
-Osciloscope was programmed in C language according to its programmer's manual \cite{PicoScope}. It is capable of 2ns sampling which is enough to capture rising edges of the pulses. The RPi sets basic parameters (DC coupling, range etc.) and then activates osciloscope's trigger (rising edge). After sampling, RPi receives all samples from osciloscope's memory.
+Osciloscope's readout was programmed in C language according to its programmer's manual \cite{PicoScope}. It is capable of 2ns sampling which is enough to capture rising edges of the pulses. The RPi sets basic parameters (DC coupling, range etc.) and then activates osciloscope's trigger (rising edge). After sampling, RPi receives all samples from osciloscope's memory.
 \par
 The multimeter is controlled by VISA commands using python USBTMC library. For thermometer we use RPi's 1-Wire.
 \par
-Main component (IS,PW, PMT with HV source, UV source) are situated in protection box to prevent unwanted manipulations and touching the HV parts.The apparatus could be seen on fig. \ref{aparature1} and \ref{aparature2}.
+Main component (IS,PW, PMT with HV source, UV source) are situated in protection box to prevent unwanted manipulations and touching the HV parts.The apparatus can be seen on fig. \ref{aparature1} and \ref{aparature2}.
 
 \begin{figure}[H]
  \centering
@@ -83,22 +83,22 @@ The data from osciloscope contains the square pulses with noise (fig. \ref{pulse
  \label{pulse}
 \end{figure}
 
-To determine the pulse height, we need to calculate the average value from all the samples at first. Then, we split the samples into two subgroups according to fact, whether they are higher or lower than the average. These subgroups are converted to histograms with fixed binning (around 5000 bins). These histograms are then fitted by gaussian. The means of these two fits determine two levels of the pulse - high ($U_\textrm{h}$) and low ($U_\textrm{l}$). The fig. \ref{pulse} shows the real pulse with levels determined by this method. The height of pulse is then simply calculated by substracting two levels: $U_\textrm{H} = U_\textrm{h} - U_\textrm{l}$.
+To determine the pulse height, we need to calculate the average value from all the samples at first. Then, we split the samples into two subgroups according to fact, whether they are higher or lower than the average. These subgroups are converted to histograms with fixed binning (around 5000 bins). These histograms are then fitted by gaussian. The means of these two fits determine two levels of the pulse - high ($U_\textrm{h}$) and low ($U_\textrm{l}$). The fig. \ref{pulse} shows the real pulse with levels determined by this method. The height of pulse is then simply calculated by subtracting two levels: $U_\textrm{H} = U_\textrm{h} - U_\textrm{l}$.
 
 \par
-The properties the rising edge could be specified by two parameters, which we are able to extract from our data - time and the slope of the rising edge. We are able to calculate both of them if we identify the samples, which are taken at the time of the rising. These samples' values should be between 10 $\%$ and 90 $\%$ of the $U_{H}$. First, we need to detect the rising edge in waveform data sequence. However, the signal is very noisy and this could not be simply done by detecting the exceeding of the 10 $\%$ of the $U_{H}$ .To achieve that, we cycle through the waveform until we meet two conditions - the value is higher than average (and lesser than $90 \%$) and the derivative is positive. Due to the noise, the derivative could not be calculated from two or three points, thus we use Savitzky–Golay polynom's derivative at chosen point: $y' = \frac{1}{12h}(y_{i-2} -8y_{i-1} + 8y_{i+1} - y_{i+2}) $. However we care only of positive/negative sign, so $\frac{1}{12h}$, where $h$ is the small step, is no use for us. When these two conditions are met at some point, the program cycles back from the point through the waveform until reaches $10\%$ level, and then beginning at the same point, which met the conditions, cycles up to reaching $90\%$ level. All the samples traversed by this way are considered as samples of the rising edge. The rising time is calculated simply by multipling the number of these samples by osciloscope's sample time (2 ns). The slope is calculated from linear fit of these samples (fig. \ref{linfit}).  
+The properties of the rising edge can be specified by two parameters, which we are able to extract from our data - time and the slope of the rising edge. We are able to calculate both of them if we identify the samples of the rising edge. These samples' values should be between 20 $\%$ and 80 $\%$ of the $U_{H}$. First, we need to detect the rising edge in waveform data sequence. However, the signal is very noisy and this can not be simply done by detecting the exceeding of the 10 $\%$ of the $U_{H}$ .To achieve that, we cycle through the waveform until we meet two conditions - the value is higher than average (and lesser than $80 \%$) and the derivative is positive. Due to the noise, the derivative could not be calculated from two or three points, thus we use Savitzky–Golay polynom's derivative at chosen point: $y' = \frac{1}{12h}(y_{i-2} -8y_{i-1} + 8y_{i+1} - y_{i+2}) $. However we care only of positive/negative sign, so $\frac{1}{12h}$, where $h$ is the small step, is no use for us. When these two conditions are met at some point, the program cycles back from the point through the waveform until reaches $20\%$ level, and then beginning at the same point, which met the conditions, cycles up to reaching $80\%$ level. All the samples traversed by this way are considered as samples of the rising edge. The rising time is calculated simply by multipling the number of these samples by the sample time (2 ns). The slope is calculated from linear fit of these samples (fig. \ref{linfit}).  
 
 
  \begin{figure}[H]
  \centering
- \includegraphics[scale=0.65]{./pictures/linFit}
+ \includegraphics[scale=0.35]{./pictures/linFit}
  \caption{Linear fit of rising edge points (marked as green).}
  \label{linfit}
 \end{figure}
 
 
 \subsection{Results}
-First data taking sequence ran about two weeks. Taken data was analyzed by methods described in previous chapter and results are presented in the following graphs. The first two graphs describe 
+First data taking sequence ran about two weeks. Taken data were analyzed by methods described in previous chapter and results are presented in the following graphs. The first two graphs describe 
 optical power with respect to time (first from PM and second is the PMT pulse height).
 \begin{figure}[H]
  \centering
@@ -168,7 +168,25 @@ The measurement of current by osciloscope was done and analyzed in similar way a
 
 
 \section{UV LED diode aging}
-As was seen in results of previous measurements, the diode aging process is the most propable cause of the changes in optical power. We tried to confirm this fact by aging the similar UV LED. 
+As was seen in results of previous measurements, the diode aging process is the most propable cause of the changes in optical power. We tried to confirm this fact by aging the similar UV LED (type MT3650W3-UV).
+\par
+The single UV LED powered by the current source lm334 on $I_\textrm{d} =$ 7.1 mA was mounted onto IS's port and the optical power in continual mode was measured by the PM16. For the additional correction - the $I_\textrm{d} $ was also measured by keysight multimeter.
+
+
+\par
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.5]{./pictures/corrected1}
+ \caption{Time evolution of the optical power of single UV LED.}
+ \label{SingleDiod}
+\end{figure}
+\par
+On the fig. \ref{SingleDiod} we can see that the optical power of single LED increased about $2 \%$ after one week. Then followed a stable interval which lasted about a week, but after that period the LED started "dying" and the power started to decrease.
+
+\par
+There are 2 major possibilities to fix the LED power variation problem. The first possibility is to monitor the time usage of the UV source the and according to that recalibrate the source, but the behaviour may vary diode from diode and thus it has many disadvantages. The second and more accurate approach is to regulate the power by an optical feedback.    
+
+
 %------------------------------------------------
 \section{Optical feedback - potential fix}
 % -----------------------------------------------
@@ -177,10 +195,10 @@ One way to handle the aging process of UV LED diodes is to monitor the power and
 The part of optical power is reflected from LED to photodiode. Photocurrent induced this way is converted to voltage which is read by ADC (analog-digital converter). This information is then used by the STM32 board to adjust the current level by DAC. One problem is that the optical power is delivered in pulses, and thus it is necessary to sample these pulses and determine the height.
 \par
 \subsection{Detection photodiode}
-As detection photodiode which we chosed is GUVV-T10GD. It is guaranteed to be UV-A sensor with wavelength responsivity from 230 to 395 nm. However, it is neccesary to test more of its properties, because some of the properties, which are essential for our application, are not shown in datasheets and propably haven't been yet measured - temperature dependency of the dark current, responsivity to 10$\mu$s square signals and aging processes. The reverse voltage of photodiode $U_\textrm{r}$ could go up to 2 V. With higher the $U_\textrm{r}$ is, the lower is the diode's capacity.
+As detection photodiode which we chose is GUVV-T10GD. It is guaranteed to be UV-A sensor with wavelength responsivity from 230 to 395 nm. However, it is neccesary to test more of its properties, because some of the properties, which are essential for our application, are not shown in datasheets and propably haven't been yet measured - temperature dependency of the dark current, responsivity to 10 $\mu$s square signals and aging processes. The reverse voltage of photodiode $U_\textrm{r}$ could go up to 2 V. With higher the $U_\textrm{r}$ is, the lower is the diode's capacity.
 \par
 \subsubsection{Dark current}
-Information of dark current is very important. We need to know if the signal levels are much greater than dark current. We measured dark current with 7 set temperatures. Current was measured by keithley 2470 picoammeter. Temperature was set by autoregulated tranzistor heating plate. The tranzistor plate is driven by STM32 nucleo's DAC. The nucleo is controlled by the RPi. The RPi also communicates with picoammeter and controls the entire data acquisition. We mesured two series - one with reverse voltage $U_\textrm{r} = 0.1$ V and second with reverse voltage $U_\textrm{r} = 1$ V. The picoammeter is also capable of adjusting voltage, so it was used as a source of reverse voltage.
+Information of dark current is very important. We need to know if the signal levels are much greater than dark current. We measured dark current with 7 set temperatures. Current was measured by Keithley 2470 picoammeter. Temperature was set by autoregulated transistor heating plate. The transistor plate is driven by STM32 nucleo's DAC. The nucleo is controlled by the RPi. The RPi also communicates with picoammeter and controls the entire data acquisition. We mesured two series - one with reverse voltage $U_\textrm{r} = 0.1$ V and second with reverse voltage $U_\textrm{r} = 1$ V. The picoammeter is also capable of adjusting voltage, so it was used as a source of reverse voltage.
 
 \begin{figure}[H]
  \centering
@@ -217,7 +235,7 @@ Information of dark current is very important. We need to know if the signal lev
 We measured 5 diodes. However, the dark currents of one diode were on abnormal level, and thats why its characteristics are not plot in graphs with others. This diode was not suitable for our application.
 \par
 
-From the measured data we can see, that for the expected operating temperatures ($t < 50^{\circ}$), the dark current is $I_{dark} < 10$ nA. 
+From the measured data we can see, that for the expected operating temperatures ($t < 50^{\circ}C$), the dark current is $I_{dark} < 10$ nA. 
 
 \subsubsection{Signal responsivity}
 By direct ilumination of the photodiode by the UV LED ($I_d = 7.5 $ mA) we are able to induce photocurrent about $I_\textrm{p} = 5$ $\mu$A, which is of the higher order than the measured dark current.
@@ -235,6 +253,28 @@ To test responsibility of the square pulses, we integrated the photodiode into t
 This way we are able to see the pulsing UV LED light. However, the rising edge of feedback pulse is deformed. 
 
 \subsubsection{Artificial aging}
+For the feedback photodiode, the time stability is very important. It has to last much more than the LED. To test the long-time stability, we tried to artificially age the feedback photodiode. It is well-known fact from the molecular physics, that the diffusion coefficients of most materials depends on temperature and they grow with increasing temperature. So we tried to speed up the aging by holding the photodiode under the maximum of operating temperature (on $80^{\circ}$C) for one week. During that period, the photodiode was iluminated by UV LED and the photocurrent was measured (fig. \ref{agingPhotoCurrent}).
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.08, angle=180]{./pictures/TempDestrc}
+ \caption{Photodiode mounted on bigger transistor heating and iluminated by LED through pipe.}
+ \label{aging}
+\end{figure}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.5]{./pictures/ArtiAging}
+ \caption{Time evolution of the photodiode's photocurrent.}
+ \label{agingPhotoCurrent}
+\end{figure}
+
+The time evolution shows that the photodiode's photocurrent increased around 1 $\%$ over one week. Hovewer, this small variation is propably caused by the LED aging, as was shown before. 
+\par
+Due to the fact, that any bigger drift in sensitivity was not observed under the bad conditions, we come to a conclusion that the feedback photodiode is much more stable than the LED.
+
 
 %------------------------------------------------
 
