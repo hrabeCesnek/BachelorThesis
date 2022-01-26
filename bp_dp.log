@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  28 DEC 2021 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  26 JAN 2022 06:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1428,9 +1428,81 @@ the same identifier (name{figure.6.2}) has been already used, duplicate ignored
 l.52 
       <./pictures/monitoringScheme.png>]) (./Chapter5.tex [46]
 Chapter 7.
-) [47
+<./pictures/NumberingSky.png, id=647, 933.4875pt x 470.75874pt>
+File: ./pictures/NumberingSky.png Graphic file (type png)
+<use ./pictures/NumberingSky.png>
+Package pdftex.def Info: ./pictures/NumberingSky.png  used on input line 15.
+(pdftex.def)             Requested size: 326.72552pt x 164.76802pt.
+<./pictures/CalibPulses.png, id=650, 1230.5975pt x 881.2925pt>
+File: ./pictures/CalibPulses.png Graphic file (type png)
+<use ./pictures/CalibPulses.png>
+Package pdftex.def Info: ./pictures/CalibPulses.png  used on input line 27.
+(pdftex.def)             Requested size: 430.71558pt x 308.45699pt.
+[47
 
-] [48
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.32 
+      <./pictures/NumberingSky.png>]
+<./pictures/CalibSaturated.png, id=659, 1233.60875pt x 882.29625pt>
+File: ./pictures/CalibSaturated.png Graphic file (type png)
+<use ./pictures/CalibSaturated.png>
+Package pdftex.def Info: ./pictures/CalibSaturated.png  used on input line 35.
+(pdftex.def)             Requested size: 431.76953pt x 308.80832pt.
+ [48pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.46 T
+      he 0.3 mA pulses are suitable for our analysis. However, due to their ...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.46 T
+      he 0.3 mA pulses are suitable for our analysis. However, due to their ...
+ <./pictures/CalibPulses.png> <./pictures/CalibSaturated.png>]
+<./pictures/right.png, id=670, 1170.3725pt x 835.12pt>
+File: ./pictures/right.png Graphic file (type png)
+<use ./pictures/right.png>
+Package pdftex.def Info: ./pictures/right.png  used on input line 57.
+(pdftex.def)             Requested size: 409.6365pt x 292.29637pt.
+<./pictures/left.png, id=671, 1170.3725pt x 838.13126pt>
+File: ./pictures/left.png Graphic file (type png)
+<use ./pictures/left.png>
+Package pdftex.def Info: ./pictures/left.png  used on input line 64.
+(pdftex.def)             Requested size: 409.6365pt x 293.35033pt.
+<./pictures/bottom.png, id=672, 1167.36125pt x 837.1275pt>
+File: ./pictures/bottom.png Graphic file (type png)
+<use ./pictures/bottom.png>
+Package pdftex.def Info: ./pictures/bottom.png  used on input line 71.
+(pdftex.def)             Requested size: 408.58257pt x 292.99901pt.
+ [49pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.75 \end{figure}
+                  <./pictures/right.png>] [50pdfTeX warning (ext4): destination
+ with the same identifier (name{figure.7.5}) has been already used, duplicate i
+gnored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 \end{equation}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.7.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 \end{equation}
+                    <./pictures/left.png> <./pictures/bottom.png>]) [51]
+[52
 
 ]
 Overfull \hbox (2.79741pt too wide) in paragraph at lines 258--258
@@ -1447,18 +1519,18 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 258.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 258.
- [49
+ [53
 
-] [50]
+] [54]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
- [51]
+ [55]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
 
 (./bp_dp.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `bp_dp.out' has not changed.
-(rerunfilecheck)             Checksum: FC6838C26B343EF4327E408C2AFDCF0E;9843.
+(rerunfilecheck)             Checksum: F1DFF60ACF1CD4AC7498D3FD22441750;9990.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1469,28 +1541,29 @@ Package logreq Info: Writing requests to 'bp_dp.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 17725 strings out of 494848
- 275305 string characters out of 6178430
- 699089 words of memory out of 5000000
- 20655 multiletter control sequences out of 15000+600000
+ 17771 strings out of 494848
+ 276235 string characters out of 6178430
+ 699567 words of memory out of 5000000
+ 20685 multiletter control sequences out of 15000+600000
  11832 words of font info for 44 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
  42i,9n,41p,1556b,1937s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mtt12.pfb>
-Output written on bp_dp.pdf (51 pages, 63838112 bytes).
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.
+pfb>
+Output written on bp_dp.pdf (55 pages, 64267751 bytes).
 PDF statistics:
- 765 PDF objects out of 1000 (max. 8388607)
- 652 compressed objects within 7 object streams
- 173 named destinations out of 1000 (max. 500000)
- 620 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 816 PDF objects out of 1000 (max. 8388607)
+ 686 compressed objects within 7 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 650 words of extra memory for PDF output out of 10000 (max. 10000000)
 

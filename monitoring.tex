@@ -17,7 +17,7 @@ The data could be used by operator when controlling the telescope or later in a 
 
 \section{Control units and sensors}
 % -----------------------------------------------
-Central control unit is a RPi, which collects data from other STM32 nucleos. For every FAST telescope there is one STM32 nucleo equipped with sensors, which is connected to the RPi via CAN bus. The operation scheme could be seen on (fig. \ref{opScheme}). The RPi itself takes care of ultrasonic wind sensor and a rain sensor, because both wind and rain are same for every telescope. The Nucleos have connected dallas DS18B20 thermometers (1-Wire), BME230 temperature, humidity and pressure sensor(I2C) and an ambient light sensor through an optoclick module. Additional possibility is also to include induction sensor catch failures in shutter opening/closing.
+Central control unit is a RPi, which collects data from other STM32 nucleos. For every FAST telescope there is one STM32 nucleo equipped with sensors, which is connected to the RPi via CAN bus. The operation scheme could be seen on (fig. \ref{opScheme}). The RPi itself takes care of ultrasonic wind sensor and a rain sensor, because both wind and rain are same for every telescope. The Nucleos have connected dallas DS18B20 thermometers (1-Wire), BME230 temperature, humidity and pressure sensor(I2C) and an ambient light sensor (OPT3001) through an optoclick module. Additional possibility is also to include induction sensor catch failures in shutter opening/closing.
 
 
 \begin{figure}[H]
@@ -44,7 +44,7 @@ Central control unit is a RPi, which collects data from other STM32 nucleos. For
 % -----------------------------------------------
 For this application, where is not essential to achieve fast sampling and do some fast responses, we decided to use python fo RPi and micropython for STM32 nucleo. These languages offer us libraries and easy programming for some of our sensors, however in a cost of speed and memory (compared to C/C++ for example).
 \par
-The data reading scripts are scheduled by classical linux's tool - crontab.
+The data reading scripts are scheduled by classic linux's tool - crontab.
 
 
 \par

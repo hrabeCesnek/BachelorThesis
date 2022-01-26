@@ -125,10 +125,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}FAST Calibration data analysis}{47}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Photomultiplier relative calibration}{47}{section.7.1}
+\contentsline {section}{\numberline {7.1}Calibration process}{47}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}}{47}{section.7.2}
+\contentsline {section}{\numberline {7.2}Analysis and results}{49}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}}{47}{section.7.3}
+\contentsline {section}{\numberline {7.3}Simulation comparement}{51}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusion}{48}{chapter*.13}
+\contentsline {chapter}{Conclusion}{52}{chapter*.13}
