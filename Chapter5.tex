@@ -3,24 +3,32 @@
 % -----------------------------------------------
 
 % -----------------------------------------------
-\chapter{FAST Calibration data analysis}
+\chapter{Calibration data analysis}
 % -----------------------------------------------
 In this section we present the analysis of calibration data, which ws acquired by iluminating one FAST telescope (Argentina) by the older version of homogenous UV LED source mounted into the IS. The older version of UV source was incapable of generating exact square pulse, and thus its output is deformed. However, the pulse's shape is stable and thus it was possible to use it for this experiment.   
 
 \par
-The main goal of this experiment is to obtain the relative calibration constants for every of the four FASTs' PMTs (pixels) with respect to the most iluminated pixel for three positions of ilumunation - from left, right and bottom. Full specifications of the pixels numbering and positions could be seen on fig. \ref{PMT orientation}.
+The main goal of this experiment is to obtain the relative calibration constants for every of the four FASTs' PMTs (pixels) with respect to the pixel with gratest response for three positions of ilumunation - from left, right and bottom. Full specifications of the pixels numbering and positions could be seen on fig. \ref{PMT orientation}.
 
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.35, angle = 0]{./pictures/NumberingSky.png}
- \caption{Orientation of FASTs' PMTs (pixels), view from the sky.}
+ \includegraphics[scale=0.35, angle = 0]{./pictures/orientation2.png}
+ \caption{Orientation of FASTs' PMTs (pixels).}
  \label{PMT orientation}
+ 
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.35, angle = 0]{./pictures/CalibMech.png}
+ \caption{UV LED source mounted onto telescope.}
+ \label{bottomCal}
  
 \end{figure}
 % -----------------------------------------------
 \section{Calibration process}
 % -----------------------------------------------
-The UV source was mounted onto three positions (fig. ) and used as EULS to generate $8$ $\mu$s pulses. Two LED current levels were tested - $I_{d1} = 0.3$ mA and $I_{d2} = 0.8$ mA. These pulses trigger an event for the telescope - it acquires waveform data from every of the four PMTs. The PMTs' signal is converted into the number of photoelectrons registered in 20 ns. The example of detected 0.3 mA pulse from bottom position can be seen on fig (\ref{03pulse}). The 0.8 mA pulse is on fig. (\ref{08pulse}).
+The UV source was mounted onto three positions and used as EULS to generate $8$ $\mu$s pulses. Two LED current levels were tested - $I_{d1} = 0.3$ mA and $I_{d2} = 0.8$ mA. These pulses trigger an event for the telescope - it acquires waveform data from every of the four PMTs. The PMTs' signal is converted into the number of photoelectrons registered in 20 ns. The example of detected 0.3 mA pulse from bottom position can be seen on fig (\ref{03pulse}). The 0.8 mA pulse is on fig. (\ref{08pulse}).
 
 \begin{figure}[H]
  \centering
@@ -54,14 +62,14 @@ The data includes 4 waveforms for every detected pulse event and consists around
 The fitted histograms can be seen on fig. \ref{leftCal} (left), \ref{rightCal} (right) and \ref{bottomCal} (bottom).
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.35, angle = 0]{./pictures/right.png}
+ \includegraphics[scale=0.35, angle = 0]{./pictures/left.png}
  \caption{Signal integral histograms with gaussian fits for left position.}
  \label{leftCal}
  
 \end{figure}
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.35, angle = 0]{./pictures/left.png}
+ \includegraphics[scale=0.35, angle = 0]{./pictures/right.png}
  \caption{Signal integral histograms with gaussian fits for right position.}
  \label{rightCal}
  
@@ -88,7 +96,21 @@ The associated error is:
 \mu(c_{\textrm{i}}) = c_{\textrm{i}} \sqrt{(\frac{\mu(m_{\textrm{i}})}{m_{\textrm{i}}})^2 + (\frac{\mu(m_{\textrm{ref}})}{m_{\textrm{ref}}})^2}.
 \end{equation}
 
-The results calculated by these equations for every position can be seen in following table.
+The results calculated by these equations for every position can be seen in the following table.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+   & right & left & bottom \\ \hline
+$c_0$ & $0.2314 \pm 0.0002$    & $1$   				   & $0.1070 \pm 0.0002$     \\ \hline
+$c_1$ & $0.1397 \pm 0.0002$    & $0.7485 \pm 0.0003$   & $0.8061 \pm 0.0003$      \\ \hline
+$c_2$ & $0.9304 \pm 0.0004$    & $0.2138 \pm 0.0002$   & $0.1631 \pm 0.0002$      \\ \hline
+$c_3$ & $1$    				   & $0.2462 \pm 0.0002$   & $1$      \\ \hline
+\end{tabular}
+\caption{Table of calculated relative calibration constants.}
+ \label{CalibConstTbl}
+\end{table}
 
 
 %------------------------------------------------
