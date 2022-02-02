@@ -5,7 +5,7 @@
 % -----------------------------------------------
 \chapter{Instrumentation and measurement methodology}
 % -----------------------------------------------
-To perform all of neccesary measurements we need to use various types of optical and electronical equipment.
+To perform all of necessary measurements we need to use various types of optical and electronical equipment.
 % -----------------------------------------------
 \section{Integration sphere}
 % -----------------------------------------------
@@ -21,7 +21,7 @@ The Integration sphere (IS) is a special optical equipment, which can be used ei
 \par
 The IS inner surface consist of white optical diffusive material (BaSO$_4$ and Polytetrafluoroethylene). The IS also contains several circular apertures, which are called input/output ports. These can be used to mount detectors or optical sources or left free to let light flux enter or exit IS. 
 \par
-The inner surface is part where light intergration happens. The effect which takes place here is known as Lambertian scattering. After one spot of inner surface is hit by a ray, the energy should be uniformly radialy distributed. In output port this produces a homogenous light source. The homogenity decreases with increasing number and sizes of input/output ports.
+The inner surface is part where light integration happens. The effect which takes place here is known as Lambertian scattering. After one spot of inner surface is hit by a ray, the energy should be uniformly radially distributed. In output port this produces a homogenous light source. The homogeneity decreases with increasing number and sizes of input/output ports.
 \par
 Using optical source with IS requires baffle to prevent source's light flux or its part to exit IS without integration.
 \par
@@ -51,7 +51,7 @@ PMT consists of 6 main elements, which can be seen on scheme \ref{PMT scheme}.
 \end{figure}
 
 \par
-The input photon with sufficient energy, which strikes the PMT's photocathode, excites photocathode's electron. This electron then follows electrostatitc field to the first dynode of the electron multiplier, where it induces secondary emission of more electrons. These electrons are then attracted by the next dynode, where the emission process repeats. After few times of multiplying electron number over dynodes, the electrons are then collected by 
+The input photon with sufficient energy, which strikes the PMT's photocathode, excites photocathode's electron. This electron then follows electrostatic field to the first dynode of the electron multiplier, where it induces secondary emission of more electrons. These electrons are then attracted by the next dynode, where the emission process repeats. After few times of multiplying electron number over dynodes, the electrons are then collected by 
 the anode, which is situated on the end of the electron multiplier. The anode output current is then converted to voltage signal by appropriate load resistor or by operational amplifier current-to-voltage circuit.
 \par
 As all other laboratory instruments, which are based on accelerating electrons, such as electron microscopes, the photomultiplier's main parts must be kept in vacuum. To maintain vacuum, the photomultiplier is surrounded by special glass envelope. To avoid mechanical damage of the glass envelope, the entire photomultiplier is situated in a plastic tube.
@@ -63,7 +63,7 @@ G = \frac{I_\textrm{a}}{I_\textrm{p}},
 \end{equation}
 where $I_\textrm{a}$ is the anode current and $I_\textrm{p}$ is the input photocurrent from the photocathode.
 \par
-In case of ideal, noiseless PMT, we can adjust gain by variing the supply voltage. By variing supply voltage we can adjust gain according to an euqation:
+In case of ideal, noiseless PMT, we can adjust gain by varying the supply voltage. By varying supply voltage we can adjust gain according to an equation:
 
 \begin{equation}
 \frac{G_2}{G_1} = (\frac{V_2}{V_1})^{\alpha N},
@@ -71,9 +71,9 @@ In case of ideal, noiseless PMT, we can adjust gain by variing the supply voltag
 \end{equation}
 where $G_2$ and $G_1$ are gains at supply voltages $V_2$ and $V_1$. $\alpha$ is coefficient given by dynode material and $N$ is the number of dynodes.
 \par
-Other effects, such as temperature, may also vary PMT's gain, and it is neccesary to keep them on constant value or measure them and involve them in the final evaluation of data.
+Other effects, such as temperature, may also vary PMT's gain, and it is necessary to keep them on constant value or measure them and involve them in the final evaluation of data.
 \par
-For proper functionality of the PMT, the charge and current linearity should be considered. Charge linearity is the ratio of the number of incident photons to the number of electrons collected at the anode. Current linearity express the proportionality between incident light flux and anode current. Ideal PMT is always linear, but the real PMT may vary from linearity due to drifts, space charges, unstability of voltage divider etc. These effect can lead up to saturation of the PMT. In saturation, increasing the input light flux leaves the anode current mostly unchanged.      
+For proper functionality of the PMT, the charge and current linearity should be considered. Charge linearity is the ratio of the number of incident photons to the number of electrons collected at the anode. Current linearity express the proportionality between incident light flux and anode current. Ideal PMT is always linear, but the real PMT may vary from linearity due to drifts, space charges, instability of voltage divider etc. These effect can lead up to saturation of the PMT. In saturation, increasing the input light flux leaves the anode current mostly unchanged.      
 
 
 \subsubsection{Window}
@@ -85,12 +85,12 @@ The photocathode is coated on glass window, whose main purpose is to admit light
 
 The photocathode is the only light-sensitive part of PMT. It transfers the light flux into the electric current.
 \par
-One of its main parameters is quantum efficenty. It is refered as ratio of emitted photoelectrons to the number of incident photons expressed as a percentage. It is generally less than 35 \%. For measurement, the more practical parameter is cathode radiant sensitivity. It is the ratio of photocathode current to an incident light power, which is expressed in mA/W.
+One of its main parameters is quantum efficiency. It is referred to as ratio of emitted photoelectrons to the number of incident photons expressed as a percentage. It is generally less than 35 \%. For measurement, the more practical parameter is cathode radiant sensitivity. It is the ratio of photocathode current to an incident light power, which is expressed in mA/W.
 \par
-Photocathode material must be sensitive to certain wavelengths, which we want to detect with the PMT, and must have sufficent quantum efficenty. Prefered materials are usually alkali antimodes.
+Photocathode material must be sensitive to certain wavelengths, which we want to detect with the PMT, and must have sufficient quantum efficenty. Preferred materials are usually alkali antimodes.
 \subsubsection{Electron multiplier}
 The electron multiplier consists of dynodes and one anode.
-Dynodes are electrodes, which produce more electrons through secondary emission. To maintain elecrostatic field between dynodes, each of dynodes is held on different potential. This is achieved by using the voltage divider. Every resistor in the divider sets the potential of one diode according to its resistivity.
+Dynodes are electrodes, which produce more electrons through secondary emission. To maintain electrostatic field between dynodes, each of dynodes is held on different potential. This is achieved by using the voltage divider. Every resistor in the divider sets the potential of one diode according to its resistivity.
 \par
 All of the photoelectrons emitted by photocathode should be ideally collected by the first dynode. However, many of them could be diverted from their path to dynode due to various effects. The parameter, which characterizes this, is the collection efficiency. The Collection efficiency is a probability that photoelectron will strike area of the first dynode. 
 \par
@@ -100,21 +100,21 @@ There are few types of dynodes arrangements. On the fig. \ref{PMT scheme} is the
 \subsubsection{Voltage divider and voltage adjustement}
 Voltage divider could be a simple resistor serial network, which divide high input voltage between the dynodes. 
 \par
-It is neccessary to consider, that the multiplier current density increases in direction to the anode, so it tends to lessen the voltage between last dynode and anode. This phenomena can shake the potential levels across the entire multiplier. One way to reduce the impact on PMT's behaviour is to choose the proper resistor values of the divider. 
+It is necessary to consider, that the multiplier current density increases in direction to the anode, so it tends to lessen the voltage between last dynode and anode. This phenomena can shake the potential levels across the entire multiplier. One way to reduce the impact on PMT's behaviour is to choose the proper resistor values of the divider. 
 \par
 The resistor values could same for all the dynodes, but for some applications it is better to have progresive voltage distribution, which increases from cathode to anode, or intermediate distribution with highest values on the beginning of the multiplier.
 
 \par
-In some aplications, where high anode current peaks are expected, the divider can be filled with reservoir capacitors, which prevent the temporaly charge exhaustion of the dynodes. In pulse mode, the unwanted oscillacions on dynodes may occur, in that case, it is desirable to connect additional damping resistor to the divider.
+In some applications, where high anode current peaks are expected, the divider can be filled with reservoir capacitors, which prevent the temporally charge exhaustion of the dynodes. In pulse mode, the unwanted oscillations on dynodes may occur, in that case, it is desirable to connect additional damping resistor to the divider.
 \par
-Voltage supply should be stable during the PMT's operation. As was mention before, the PMT's gain is voltage dependent. To adjust sufficent gain, high voltage (thosands of volts) needs to be applied between photocathode and anode. The high voltage needs to be ramped on required level gradually to avoid negative consequences of transition and dark current effects, which can decrease the operating life of PMT. The same truth is for shutting down the PMT.
+Voltage supply should be stable during the PMT's operation. As was mention before, the PMT's gain is voltage dependent. To adjust sufficient gain, high voltage (thousands of volts) needs to be applied between photocathode and anode. The high voltage needs to be ramped on required level gradually to avoid negative consequences of transition and dark current effects, which can decrease the operating life of PMT. The same truth is for shutting down the PMT.
 \par
 The high voltage could be applied to the PMT in negative or positive polarity. In case of positive polarity, the cathode is held at ground and anode on +HV. In case of negative polarity, the cathode is held at -HV and anode at ground. 
 
 \subsection{Dark current}
-Dark current is anode current produced by photomultiplier in total darkness. It is considered to be a part of unwanted noise, causes errors in measurements and limits the detectivity of PMT. Dark current has origin in Ohmical leakage, thermionic and field emission or in radioactivity. Ohmical leakage is major part of dark current at low gain. With the increasing gain the thermionic emission prevails. At high gains the field emission becomes the major part.
-\subsubsection{Ohmical leakage}
-Insufficent insulation of electrodes, dynodes and all other parts which are under high voltage may lead to surface current over glass and tube. Dirt and humidity are in most cases the reason of Ohmical leakage.
+Dark current is anode current produced by photomultiplier in total darkness. It is considered to be a part of unwanted noise, causes errors in measurements and limits the detectivity of PMT. Dark current has origin in ohmical leakage, thermionic and field emission or in radioactivity. Ohmical leakage is major part of dark current at low gain. With the increasing gain the thermionic emission prevails. At high gains the field emission becomes the major part.
+%\subsubsection{Ohmical leakage}
+%Insufficent insulation of electrodes, dynodes and all other parts which are under high voltage may lead to surface current over glass and tube. Dirt and humidity are in most cases the reason of Ohmical leakage.
 
 %\subsubsection{Thermionic emission}
 %Temperature causes emission of photocathode's electrons, which are at medium gains the major part of dark current.  Due to this effect, some PMTs may need to be cooled during operation.
@@ -124,21 +124,21 @@ Insufficent insulation of electrodes, dynodes and all other parts which are unde
 %The radioactivity of PMT's components depends only on the material composition. In some aplications, such as astroparticle detection, it is neccessary to decrease radiation as possible. In astroparticle detection the radioactivity could be a source of false events. Only way to prevent this is to use materials with a very low concentration of radioactive isotopes.
 
 \subsection{Timing and response}
-Differences of photoelectrons' trajectories from the cathode to the first dynode lead into time distorsion of signal. For example if we were able to produce delta-function pulse, the PMT would detect pulse with some response width time $t_\textrm{w}$.
+Differences of photoelectrons' trajectories from the cathode to the first dynode lead into time distortion of signal. For example if we were able to produce delta-function pulse, the PMT would detect pulse with some response width time $t_\textrm{w}$.
 With respect to differences in electron trajectories and arrival times, the PMTs are divided into 3 types:
 \begin{enumerate}
-\item \textbf{Very-fast tubes} - photoelectrons arrive simultaneously, low collection efficency.
-\item \textbf{Fast tubes} - compromise between timing performance and collection efficency
-\item \textbf{General-purpose tubes} - simple optoelectronics, good collection efficency, low timing performance
+\item \textbf{Very-fast tubes} - photoelectrons arrive simultaneously, low collection efficiency.
+\item \textbf{Fast tubes} - compromise between timing performance and collection efficiency
+\item \textbf{General-purpose tubes} - simple optoelectronics, good collection efficiency, low timing performance
 \end{enumerate}
 %\par 
 %Another time delay to be considered 
 
 \subsection{Operating life and degradation}
 The operating life of PMT is defined as the time required for anode sensitivity to be halved. If we neglect the outside effects, the operating life mainly depends on anode current. 
-Degradation processes start to show themselves at currents higher than 10 $\mu$A. Aging is accompanied by increasing or decreasing gain at stable voltage. Operating life of PMT is measured in thousands of operating hours.
+Degradation processes start to show themselves at currents higher than 10 $\mu$A. Ageing is accompanied by increasing or decreasing gain at stable voltage. Operating life of PMT is measured in thousands of operating hours.
 \par
-By exposuring PMT to bad conditions, such as humidity, mechanical stress, high temperatures or the high-intensity light, the PMT's operating life could be shorten much faster.
+By exposing PMT to bad conditions, such as humidity, mechanical stress, high temperatures or the high-intensity light, the PMT's operating life could be shorten much faster.
 %------------------------------------------------
 %------------------------------------------------
 
@@ -146,9 +146,9 @@ By exposuring PMT to bad conditions, such as humidity, mechanical stress, high t
 % -----------------------------------------------
 
 \subsection{Raspberry Pi}
-Raspberry Pi (RPi) is a single board computer which we use mainly for the experiment control. The linux-based Raspbian or DietPi operating system allows us to easilly run various scripts and programs written in multiple languages. By having wifi and an ethernet port, the RPi can be easilly accessed over internet. It can be used to control instruments and data acquisition over its USBs,1-Wire and I2C etc. However, it doesn't have any analog inputs/outputs such as ADCs and DACs.
+Raspberry Pi (RPi) is a single board computer which we use mainly for the experiment control. The linux-based Raspbian or DietPi operating system allows us to easily run various scripts and programs written in multiple languages. By having wifi and an ethernet port, the RPi can be easily accessed over internet. It can be used to control instruments and data acquisition over its USBs,1-Wire and I2C etc. However, it doesn't have any analog inputs/outputs such as ADCs and DACs.
 \subsection{STM32 based microcontrolers}
-For other types of tasks, which do not require data storage and remote control, but require for example an analog sampling, setting up the voltage levels or generating well defined PWM pulses, we use STM32 based microcontrolers. 
+For other types of tasks, which do not require data storage and remote control, but require for example an analog sampling, setting up the voltage levels or generating well defined PWM pulses, we use STM32 based microcontrollers. 
 \par
 For this thesis purposes we use the STM32 nucleo F411RE and the STM32 nucleo F446RE with better analog inputs/outputs. 
 

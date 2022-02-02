@@ -526,6 +526,32 @@
       \endverb
       \keyw{Integrating sphere,Extended uniform light source,Field of view,Spatial radiance uniformity,Angular radiance uniformity,SiPM sensor,Low intensity UV-A}
     \endentry
+    \entry{Canvas}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=57e7e622fe60b43416ce12f8728aa699}{%
+           family={canvasJS},
+           familyi={c\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{57e7e622fe60b43416ce12f8728aa699}
+      \strng{fullhash}{57e7e622fe60b43416ce12f8728aa699}
+      \strng{bibnamehash}{57e7e622fe60b43416ce12f8728aa699}
+      \strng{authorbibnamehash}{57e7e622fe60b43416ce12f8728aa699}
+      \strng{authornamehash}{57e7e622fe60b43416ce12f8728aa699}
+      \strng{authorfullhash}{57e7e622fe60b43416ce12f8728aa699}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://canvasjs.com/}}
+      \field{title}{canvasJS}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+    \endentry
     \entry{Project}{misc}{}
       \name{author}{1}{}{%
         {{hash=cddb2a39ab3bb9e0db7fbdbe0ad4dcca}{%

@@ -5,11 +5,14 @@
 % -----------------------------------------------
 \chapter{Monitoring system}
 % -----------------------------------------------
-As was mentioned before, the quality of the fluorescence detection depends on athmospheric conditions and a durability of detection parts is also dependent on exposure to these effects. Thus it is highly advised to monitor them and plan shifts according to these conditions. To capture athmospheric data, we construted a monitoring system - a meteostation, which we describe in this chapter.
+As was mentioned before, the quality of the fluorescence detection depends on atmospheric conditions and a durability of detection parts is also dependent on exposure to these effects. Thus it is highly advised to monitor them and plan shifts according to these conditions. To capture atmospheric data, we constructed a monitoring system - a meteostation, which we describe in this chapter.
 % -----------------------------------------------
 \section{Monitoring of multiple FAST telescopes}
 % -----------------------------------------------
-The main goal was to develop a monitoring system for multiple FAST telescopes, which is capable of acquiring data of temperature, humidity, wind speed and direction, raining and light exposure. These data have to be easily accessible, so it is necessary to store them in some database, which could be accessed throughout the network. 
+The main goal was to develop a monitoring system for multiple FAST telescopes, which is capable of acquiring data of temperature, humidity, wind speed and direction, raining and light exposure. These data have to be easily accessible, so it is necessary to store them in some database, which could be accessed throughout the network.
+\par
+One of the requirements was also the modularity. Additional sensors and boards has to be integrated into system without requiring the core rework the of reading scripts.
+
 \par
 The data could be used by operator when controlling the telescope or later in a complex analysis of detection events and calibration measurements. For example, the operator must be sure that there is no light source outside before he executes command to open the shutter of the telescope's hut. To obtain this information, he checks for the measured value from an ambient light sensor, which is a part of monitoring system.
 \par
@@ -52,12 +55,24 @@ The main part of software communication between RPi (and RPi's internal processe
 
 
 \par
-The data are in specified intervals picked up from MQTT, and transfered into a MySQL database. The MySQL database is a part of RPi's MySQL server, and thus the data could be easilly read by any other device in internal network. This database data could be also used for some web browser application to visualize the time development of local weather conditions.
+The data are in specified intervals picked up from MQTT, and transferred into a MySQL database. The MySQL database is a part of RPi's MySQL server, and thus the data could be easily read by any other device in internal network. This database data could be also used for some web browser application to visualize the time development of local weather conditions.
+
+\par
+The modularity is achieved by configurations files, which describe the scheme of the connected sensors and the data acquisition. In case of upgrade - adding of an additional sensor or an another nucleo board, it is not necessary to rewrite any of the reading scripts. The configurations files are the only part which has to be changed.
 
 \par
 
 Usage of this scheme, where the processes are separated and executed in scheduled times by operating system makes the system tolerant for many faults (both sensors' and nucleos' HW and SW failures) and eases the potential future upgrades.
 
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.35, angle = 0]{./pictures/RemoteWeb.png}
+ \caption{View of the web interface, which allows to access and visualise the measured data stored in databases, graph created by using javascript libraries \cite{Canvas}.}
+ \label{PMT orientation}
+ 
+\end{figure}
 
 % -----------------------------------------------
 % %%%%%%%%%%%%%%%%%%%%%%%% End of file %%%%%%%%%%%%%%%%%%%%%%%%
