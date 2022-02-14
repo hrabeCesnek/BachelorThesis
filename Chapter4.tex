@@ -5,6 +5,7 @@
 % -----------------------------------------------
 \chapter{Calibration UV optical source}
 % -----------------------------------------------
+ \label{chap4}
 As was mentioned before, the calibration UV optical source is an essential instrument to perform calibrations. Its main purpose is to deliver stable intensity which does not vary over time or due to the changes in outer conditions.
 \par
 In case of FAST the process of calibration requires low-intensity UV light to be delivered in microsecond square pulses. This is because FAST is a low-intensity detector and its PMTs may be easily saturated.
@@ -27,13 +28,13 @@ The source is driven by STM32 board, which allows us to set parameters - LED cur
 
  \begin{figure}[H]
  \centering
- \includegraphics[scale=0.09, angle = 270, origin = c]{./pictures/KarlsRuhe}
- \caption{UV source schematic.}
+ \includegraphics[scale=0.5, angle = 0, origin = c]{./pictures/OrigScheme.png}
+ \caption{UV source schematic. On the right side we can see the pulse current drivers for three LEDs with the feedback Op amps as the main component.}
  \label{UVsource}
 \end{figure}
 
 
-Our main task was to test this UV source's longtime stability and develop possible fixes and upgrades.
+Our main task was to test this UV source's long-time stability and develop possible fixes and upgrades.
 
 % -----------------------------------------------
 
@@ -41,7 +42,7 @@ Our main task was to test this UV source's longtime stability and develop possib
 % -----------------------------------------------
 For calibration UV source, the long-time stability of optical power and pulse geometry is very important. Because there was no specialized apparatus for this measurement, we had to make our own. For these measurements, we use UV source with LED current $I_{\textrm{d}}$ = 2.5 mA, 50$\%$ duty cycle and frequency $f = 50$ kHz. 
 \subsection{Measuring apparatus}
-For measuring the optical power we use PM16 power meter (PM) and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb osciloscope. XP2262 PMT is held on $U \approx -680$ V by HV voltage source. The PMT's gain may drift over time, but we use PMT mainly for geometry analysis and measurement of absolute optical power is left to PM16.
+For measuring the optical power we use PM16 power meter (PM) and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb oscilloscope. XP2262 PMT is held on $U \approx -680$ V by HV voltage source. The PMT's gain may drift over time, but we use PMT mainly for geometry analysis and measurement of absolute optical power is left to PM16.
 \par
 We also use DS18B20 thermometer for PMT temperature monitoring and keysight 34461a multimeter for readout voltages.
 
@@ -50,7 +51,7 @@ The PMT, power meter and the optical head of UV source are mounted in the IS's p
 \par
 The entire apparatus is driven by Raspberry Pi (RPi). The RPi takes care of data acquisition and can be used to set the parameters of the UV source. It can be easily accessed over internet for data download or for user to control the experiment.
 \par
-Osciloscope's readout was programmed in C language according to its programmer's manual \cite{PicoScope}. It is capable of 2ns sampling which is enough to capture rising edges of the pulses. The RPi sets basic parameters (DC coupling, range etc.) and then activates osciloscope's trigger (rising edge). After sampling, RPi receives all samples from osciloscope's memory.
+Osciloscope's readout was programmed in C language according to its programmer's manual \cite{PicoScope}. It is capable of 2ns sampling which is enough to capture rising edges of the pulses. The RPi sets basic parameters (DC coupling, range etc.) and then activates oscilloscope's trigger (rising edge). After sampling, RPi receives all samples from oscilloscope's memory.
 \par
 The multimeter is controlled by VISA commands using python USBTMC library. For thermometer we use RPi's 1-Wire.
 \par
@@ -74,7 +75,7 @@ Main component (IS,PW, PMT with HV source, UV source) are situated in protection
 \subsection{Data acquisition and analysis}
 All the data are taken in specified interval (15 or 30 minutes). Two files are produced - osciloscope waveform file and a file with 30 samples of power meter, multimeter and a thermometer readings. From these 30 samples we calculate average and error. Most of data analysis we perform is done by C/C++ Root framework.
 \par
-The data from osciloscope contains the square pulses with noise (fig. \ref{pulse}). From them we need to extract the information of pulses height, slope and time of the rising edge.
+The data from oscilloscope contains the square pulses with noise (fig. \ref{pulse}). From them we need to extract the information of pulses height, slope and time of the rising edge.
 
  \begin{figure}[H]
  \centering
@@ -164,10 +165,10 @@ To confirm this measured fact and check for possible causes of the optical power
 
 Other measurements of optical power have ended in similar way. But by using the multimeter we can see that PMT's voltage is stable (fig. \ref{PMTVolt}). It is varying only about 0.4 V at the beginning.
 \par
-The measurement of current by osciloscope was done and analysed in similar way as was done for the PMT's pulses. Both of them are PWM square pulses by shape. The osciloscope's probe was connected to the 100$\Omega$ resistor, which is in serial to the LED and the current source and acted as a simple $U/I$ converter. As we can see in fig. \ref{LEDCurrent}, the current varies only a little over the value which was set ($I_\textrm{d} = 2.5$ mA), and thus the rising trend of optical power is definitely not caused by the current variations.
+The measurement of current by oscilloscope was done and analysed in similar way as was done for the PMT's pulses. Both of them are PWM square pulses by shape. The oscilloscope's probe was connected to the 100$\Omega$ resistor, which is in serial to the LED and the current source and acted as a simple $U/I$ converter. As we can see in fig. \ref{LEDCurrent}, the current varies only a little over the value which was set ($I_\textrm{d} = 2.5$ mA), and thus the rising trend of optical power is definitely not caused by the current variations.
 
 
-\section{UV LED diode aging}
+\section{UV LED diode ageing}
 As was seen in results of previous measurements, the diode ageing process is the most probable cause of the changes in optical power. We tried to confirm this fact by ageing the similar UV LED (type MT3650W3-UV).
 \par
 The single UV LED powered by the current source lm334 on $I_\textrm{d} =$ 7.1 mA was mounted onto IS's port and the optical power in continual mode was measured by the PM16. For the additional correction - the $I_\textrm{d} $ was also measured by keysight multimeter.

@@ -5,7 +5,7 @@
 % -----------------------------------------------
 \chapter{Instrumentation and measurement methodology}
 % -----------------------------------------------
-To perform all of necessary measurements we need to use various types of optical and electronical equipment.
+To perform all of necessary measurements we need to use various types of optical and electronic equipment.
 % -----------------------------------------------
 \section{Integration sphere}
 % -----------------------------------------------
@@ -21,7 +21,7 @@ The Integration sphere (IS) is a special optical equipment, which can be used ei
 \par
 The IS inner surface consist of white optical diffusive material (BaSO$_4$ and Polytetrafluoroethylene). The IS also contains several circular apertures, which are called input/output ports. These can be used to mount detectors or optical sources or left free to let light flux enter or exit IS. 
 \par
-The inner surface is part where light integration happens. The effect which takes place here is known as Lambertian scattering. After one spot of inner surface is hit by a ray, the energy should be uniformly radially distributed. In output port this produces a homogenous light source. The homogeneity decreases with increasing number and sizes of input/output ports.
+The inner surface is part where light integration happens. The effect which takes place here is known as Lambertian scattering. After one spot of inner surface is hit by a ray, the energy should be uniformly radially distributed. In output port this produces a homogeneous light source. The homogeneity decreases with increasing number and sizes of input/output ports.
 \par
 Using optical source with IS requires baffle to prevent source's light flux or its part to exit IS without integration.
 \par
@@ -45,7 +45,7 @@ PMT consists of 6 main elements, which can be seen on scheme \ref{PMT scheme}.
 
 \begin{figure}[H]
  \centering
- \includegraphics{up_logo_bw}
+ \includegraphics[scale = 0.1, angle = 180]{./pictures/XP2262}
  \caption{XP2262 PMT used for our measurements.}
  \label{XP2262 PMT}
 \end{figure}
@@ -87,7 +87,7 @@ The photocathode is the only light-sensitive part of PMT. It transfers the light
 \par
 One of its main parameters is quantum efficiency. It is referred to as ratio of emitted photoelectrons to the number of incident photons expressed as a percentage. It is generally less than 35 \%. For measurement, the more practical parameter is cathode radiant sensitivity. It is the ratio of photocathode current to an incident light power, which is expressed in mA/W.
 \par
-Photocathode material must be sensitive to certain wavelengths, which we want to detect with the PMT, and must have sufficient quantum efficenty. Preferred materials are usually alkali antimodes.
+Photocathode material must be sensitive to certain wavelengths, which we want to detect with the PMT, and must have sufficient quantum efficiency. Preferred materials are usually alkali antimodes.
 \subsubsection{Electron multiplier}
 The electron multiplier consists of dynodes and one anode.
 Dynodes are electrodes, which produce more electrons through secondary emission. To maintain electrostatic field between dynodes, each of dynodes is held on different potential. This is achieved by using the voltage divider. Every resistor in the divider sets the potential of one diode according to its resistivity.
@@ -97,12 +97,12 @@ All of the photoelectrons emitted by photocathode should be ideally collected by
 There are few types of dynodes arrangements. On the fig. \ref{PMT scheme} is the classic linear-focusing multiplier. 
 
 
-\subsubsection{Voltage divider and voltage adjustement}
+\subsubsection{Voltage divider and voltage adjustment}
 Voltage divider could be a simple resistor serial network, which divide high input voltage between the dynodes. 
 \par
 It is necessary to consider, that the multiplier current density increases in direction to the anode, so it tends to lessen the voltage between last dynode and anode. This phenomena can shake the potential levels across the entire multiplier. One way to reduce the impact on PMT's behaviour is to choose the proper resistor values of the divider. 
 \par
-The resistor values could same for all the dynodes, but for some applications it is better to have progresive voltage distribution, which increases from cathode to anode, or intermediate distribution with highest values on the beginning of the multiplier.
+The resistor values could same for all the dynodes, but for some applications it is better to have progressive voltage distribution, which increases from cathode to anode, or intermediate distribution with highest values on the beginning of the multiplier.
 
 \par
 In some applications, where high anode current peaks are expected, the divider can be filled with reservoir capacitors, which prevent the temporally charge exhaustion of the dynodes. In pulse mode, the unwanted oscillations on dynodes may occur, in that case, it is desirable to connect additional damping resistor to the divider.
@@ -150,16 +150,6 @@ Raspberry Pi (RPi) is a single board computer which we use mainly for the experi
 \subsection{STM32 based microcontrolers}
 For other types of tasks, which do not require data storage and remote control, but require for example an analog sampling, setting up the voltage levels or generating well defined PWM pulses, we use STM32 based microcontrollers. 
 \par
-For this thesis purposes we use the STM32 nucleo F411RE and the STM32 nucleo F446RE with better analog inputs/outputs. 
-
-\subsection{PM16 optical Power meter }
-
-\section{Sensors and other electronics components}
-
-\subsection{MPU6050}
-
-\subsection{servo motors}
-
-\subsection{Dallas DS18B20 thermometer}
+For this thesis purposes we use the STM32 nucleo F411RE and the STM32 nucleo F446RE with better analog inputs/outputs.
 % -----------------------------------------------
 % %%%%%%%%%%%%%%%%%%%%%%%% End of file %%%%%%%%%%%%%%%%%%%%%%%%
