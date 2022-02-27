@@ -276,10 +276,61 @@ The time evolution shows that the photodiode's photocurrent increased around 1 $
 \par
 Due to the fact, that any bigger drift in sensitivity was not observed under the bad conditions, we come to a conclusion that the feedback photodiode is much more stable than the LED.
 
+\subsection{Feedback concept and testing}
+
+The original concept circuit was modified by adding the feedback part, which consists of two op amps - primary acts as transimpedance amplifier to convert induced photocurrent into the signal voltage and the secondary acts as a simple voltage amplifier. The additional scheme can be seen on fig. \ref{Amplifier}.
+   
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.5]{up_logo_bw}
+ \caption{2 - Amplifier with photodiode scheme.}
+ \label{Amplifier}
+\end{figure}
+
+The UV LED is mounted in position to deliver power into the photodiode and also to an output port. The optomechanical system can be seen on fig. \ref{Optomechanics}.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.5]{up_logo_bw}
+ \caption{Optomechanics of prototype.}
+ \label{Optomechanics}
+\end{figure}
+
+
+However, the UV source is designed to deliver 10 $\mu$s pulses, so, to determine the signal level, it is necessary to sample this pulse. 
+
+\subsubsection{Sampling}
+
+To perform the pulse sampling, the hardware with enough capabilities has to be used. STM32 board Nucleo F446RE offers various timers (for PWM generation and advanced triggering), both 12-bit ADC and DAC (digital to analog converter) and a DMA (direct memory access) feature. The ADC combined with DMA can flush the sampled data directly into the memory and may exceed the sample rate over 1 MS/s.
+
+\par
+
+The other problem is the time synchronization of sampling with the pulse, to achieve that  . The sampling procedure can be seen captured by oscilloscope on fig. \ref{procedure}.
+
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.08, angle=180]{./pictures/TempDestrc}
+ \caption{Photodiode mounted on bigger transistor heating and illuminated by LED through pipe.}
+ \label{procedure}
+\end{figure}
+
+
+
+\par
+
+The ADC and DAC reference is 3.3 V made from the supply voltage stabilizer, which does not have the required accuracy and may vary with the supply voltage. For the feedback purposes the STM32 reference pin was reconnected to the external, more accurate 2 V reference along with a 50nF capacitor to prevent board's internal oscillators from jamming the reference stability.     
+
+
+
+
+\subsubsection{Sampling}
+
+
+\subsubsection{Longtime testing}
 
 %------------------------------------------------
-
-\section{Modified UV source for drone mounting}
 % -----------------------------------------------
 
 
