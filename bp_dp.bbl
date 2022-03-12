@@ -552,6 +552,32 @@
       \field{urlyear}{2021}
       \field{urldateera}{ce}
     \endentry
+    \entry{ROOT}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=350ae988c85cf1a13c8cc0d38f28d0ee}{%
+           family={CERN},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{fullhash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{bibnamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{authorbibnamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{authornamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{authorfullhash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://root.cern/}}
+      \field{title}{ROOT Data Analysis Framework}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+    \endentry
     \entry{Project}{misc}{}
       \name{author}{1}{}{%
         {{hash=cddb2a39ab3bb9e0db7fbdbe0ad4dcca}{%
@@ -613,6 +639,32 @@
       \field{labeltitlesource}{title}
       \field{note}{\url{https://cosmic.lbl.gov/SKliewer/Index.htm}}
       \field{title}{The Compact Cosmic Ray Telescope aboard the Kuiper Airborne Observatory}
+    \endentry
+    \entry{PID}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7abc1a233092fc104c7af72a89c0829c}{%
+           family={MIT},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7abc1a233092fc104c7af72a89c0829c}
+      \strng{fullhash}{7abc1a233092fc104c7af72a89c0829c}
+      \strng{bibnamehash}{7abc1a233092fc104c7af72a89c0829c}
+      \strng{authorbibnamehash}{7abc1a233092fc104c7af72a89c0829c}
+      \strng{authornamehash}{7abc1a233092fc104c7af72a89c0829c}
+      \strng{authorfullhash}{7abc1a233092fc104c7af72a89c0829c}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-06-principles-of-automatic-control-fall-2012/lecture-notes/MIT16_06F12_Lecture_10.pdf}}
+      \field{title}{16.06 Principles of Automatic Control, Lecture 10}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
     \endentry
     \entry{Photonis}{misc}{}
       \list{language}{1}{%
@@ -731,6 +783,32 @@
       \field{labeltitlesource}{title}
       \field{note}{\url{https://physicsworld.com/a/the-riddle-of-ultrahigh-energy-cosmic-rays/}}
       \field{title}{The riddle of ultrahigh-energy cosmic rays}
+    \endentry
+    \entry{NucF446RE}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c38884ab3cf908c2798725960369391b}{%
+           family={STMicroelectronics},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.st.com/en/evaluation-tools/nucleo-f446re.html}}
+      \field{title}{STM32 Nucleo F446RE}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
     \endentry
     \entry{PicoScope}{misc}{}
       \name{author}{1}{}{%

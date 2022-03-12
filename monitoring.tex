@@ -9,18 +9,18 @@ As was mentioned before, the quality of the fluorescence detection depends on at
 % -----------------------------------------------
 \section{Monitoring of multiple FAST telescopes}
 % -----------------------------------------------
-The main goal was to develop a monitoring system for multiple FAST telescopes, which is capable of acquiring data of temperature, humidity, wind speed and direction, raining and light exposure. These data have to be easily accessible, so it is necessary to store them in some database, which could be accessed throughout the network.
+The main goal was to develop a monitoring system for multiple FAST telescopes, which is capable of acquiring data of temperature, humidity, wind speed and direction, rain and light exposure. These data have to be easily accessible, so it is necessary to store them in some database, which can be accessed throughout the network.
 \par
 One of the requirements was also the modularity. Additional sensors and boards has to be integrated into system without requiring the core rework the of reading scripts.
 
 \par
-The data could be used by operator when controlling the telescope or later in a complex analysis of detection events and calibration measurements. For example, the operator must be sure that there is no light source outside before he executes command to open the shutter of the telescope's hut. To obtain this information, he checks for the measured value from an ambient light sensor, which is a part of monitoring system.
+The data can be used by operator when controlling the telescope or later in a complex analysis of detection events and calibration measurements. For example, the operator must be sure that there is no light source outside before he executes command to open the shutter of the telescope's hut. To obtain this information, he checks for the measured value from an ambient light sensor, which is a part of monitoring system.
 \par
 % -----------------------------------------------
 
 \section{Control units and sensors}
 % -----------------------------------------------
-Central control unit is a RPi, which collects data from other STM32 nucleos. For every FAST telescope there is one STM32 nucleo equipped with sensors, which is connected to the RPi via CAN bus. The operation scheme could be seen on (fig. \ref{opScheme}). The RPi itself takes care of ultrasonic wind sensor and a rain sensor, because both wind and rain are same for every telescope. The Nucleos have connected dallas DS18B20 thermometers (1-Wire), BME230 temperature, humidity and pressure sensor(I2C) and an ambient light sensor (OPT3001) through an optoclick module. Additional possibility is also to include induction sensor catch failures in shutter opening/closing.
+Central control unit is a RPi, which collects data from STM32 F411RE Nucleo. For every FAST telescope there is one STM32 Nucleo equipped with sensors, which is connected to the RPi via CAN-like bus. The operation scheme can be seen on (fig. \ref{opScheme}). The RPi itself takes care of ultrasonic wind sensor (WindSonic) and a rain sensor, because both wind and rain are same for all telescopes on the same site. The Nucleos have dallas DS18B20 thermometers (1-Wire), BME230 temperature, humidity and pressure sensor (I2C) and an ambient light sensor OPT3001 (I2C) connected. Additional possibility is also to include induction sensor through an optoclick module to catch failures in shutter opening/closing.
 
 
 \begin{figure}[H]
@@ -45,17 +45,17 @@ Central control unit is a RPi, which collects data from other STM32 nucleos. For
 
 \section{Software system}
 % -----------------------------------------------
-For this application, where is not essential to achieve fast sampling and do some fast responses, we decided to use python fo RPi and micropython for STM32 nucleo. These languages offer us libraries and easy programming for some of our sensors, however in a cost of speed and memory (compared to C/C++ for example).
+For this application, where it is not essential to achieve fast sampling and fast responses, we decided to use python fo RPi and micropython for STM32 nucleo. These languages offer us libraries and easy programming for some of our sensors, however in a cost of speed and memory (compared to C/C++ for example).
 \par
 The data reading scripts are scheduled by classic linux's tool - crontab.
 
 
 \par
-The main part of software communication between RPi (and RPi's internal processes) and Stm32 nucleos is done throught the MQTT Mosquitto server, which runs on RPi. Nowadays the MQTT is a useful service used in automatization processes, where the many messages from various devices are sent and received simultaneously. The processes coud have three roles - publisher, subscriber and broker (in our case done by MQTT itself). The publisher process sends data packet with theme to broker. The broker calls all subscribers of this theme and passes them the data packet \cite{MqttServ}. The processes must be programmed to communicate with MQTT service, which could be done by using various MQTT libraries. The MQTT scheme could be in our case specified in following way: The running scripts (representing processes for MQTT) for data acquisition (Wind, rain, nucleo data transfer) are programmed as publishers and publish values of specified sensors with theme related to their names and types in specified intervals. The script, which handles the data transfer to a database is programmed as a subscriber.
+The main part of software communication between RPi (and RPi's internal processes) and Stm32 nucleos is done throught the MQTT Mosquitto server, which runs on RPi. Nowadays the MQTT is a useful service used in automatization processes, where the many messages from various devices are sent and received simultaneously. The processes coud have three roles - publisher, subscriber and broker (in our case done by MQTT service itself). The publisher process sends data packet with theme to broker. The broker calls all subscribers of this theme and passes them the data packet \cite{MqttServ}. The processes must be programmed to communicate with MQTT service, which could be done by using various MQTT libraries. The MQTT scheme can be in our case specified in following way: The running scripts (representing processes for MQTT) for data acquisition (Wind, rain, Nucleo data transfer) are programmed as publishers and publish values of specified sensors with theme related to their names and types in specified intervals. The script, which handles the data transfer to a database is programmed as a subscriber.
 
 
 \par
-The data are in specified intervals picked up from MQTT, and transferred into a MySQL database. The MySQL database is a part of RPi's MySQL server, and thus the data could be easily read by any other device in internal network. This database data could be also used for some web browser application to visualize the time development of local weather conditions.
+The data are in specified intervals picked up from MQTT, and transferred into a MySQL database. The MySQL database is a part of RPi's MySQL server, and thus the data can be easily read by any other device in internal network. This database data can be also used for some web browser application to visualize the time development of local weather conditions.
 
 \par
 The modularity is achieved by configurations files, which describe the scheme of the connected sensors and the data acquisition. In case of upgrade - adding of an additional sensor or an another nucleo board, it is not necessary to rewrite any of the reading scripts. The configurations files are the only part which has to be changed.
@@ -69,7 +69,7 @@ Usage of this scheme, where the processes are separated and executed in schedule
 \begin{figure}[H]
  \centering
  \includegraphics[scale=0.25, angle = 0]{./pictures/RemoteWeb.png}
- \caption{View of the web interface, which allows to access and visualise the measured data stored in databases, graph created by using javascript libraries \cite{Canvas}.}
+ \caption{View of the web interface, which allows to access and visualise the measured data stored in databases, graph created by using Highcharts javascript libraries \cite{Canvas}.}
  \label{PMT orientation}
  
 \end{figure}
