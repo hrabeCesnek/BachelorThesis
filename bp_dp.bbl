@@ -606,6 +606,34 @@
       \field{urlyear}{2021}
       \field{urldateera}{ce}
     \endentry
+    \entry{Diff}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=11c15ab3407a9b1106bc8f39c6a08b60}{%
+           family={David\bibnamedelima Boal},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Simon\bibnamedelimb Fraser\bibnamedelima University},
+           giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{11c15ab3407a9b1106bc8f39c6a08b60}
+      \strng{fullhash}{11c15ab3407a9b1106bc8f39c6a08b60}
+      \strng{bibnamehash}{11c15ab3407a9b1106bc8f39c6a08b60}
+      \strng{authorbibnamehash}{11c15ab3407a9b1106bc8f39c6a08b60}
+      \strng{authornamehash}{11c15ab3407a9b1106bc8f39c6a08b60}
+      \strng{authorfullhash}{11c15ab3407a9b1106bc8f39c6a08b60}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{http://www.sfu.ca/~boal/101lecs/101lec31x.pdf}}
+      \field{title}{Lecture 31x – Diffusion (extended version)}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+    \endentry
     \entry{Hamamatsu}{misc}{}
       \list{language}{1}{%
         {english}%

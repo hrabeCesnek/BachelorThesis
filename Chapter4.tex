@@ -13,7 +13,7 @@ In case of FAST the process of calibration requires low-intensity UV light to be
 % -----------------------------------------------
 \section{UV source}
 % -----------------------------------------------
-For the calibration purposes was developed a prototype of pulse UV source based on the current-driven LEDs inspired by the Karlsruhe Institute of Technology (KIT) concept. The active parts - LED drive circuit and 3 LEDs are situated in temperature stabilized head. 
+For the calibration purposes a prototype of pulse UV source was developed. It was based on the current-driven LEDs inspired by the Karlsruhe Institute of Technology (KIT) concept. The active parts - LED drive circuit and 3 LEDs are situated in temperature stabilized head. 
 \par
 The source is driven by STM32 board, which allows us to set parameters - LED current by setting the voltage on the DAC channel, PWM duty and frequency, which is used to excite LED current through op amps.
  
@@ -44,12 +44,12 @@ For calibration UV source, the long-time stability of optical power and pulse ge
 \subsection{Measuring apparatus}
 For measuring the optical power we use PM16 power meter (PM) and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb oscilloscope. XP2262 PMT is held on $U \approx -680$ V by HV voltage source. The PMT's gain may drift over time, but we use PMT mainly for geometry analysis and measurement of absolute optical power is left to PM16.
 \par
-We also use DS18B20 thermometer for PMT temperature monitoring and keysight 34461a multimeter for readout voltages.
+We also use DS18B20 thermometer for PMT temperature monitoring and keysight 34461a multimeter for readout of voltages.
 
 \par
 The PMT, power meter and the optical head of UV source are mounted in the IS's ports. The IS stops the unwanted external light and distributes the optical power to PMT and power meter. 
 \par
-The entire apparatus is driven by Raspberry Pi (RPi). The RPi takes care of data acquisition and can be used to set the parameters of the UV source. It can be easily accessed over internet for data download or for user to control the experiment.
+The entire apparatus is controlled by Raspberry Pi (RPi). The RPi takes care of data acquisition and can be used to set the parameters of the UV source. It can be easily accessed over internet for data download or for user to control the experiment.
 \par
 Osciloscope's readout was programmed in C language according to its programmer's manual \cite{PicoScope}. It is capable of 2ns sampling which is enough to capture rising edges of the pulses. The RPi sets basic parameters (DC coupling, range etc.) and then activates oscilloscope's trigger (rising edge). After sampling, RPi receives all samples from oscilloscope's memory.
 \par
@@ -73,7 +73,7 @@ Main component (IS,PW, PMT with HV source, UV source) are situated in protection
 
 
 \subsection{Data acquisition and analysis}
-All the data are taken in specified interval (15 or 30 minutes). Two files are produced - osciloscope waveform file and a file with 30 samples of power meter, multimeter and a thermometer readings. From these 30 samples we calculate average and error. Most of data analysis we perform is done by C/C++ Root framework.
+All the data are taken in specified interval (15 or 30 minutes). Two files are produced - osciloscope waveform file and a file with 30 samples of power meter, multimeter and a thermometer readings. From these 30 samples we calculate average and error. Most of data analysis we perform is done by C/C++ Root framework \cite{ROOT}.
 \par
 The data from oscilloscope contains the square pulses with noise (fig. \ref{pulse}). From them we need to extract the information of pulses height, slope and time of the rising edge.
 
@@ -133,7 +133,7 @@ In the next two graphs we present calculated heights and slopes.
  \label{slope1}
 \end{figure}
 
-We also measured PMT's temperature for potential gain changes.
+We also measured PMT's temperature for potential corrections.
  
 \begin{figure}[H]
  \centering
@@ -167,8 +167,11 @@ Other measurements of optical power have ended in similar way. But by using the 
 \par
 The measurement of current by oscilloscope was done and analysed in similar way as was done for the PMT's pulses. Both of them are PWM square pulses by shape. The oscilloscope's probe was connected to the 100$\Omega$ resistor, which is in serial to the LED and the current source and acted as a simple $U/I$ converter. As we can see in fig. \ref{LEDCurrent}, the current varies only a little over the value which was set ($I_\textrm{d} = 2.5$ mA), and thus the rising trend of optical power is definitely not caused by the current variations.
 
+\section{UV LED diode}
 
-\section{UV LED diode ageing}
+In following experiments and prototyping we are using the UV LED types MT3650W3-UV and its smaller SMD equivalent  .
+
+\subsection{ageing}
 As was seen in results of previous measurements, the diode ageing process is the most probable cause of the changes in optical power. We tried to confirm this fact by ageing the similar UV LED (type MT3650W3-UV).
 \par
 The single UV LED powered by the current source lm334 on $I_\textrm{d} =$ 7.1 mA was mounted onto IS's port and the optical power in continual mode was measured by the PM16. For the additional correction - the $I_\textrm{d} $ was also measured by keysight multimeter.
@@ -178,15 +181,29 @@ The single UV LED powered by the current source lm334 on $I_\textrm{d} =$ 7.1 mA
 \begin{figure}[H]
  \centering
  \includegraphics[scale=0.5]{./pictures/corrected1}
- \caption{Time evolution of the optical power of single UV LED.}
+ \caption{Time evolution of the optical power of a single UV LED.}
  \label{SingleDiod}
 \end{figure}
 \par
 On the fig. \ref{SingleDiod} we can see that the optical power of single LED increased about $2 \%$ after one week. Then followed a stable interval which lasted about a week, but after that period the LED started "dying" and the power started to decrease.
 
 \par
-There are 2 major possibilities to fix the LED power variation problem. The first possibility is to monitor the time usage of the UV source the and according to that recalibrate the source, but the behaviour may vary diode from diode and thus it has many disadvantages. The second and more accurate approach is to regulate the power by an optical feedback.    
+There are 2 mayor possibilities to fix the LED power variation problem. The first possibility is to monitor the time usage of the UV source the and according to that recalibrate the source, but the behaviour may vary diode from diode and thus it has many disadvantages. The second and more accurate approach is to regulate the power by an optical feedback.    
 
+
+\subsection{Wavelength dependency}
+
+For these experiments, it is also necessary to determine the exact wavelength and its temperature dependency. We performed measurement using Ocean optics UV spectrometer along with a regulated heating plate. The LED's light was led through collimator and optical fibre directly into spectrometer's port. For every adjusted temperature, the full spectral profile of the UV LED is measured. Both the heating plate and the spectrometer are controlled by the RPi. The main part of spectral data is fitted with a gaussian and its parameters are used to obtain wanted physical quantities: $\mu$ - the main wavelength $\lambda$, $\sigma$ - the wavelength interval $\Delta \lambda$. The uncertainties are taken from the fit.
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.5]{./pictures/SpectreShakeWave}
+ \caption{$\lambda$ and $\Delta \lambda$ temperature dependency.}
+ \label{wavdep}
+\end{figure}
+
+On the fig. \ref{wavdep} we can see, that both $\lambda$ and $\Delta \lambda$ dependencies on temperature are insignificant.
 
 %------------------------------------------------
 \section{Optical feedback - potential fix}
@@ -196,10 +213,10 @@ One way to handle the ageing process of UV LED diodes is to monitor the power an
 The part of optical power is reflected from LED to photodiode. Photocurrent induced this way is converted to voltage which is read by ADC (analog-digital converter). This information is then used by the STM32 board to adjust the current level by DAC. One problem is that the optical power is delivered in pulses, and thus it is necessary to sample these pulses and determine the height.
 \par
 \subsection{Detection photodiode}
-As detection photodiode which we chose is GUVV-T10GD. It is guaranteed to be UV-A sensor with wavelength responsivity from 230 to 395 nm. However, it is necessary to test more of its properties, because some of the properties, which are essential for our application, are not shown in datasheets and probably haven't been yet measured - temperature dependency of the dark current, responsivity to 10 $\mu$s square signals and ageing processes. The reverse voltage of photodiode $U_\textrm{r}$ could go up to 2 V. With higher the $U_\textrm{r}$ is, the lower is the diode's capacity.
+As detection photodiode we chose GUVV-T10GD (or GUVV-C20SD as SMD equivalent). It is guaranteed to be UV-A sensor with wavelength responsivity from 230 to 395 nm. However, it is necessary to test more of its properties, because some of the properties, which are essential for our application, are not shown in datasheets and probably haven't been yet measured - temperature dependency of the dark current, responsivity to 10 $\mu$s square signals and ageing processes. The reverse voltage of photodiode $U_\textrm{r}$ could go up to 2 V. With higher the $U_\textrm{r}$ is, the lower is the diode's capacity.
 \par
 \subsubsection{Dark current}
-Information of dark current is very important. We need to know if the signal levels are much greater than dark current. We measured dark current with 7 set temperatures. Current was measured by Keithley 2470 picoammeter. Temperature was set by autoregulated transistor heating plate. The transistor plate is driven by STM32 nucleo's DAC. The nucleo is controlled by the RPi. The RPi also communicates with picoammeter and controls the entire data acquisition. We measured two series - one with reverse voltage $U_\textrm{r} = 0.1$ V and second with reverse voltage $U_\textrm{r} = 1$ V. The picoammeter is also capable of adjusting voltage, so it was used as a source of reverse voltage.
+Information of dark current is very important. We need to know if the signal levels are much greater than dark current. We measured dark current with 7 set temperatures. Current was measured by Keithley 2470 picoammeter. Temperature was set by autoregulated transistor heating plate. The transistor plate is driven by STM32 nucleo's DAC. The nucleo is controlled by the RPi. The RPi also communicates with picoammeter and controls the entire data acquisition. We measured two series - one with reverse voltage $U_\textrm{r} = 0.1$ V and second with reverse voltage $U_\textrm{r} = 1$ V. The picoammeter is also capable of providing voltage, so it was used as a source of reverse voltage.
 
 \begin{figure}[H]
  \centering
@@ -254,7 +271,7 @@ To test responsibility of the square pulses, we integrated the photodiode into t
 This way we are able to see the pulsing UV LED light. However, the rising edge of feedback pulse is deformed. 
 
 \subsubsection{Artificial ageing}
-For the feedback photodiode, the time stability is very important. It has to last much more than the LED. To test the long-time stability, we tried to artificially age the feedback photodiode. It is well-known fact from the molecular physics, that the diffusion coefficients of most materials depends on temperature and they grow with increasing temperature. So we tried to speed up the ageing by holding the photodiode under the maximum of operating temperature (on $80^{\circ}$C) for one week. During that period, the photodiode was illuminated by UV LED and the photocurrent was measured (fig. \ref{agingPhotoCurrent}).
+For the feedback photodiode, the time stability is very important. It has to last much more than the LED. To test the long-time stability, we tried to artificially age the feedback photodiode. It is well-known fact from the molecular physics, that the diffusion coefficients of most materials depends on temperature and they grow with increasing temperature \cite{Diff}. So we tried to speed up the ageing by holding the photodiode just under the maximum of operating temperature (on $80^{\circ}$C) for one week. During that period, the photodiode was illuminated by UV LED and the photocurrent was measured (fig. \ref{agingPhotoCurrent}).
 
 
 \begin{figure}[H]
