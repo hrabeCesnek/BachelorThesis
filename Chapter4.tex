@@ -371,7 +371,32 @@ This behaviour is what was expected. However, the long-time test similar to the 
 
 \subsubsection{Long-time test}
 
+Due to the non-optimized optomechanics the source was not able to produce enough light for the test in IS, so the power meter was mounted directly onto the output of the prototype. Also the pre-testing has shown that the prototype is incapable to fully compensate the temperature variations. The most propable cause of these temperature variations is the thermal expansion of the mechanics. Many of the other possible causes (LED spectral dependency, voltage reference stability etc.) were tested without having any impact on the prototype's behaviour. 
 
+
+\par
+The test run was done on heating plate having both the prototype and Nucleo stabilized on $t \approx 40.5$ $^\circ C$ (the heating itself is incapable of holding the temperature with accuracy better than 1 $^\circ C$) and covered by insulating material. Besides the optical power measurement, the DAC value (voltage - measured by multimeter) was also measured to observe the feedback stabilization.
+
+\par
+
+The test lasted about 10 days and the results can be seen on fig. \ref{Long test}.
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.5]{./pictures/LongTime.png}
+ \caption{Long time test of the feedback UV source prototype.}
+ \label{Long test}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.5]{./pictures/LastTemp.png}
+ \caption{Temperature of the heating plate evolution.}
+ \label{Long test temperatures}
+\end{figure}
+
+ 
 
 %------------------------------------------------
 % -----------------------------------------------
