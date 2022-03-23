@@ -213,9 +213,14 @@ In~Olomouc~\today   \hfill\parbox[t]{6cm}{\centering\null\dotfill\\\student}
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit amet lectus vestibulum dignissim. Cras sit amet enim vitae mi elementum blandit eget nec tortor. Curabitur eget eros vitae arcu luctus varius commodo vel mauris. Nam elementum convallis pretium. Nunc dignissim pulvinar urna, nec blandit ante fringilla at. Ut et magna purus, vel pellentesque massa. In tortor nisi, faucibus condimentum cursus ut, sollicitudin quis leo. Ut at purus nec arcu accumsan tincidunt id id massa. Nam id vehicula mi. 
+This thesis is devoted to the development of calibration and monitoring hardware and techniques, mainly focused for the purposes of the astroparticle FAST telescope.
+\par
+The beginning theoretical chapters provide a short introduction into the astroparticle physics and its detection techniques, following by a summary of the associated calibration techniques. Telescope FAST is described in its own chapter.
+\par
+The experimental part is mainly focused onto the long-time testing of the pulse calibration UV source. The time stability of the two main parameters is observed - optical power and pulse geometry. The testing is followed by development of the stabilization upgrades. The experimental part is supplemented by a short chapter describing the software development and functionality the new FAST monitoring system for monitoring the multiple telescopes based on the Raspberry Pi.
+\par
+The last chapter contains a demonstration and a data analysis of the FAST calibration using the mentioned UV source.
 
-\url{http://exfyz.upol.cz/didaktika/}
 
 % -----------------------------------------------
 % Kapitoly lze ukládat do zvláštních souborů...
@@ -239,7 +244,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
 
-We are completely f****d.
+
+
+
+\par
+The LED aging process was discovered to have a serious impact on optical power stability. The way to handle this problem was developed and successfully tested. However, it was not able to fully examine the causes or to measure enough LEDs to obtain statistical behaviour, because there were not enough resources and time to do it. Personally I think, that this could be a future topic for solid state physics or nanotechnology.
+\par
+The calibration data were successfully analysed, however they differ from theoretical values. This can be caused by errors in experimental method itself or there are some undiscovered effects, that are neglected by the theoretical simulations.  
+\par
+I thank my supervisor Ladislav Chytka for support. For technical support including mainly the manufacture of fine optoelectronic analog circuits I thank Vladimír Urbášek. For necessary assistance with development of monitoring system and many advises on microcontrollers I thank Aleš Kratochvíl from Jointlab. I thank Martin Vacula for providing me the theoretical calibration data and Michal Dudka from KEF for the key advises on the STM32's timers and triggers.
+\par
+The work on thesis was both very hard and experiencing, and thus it can be compared to have to chug a bottle of 50$\%$ vodka - get sick, get experienced.
+
+
 
 % -----------------------------------------------
 % Literatura a prameny
