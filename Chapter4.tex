@@ -375,7 +375,7 @@ Due to the non-optimized optomechanics the source was not able to produce enough
 
 
 \par
-The test run was done on heating plate having both the prototype and Nucleo stabilized on $t \approx 40.5$ $^\circ C$ (the heating itself is incapable of holding the temperature with accuracy better than 1 $^\circ C$) and covered by insulating material. Besides the optical power measurement, the DAC value (voltage - measured by multimeter) was also measured to observe the feedback stabilization.
+The test run was done on heating plate having both the prototype and Nucleo stabilized on $t \approx 40.5$ $^\circ C$ (the heating itself is incapable of holding the temperature with accuracy better than 1 $^\circ C$) and covered by insulating material. Besides the optical power measurement, the DAC value (voltage - measured by multimeter) was also measured to observe the feedback stabilization. To measure optical power with the power meter, the pulse's duty cycle was increased to 50 $\%$, but the sampling scheme was unchanged.
 
 \par
 
@@ -396,7 +396,12 @@ The test lasted about 10 days and the results can be seen on fig. \ref{Long test
  \label{Long test temperatures}
 \end{figure}
 
+From the relative optical power time evolution we can see, that it decreased about 0.005 $\%$ in 10 days. This change can be partially associated with temperature drop about 0.2 $\circ C$ from Fig. \ref{Long test temperatures}. However, the DAC value increased about 1.7 $\%$ and it is highly possible, that this was the way the feedback loop balanced the LED's power decrease.
+
+\par 
  
+Althrough there was a 0.005 $\%$ change in optical power, this test can be considered to be the most sufficent test of the UV source stability so far. However, the UV source prototype is not yet ready to fully serve the FAST's calibration procedures. There is yet much to be done - temperature stabilization, fine mechanics and user-friendly controll.
+
 
 %------------------------------------------------
 % -----------------------------------------------

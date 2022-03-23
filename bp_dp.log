@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.6)  22 MAR 2022 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.6)  23 MAR 2022 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1487,7 +1487,7 @@ destination with the same identifier (name{figure.5.28}) has been already used,
 l.6 \chapter
             {Monitoring system} <./pictures/LastTemp.png>]
 Chapter 6.
-<./pictures/Metostation.png, id=655, 699.61375pt x 520.94624pt>
+<./pictures/Metostation.png, id=656, 699.61375pt x 520.94624pt>
 File: ./pictures/Metostation.png Graphic file (type png)
 <use ./pictures/Metostation.png>
 Package pdftex.def Info: ./pictures/Metostation.png  used on input line 28.
@@ -1495,7 +1495,7 @@ Package pdftex.def Info: ./pictures/Metostation.png  used on input line 28.
 [48
 
 ]
-<./pictures/monitoringScheme.png, id=661, 1070.49937pt x 1412.27625pt>
+<./pictures/monitoringScheme.png, id=662, 1070.49937pt x 1412.27625pt>
 File: ./pictures/monitoringScheme.png Graphic file (type png)
 <use ./pictures/monitoringScheme.png>
 Package pdftex.def Info: ./pictures/monitoringScheme.png  used on input line 36
@@ -1515,7 +1515,7 @@ the same identifier (name{figure.6.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.55 
       <./pictures/monitoringScheme.png>]
-<./pictures/RemoteWeb.png, id=676, 1370.11874pt x 597.23125pt>
+<./pictures/RemoteWeb.png, id=677, 1370.11874pt x 597.23125pt>
 File: ./pictures/RemoteWeb.png Graphic file (type png)
 <use ./pictures/RemoteWeb.png>
 Package pdftex.def Info: ./pictures/RemoteWeb.png  used on input line 71.
@@ -1528,12 +1528,12 @@ r (name{figure.6.3}) has been already used, duplicate ignored
 l.6 \chapter
             {Calibration data analysis} <./pictures/RemoteWeb.png>]
 Chapter 7.
-<./pictures/orientation2.png, id=687, 542.77782pt x 527.72156pt>
+<./pictures/orientation2.png, id=688, 542.77782pt x 527.72156pt>
 File: ./pictures/orientation2.png Graphic file (type png)
 <use ./pictures/orientation2.png>
 Package pdftex.def Info: ./pictures/orientation2.png  used on input line 15.
 (pdftex.def)             Requested size: 189.97508pt x 184.7053pt.
-<./pictures/CalibMech.png, id=688, 374.39874pt x 498.86375pt>
+<./pictures/CalibMech.png, id=689, 374.39874pt x 498.86375pt>
 File: ./pictures/CalibMech.png Graphic file (type png)
 <use ./pictures/CalibMech.png>
 Package pdftex.def Info: ./pictures/CalibMech.png  used on input line 23.
@@ -1547,12 +1547,12 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.29 \section
              {Calibration process} <./pictures/orientation2.png>]
-<./pictures/CalibPulses.png, id=697, 1438.37375pt x 1031.855pt>
+<./pictures/CalibPulses.png, id=698, 1438.37375pt x 1031.855pt>
 File: ./pictures/CalibPulses.png Graphic file (type png)
 <use ./pictures/CalibPulses.png>
 Package pdftex.def Info: ./pictures/CalibPulses.png  used on input line 35.
 (pdftex.def)             Requested size: 431.51546pt x 309.55888pt.
-<./pictures/CalibSaturated.png, id=698, 1436.36626pt x 1028.84375pt>
+<./pictures/CalibSaturated.png, id=699, 1436.36626pt x 1028.84375pt>
 File: ./pictures/CalibSaturated.png Graphic file (type png)
 <use ./pictures/CalibSaturated.png>
 Package pdftex.def Info: ./pictures/CalibSaturated.png  used on input line 43.
@@ -1570,7 +1570,7 @@ l.48
                                                   \fi \fi 
 l.48 
       <./pictures/CalibMech.png> <./pictures/CalibPulses.png>]
-<./pictures/left.png, id=712, 1433.355pt x 1027.84pt>
+<./pictures/left.png, id=713, 1433.355pt x 1027.84pt>
 File: ./pictures/left.png Graphic file (type png)
 <use ./pictures/left.png>
 Package pdftex.def Info: ./pictures/left.png  used on input line 65.
@@ -1580,7 +1580,7 @@ Overfull \hbox (17.66525pt too wide) in paragraph at lines 65--66
  [][] 
  []
 
-<./pictures/right.png, id=713, 1434.35875pt x 1030.85126pt>
+<./pictures/right.png, id=714, 1434.35875pt x 1030.85126pt>
 File: ./pictures/right.png Graphic file (type png)
 <use ./pictures/right.png>
 Package pdftex.def Info: ./pictures/right.png  used on input line 72.
@@ -1597,7 +1597,7 @@ Overfull \hbox (17.98645pt too wide) in paragraph at lines 72--73
                                                   \fi \fi 
 l.76 \end{figure}
                   <./pictures/CalibSaturated.png>]
-<./pictures/bottom.png, id=723, 1435.3625pt x 1030.85126pt>
+<./pictures/bottom.png, id=724, 1435.3625pt x 1030.85126pt>
 File: ./pictures/bottom.png Graphic file (type png)
 <use ./pictures/bottom.png>
 Package pdftex.def Info: ./pictures/bottom.png  used on input line 79.
@@ -1695,10 +1695,10 @@ amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.
 pfb>
-Output written on bp_dp.pdf (61 pages, 88367222 bytes).
+Output written on bp_dp.pdf (61 pages, 88368337 bytes).
 PDF statistics:
- 881 PDF objects out of 1000 (max. 8388607)
- 730 compressed objects within 8 object streams
+ 882 PDF objects out of 1000 (max. 8388607)
+ 731 compressed objects within 8 object streams
  205 named destinations out of 1000 (max. 500000)
  668 words of extra memory for PDF output out of 10000 (max. 10000000)
 
