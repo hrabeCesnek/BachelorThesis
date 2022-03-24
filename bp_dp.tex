@@ -217,7 +217,7 @@ This thesis is devoted to the development of calibration and monitoring hardware
 \par
 The beginning theoretical chapters provide a short introduction into the astroparticle physics and its detection techniques, following by a summary of the associated calibration techniques. Telescope FAST is described in its own chapter.
 \par
-The experimental part is mainly focused onto the long-time testing of the pulse calibration UV source. The time stability of the two main parameters is observed - optical power and pulse geometry. The testing is followed by development of the stabilization upgrades. The experimental part is supplemented by a short chapter describing the software development and functionality the new FAST monitoring system for monitoring the multiple telescopes based on the Raspberry Pi.
+The experimental part is mainly focused onto the long-time testing of the pulse calibration UV source. The time stability of the two main parameters is observed - optical power and pulse geometry. The testing is followed by development of the stabilization upgrades leading up to optical feedback concept. The experimental part is supplemented by a short chapter describing the software development and functionality of the new FAST monitoring system for monitoring the multiple telescopes based on the Raspberry Pi.
 \par
 The last chapter contains a demonstration and a data analysis of the FAST calibration using the mentioned UV source.
 
@@ -244,13 +244,20 @@ The last chapter contains a demonstration and a data analysis of the FAST calibr
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
 
-
-
+The main significance of this thesis is its experimental part - the experimental setup for measuring the UV source stability was assembled and programmed, and the experimental data were successfully acquired.
+ 
+By using analysis algorithms was proved, that the UV source is able to produce stable pulses, but with the optical power (pulse's height) varying over time. It was found out, that the UV LED itself is a cause of this. 
 
 \par
-The LED aging process was discovered to have a serious impact on optical power stability. The way to handle this problem was developed and successfully tested. However, it was not able to fully examine the causes or to measure enough LEDs to obtain statistical behaviour, because there were not enough resources and time to do it. Personally I think, that this could be a future topic for solid state physics or nanotechnology.
+The LED ageing process was discovered to have a serious impact on optical power stability. The optical feedback based on pulse sampling and regulation showed itself to be the way to handle this problem. 
+
 \par
-The calibration data were successfully analysed, however they differ from theoretical values. This can be caused by errors in experimental method itself or there are some undiscovered effects, that are neglected by the theoretical simulations.  
+However, it was not able to fully examine the causes or to measure enough LEDs to obtain statistical behaviour, because there were not enough resources and time to do it. Personally I think, that this could be a future topic for solid state physics or nanotechnology.
+\par
+The new monitoring system will possibly satisfy the dynamically changing requirements onto the monitoring scheme of the deployed FAST prototypes.
+
+\par
+I managed to close the thesis by analysis of FAST calibration data. It was shown that they differ from theoretical values, which can be caused by errors in experimental method itself or there are some undiscovered effects, that are neglected by the theoretical simulations.  
 \par
 I thank my supervisor Ladislav Chytka for support. For technical support including mainly the manufacture of fine optoelectronic analog circuits I thank Vladimír Urbášek. For necessary assistance with development of monitoring system and many advises on microcontrollers I thank Aleš Kratochvíl from Jointlab. I thank Martin Vacula for providing me the theoretical calibration data and Michal Dudka from KEF for the key advises on the STM32's timers and triggers.
 \par
