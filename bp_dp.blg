@@ -1,17 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'bp_dp.blg'
-[76] biber:313> INFO - === Ne bře 13, 2022, 05:09:32
-[260] Biber.pm:371> INFO - Reading 'bp_dp.bcf'
-[310] Biber.pm:854> INFO - Using all citekeys in bib section 0
-[319] Biber.pm:3981> INFO - Processing section 0
-[381] Biber.pm:4154> INFO - Looking for bibtex format file 'citations.bib' for section 0
-[383] bibtex.pm:1468> INFO - LaTeX decoding ...
-[404] bibtex.pm:1294> INFO - Found BibTeX data source 'citations.bib'
-[406] Utils.pm:169> WARN - month field 'jul' in entry 'Mandat_2017' is not an integer - this will probably not sort properly.
-[554] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[554] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[554] Biber.pm:3809> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[554] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
-[627] bbl.pm:617> INFO - Writing 'bp_dp.bbl' with encoding 'UTF-8'
-[635] bbl.pm:720> INFO - Output to bp_dp.bbl
-[635] Biber.pm:110> INFO - WARNINGS: 1
+[53] biber:313> INFO - === Po bře 28, 2022, 00:22:33
+[152] Biber.pm:371> INFO - Reading 'bp_dp.bcf'
+[197] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[206] Biber.pm:3981> INFO - Processing section 0
+[277] Biber.pm:4154> INFO - Looking for bibtex format file 'citations.bib' for section 0
+[280] bibtex.pm:1468> INFO - LaTeX decoding ...
+[302] bibtex.pm:1294> INFO - Found BibTeX data source 'citations.bib'
+[430] Utils.pm:169> WARN - month field 'jul' in entry 'Mandat_2017' is not an integer - this will probably not sort properly.
+[471] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[471] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[471] Biber.pm:3809> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[471] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[515] bbl.pm:617> INFO - Writing 'bp_dp.bbl' with encoding 'UTF-8'
+[524] bbl.pm:720> INFO - Output to bp_dp.bbl
+[524] Biber.pm:110> INFO - WARNINGS: 1

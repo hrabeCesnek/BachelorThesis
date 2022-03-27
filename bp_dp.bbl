@@ -862,6 +862,32 @@
       \field{note}{\url{https://www.picotech.com/download/manuals/picoscope-2000-series-a-api-programmers-guide.pdf}}
       \field{title}{PicoScope ® 2000 Series (A API) PC Oscilloscopes and MSOs Programmer's Guide}
     \endentry
+    \entry{zemax}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=94d467dd84fdb39235c9031f5c75503c}{%
+           family={Zemax},
+           familyi={Z\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{94d467dd84fdb39235c9031f5c75503c}
+      \strng{fullhash}{94d467dd84fdb39235c9031f5c75503c}
+      \strng{bibnamehash}{94d467dd84fdb39235c9031f5c75503c}
+      \strng{authorbibnamehash}{94d467dd84fdb39235c9031f5c75503c}
+      \strng{authornamehash}{94d467dd84fdb39235c9031f5c75503c}
+      \strng{authorfullhash}{94d467dd84fdb39235c9031f5c75503c}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.zemax.com/pages/opticstudio}}
+      \field{title}{Zemax OpticStudio}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
