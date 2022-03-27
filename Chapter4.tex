@@ -22,7 +22,7 @@ The source is driven by STM32 board, which allows us to set parameters - LED cur
  \begin{figure}[H]
  \centering
  \includegraphics[scale=0.09, angle = 270, origin = c]{./pictures/KarlsRuhe}
- \caption{UV source conctructed by Vladimír Urbášek from SLO.}
+ \caption{UV source constructed by Vladimír Urbášek from Jointlab.}
  \label{UVsource}
 \end{figure}
 
@@ -169,7 +169,7 @@ The measurement of current by oscilloscope was done and analysed in similar way 
 
 \section{UV LED diode}
 
-In following experiments and prototyping we are using the UV LED types MT3650W3-UV and its smaller SMD equivalent  .
+In following experiments and prototyping we are using the UV LED types MT3650W3-UV and its smaller SMD equivalent ELUA2016OGB.
 
 \subsection{ageing}
 As was seen in results of previous measurements, the diode ageing process is the most probable cause of the changes in optical power. We tried to confirm this fact by ageing the similar UV LED (type MT3650W3-UV).
@@ -180,7 +180,7 @@ The single UV LED powered by the current source lm334 on $I_\textrm{d} =$ 7.1 mA
 \par
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.5]{./pictures/corrected1}
+ \includegraphics[scale=0.8]{./pictures/corrected1}
  \caption{Time evolution of the optical power of a single UV LED.}
  \label{SingleDiod}
 \end{figure}
@@ -193,12 +193,12 @@ There are 2 mayor possibilities to fix the LED power variation problem. The firs
 
 \subsection{Wavelength dependency}
 
-For these experiments, it is also necessary to determine the exact wavelength and its temperature dependency. We performed measurement using Ocean optics UV spectrometer along with a regulated heating plate. The LED's light was led through collimator and optical fibre directly into spectrometer's port. For every adjusted temperature, the full spectral profile of the UV LED is measured. Both the heating plate and the spectrometer are controlled by the RPi. The main part of spectral data is fitted with a gaussian and its parameters are used to obtain wanted physical quantities: $\mu$ - the main wavelength $\lambda$, $\sigma$ - the wavelength interval $\Delta \lambda$. The uncertainties are taken from the fit.
+For experiments and calibration, it is also necessary to determine the exact wavelength and its temperature dependency. We performed measurement using Ocean optics UV spectrometer along with a regulated heating plate. The LED's light was led through collimator and optical fibre directly into spectrometer's port. For every adjusted temperature, the full spectral profile of the UV LED is measured. Both the heating plate and the spectrometer are controlled by the RPi. The main part of spectral data is fitted with a gaussian and its parameters are used to obtain wanted physical quantities: $\mu$ - the main wavelength $\lambda$, $\sigma$ - the wavelength interval $\Delta \lambda$. The uncertainties are taken from the fit.
 
 
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.5]{./pictures/SpectreShakeWave}
+ \includegraphics[scale=0.65]{./pictures/SpectreShakeWave}
  \caption{$\lambda$ and $\Delta \lambda$ temperature dependency.}
  \label{wavdep}
 \end{figure}
@@ -237,14 +237,14 @@ Information of dark current is very important. We need to know if the signal lev
 
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.5]{./pictures/01V}
+ \includegraphics[scale=0.8]{./pictures/01V}
  \caption{Dark currents with the reverse voltage $U_\textrm{r}= 0.1$ V.}
  \label{01V}
 \end{figure}
 
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.5]{./pictures/1V}
+ \includegraphics[scale=0.8]{./pictures/1V}
  \caption{Dark currents with the reverse voltage $U_\textrm{r}= 1$ V.}
  \label{1V}
 \end{figure}
@@ -284,7 +284,7 @@ For the feedback photodiode, the time stability is very important. It has to las
 
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.5]{./pictures/ArtiAging}
+ \includegraphics[scale=0.6]{./pictures/ArtiAging}
  \caption{Time evolution of the photodiode's photocurrent.}
  \label{agingPhotoCurrent}
 \end{figure}
@@ -300,7 +300,7 @@ The original concept circuit was modified by adding the feedback part, which con
 \begin{figure}[H]
  \centering
  \includegraphics[scale=0.5]{up_logo_bw}
- \caption{2 - Amplifier with photodiode scheme.}
+ \caption{two state amplifier with a photodiode scheme.}
  \label{Amplifier}
 \end{figure}
 
@@ -335,14 +335,14 @@ There may be a space for two more samples to be taken at the end of the yellow p
  \label{procedure}
 \end{figure}
 \par
-This synchronized sampling can produce up to 8 samples per pulse. To achieve better statistics, we decided to capture and sample about 50 pulses. The mean value of these samples is considered to be a level of the actual LED power. This value is then used by STM32's program to set the DAC value. However, the direct setting of DAC by actual value of LED power is not suitable for this application and may cause unwanted oscillations in power level, and thus it is better to implement some kind numerical regulation.
+This synchronized sampling can produce up to 8 samples per pulse. To achieve better statistics, we decided to capture and sample about 50 pulses. The mean value of these samples is considered to be a level of the actual LED power. This value is then used by STM32's program to set the DAC value. However, the direct setting of DAC by actual value of LED power is not suitable for this application and may cause unwanted oscillations in power level, and thus it is better to implement some kind of numerical regulation.
 
 
 \par
-In many applications it is needed to dynamically vary the output to compensate unwanted effects the and to achieve the stability of some physical quantity (temperature, position etc.). The most basic approach is the PID regulation (proportional-integral-derivative). PID regulation is based on a feedback loop - the error value is calculated from the difference of a current measured state and a desired state. Output is then set to the value calculated as a weighted sum proportional, integral and derivative terms of the error value (both integral and derivative are numerically calculated). This is repeated in cycle, with recalculating error value and its terms \cite{PID}.
+In many applications it is needed to dynamically vary the output to compensate unwanted effects the and to achieve the stability of some physical quantity (temperature, position etc.). The most basic approach is the PID regulation (proportional-integral-derivative). PID regulation is based on a feedback loop - the error value is calculated from the difference of a current measured state and a desired state. Output is then set to the value calculated as a weighted sum proportional, integral and derivative terms of the error value (both integral and derivative are numerically calculated). This is repeated in cycle, with recalculating error value and its terms \cite{PID}. The new value for DAC is set in every cycle.
 
 \par
-For our purposes, where the output state (optical power) is set by DAC, the regulation based only on the integral term was implemented. This concept allows optical power to rapidly increase when it is too far from desired value and also to make soft corrections when the optical power starts to deviate from the desired value. 
+For our purposes, where the output state (optical power) is set by DAC, the regulation based only on the integral term was implemented. This concept allows optical power to rapidly increase when it is too far from desired value and also to make fine corrections when the optical power starts to deviate from the desired value. 
 
 \par
 
@@ -371,11 +371,11 @@ This behaviour is what was expected. However, the long-time test similar to the 
 
 \subsubsection{Long-time test}
 
-Due to the non-optimized optomechanics the source was not able to produce enough light for the test in IS, so the power meter was mounted directly onto the output of the prototype. Also the pre-testing has shown that the prototype is incapable to fully compensate the temperature variations. The most probable cause of these temperature variations is the thermal expansion of the mechanics. Many of the other possible causes (LED spectral dependency, voltage reference stability etc.) were tested without having any impact on the prototype's behaviour. 
+Due to the non-optimized optomechanics the source was not able to produce enough light for the test in the IS, so the power meter was mounted directly onto the output of the prototype. Also the pre-testing has shown that the prototype is incapable to fully compensate the temperature variations. The most probable cause of these temperature variations is the thermal expansion of the mechanics. Many of the other possible causes (LED spectral dependency, voltage reference stability etc.) were tested without having any impact on the prototype's behaviour. 
 
 
 \par
-The test run was done on heating plate having both the prototype and Nucleo stabilized on $t \approx 40.5$ $^\circ C$ (the heating itself is incapable of holding the temperature with accuracy better than 1 $^\circ C$) and covered by insulating material. Besides the optical power measurement, the DAC value (voltage - measured by multimeter) was also measured to observe the feedback stabilization. To measure optical power with the power meter, the pulse's duty cycle was increased to 50 $\%$, but the sampling scheme was unchanged.
+The test run was done on heating plate having both the prototype and Nucleo stabilized on $t \approx 40.5$ $^\circ $C (the heating itself is incapable of holding the temperature with accuracy better than 1 $^\circ $C) and covered by an insulating material. Besides the optical power measurement, the DAC value (voltage - measured by multimeter) was also measured to observe the feedback stabilization. To measure optical power with the power meter, the pulse's duty cycle was increased to 50 $\%$, but the sampling scheme was unchanged.
 
 \par
 
@@ -396,7 +396,7 @@ The test lasted about 10 days and the results can be seen on fig. \ref{Long test
  \label{Long test temperatures}
 \end{figure}
 
-From the relative optical power time evolution we can see, that it decreased about 0.005 $\%$ in 10 days. This change can be partially associated with temperature drop about 0.2 $\circ$C from Fig. \ref{Long test temperatures}. However, the DAC value increased about 1.7 $\%$ and it is highly possible, that this was the way the feedback loop balanced the LED's power decrease.
+From the relative optical power time evolution we can see, that it decreased about 0.005 $\%$ in 10 days. This change can be partially associated with temperature drop about 0.2 $^\circ$C from Fig. \ref{Long test temperatures}. However, the DAC value increased about 1.7 $\%$ and it is highly possible, that this was the way the feedback loop balanced the LED's power decrease.
 
 \par 
  

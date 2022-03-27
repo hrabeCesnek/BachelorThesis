@@ -23,7 +23,7 @@
 \usepackage{url}
 
 \usepackage{float}
-
+\usepackage{lastpage}
 
 %\usepackage[numbers]{natbib}
 
@@ -57,15 +57,16 @@ sorting=ynt
 \newcommand{\rokod}{2022}
 \newcommand{\vedouci}{Ing. Ladislav Chytka, Ph.D.}
 \newcommand{\abstrakt}{%
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit amet lectus vestibulum dignissim. Cras sit amet enim vitae mi elementum blandit eget nec tortor. Curabitur eget eros vitae arcu luctus varius commodo vel mauris. Nam elementum convallis pretium. Nunc dignissim pulvinar urna, nec blandit ante fringilla at. Ut et magna purus, vel pellentesque massa. In tortor nisi, faucibus condimentum cursus ut, sollicitudin quis leo. Ut at purus nec arcu accumsan tincidunt id id massa. Nam id vehicula mi.}
+Tato práce je věnována vývoji kalibračního a monitorovacího hardwaru a softwaru pro účely astročásticového teleskopu FAST. Zabývá se testováním kalibračních světelných UV zdrojů, jejich vylepšením. Následně vývojem monitorovacího systému pro více teleskopů. V poslední řadě také vyhodnocením kalibračních dat.}
 % -----------------------------------------------
 \newcommand{\abstrakten}{%
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit amet lectus vestibulum dignissim. Cras sit amet enim vitae mi elementum blandit eget nec tortor. Curabitur eget eros vitae arcu luctus varius commodo vel mauris. Nam elementum convallis pretium. Nunc dignissim pulvinar urna, nec blandit ante fringilla at. Ut et magna purus, vel pellentesque massa. In tortor nisi, faucibus condimentum cursus ut, sollicitudin quis leo. Ut at purus nec arcu accumsan tincidunt id id massa. Nam id vehicula mi.}
+This thesis is devoted to the development of calibration and monitoring hardware and software for the purposes of the FAST astroparticle telescope. It deals with testing of calibration UV sources, their upgrades. Subsequently, with the development of a monitoring system for multiple astroparticle telescopes. And lastly with evaluation of the calibration data.}
 % klíčová slova
-\newcommand{\klic}{klíčové slovo 1, klíčové slovo 2, \ldots}
-\newcommand{\klicen}{keyword 1, keyword 2, \ldots}
-\newcommand{\pocetstran}{xx}
-\newcommand{\pocetpriloh}{x}
+\newcommand{\klic}{UHECR, PMT, IS, fotodioda, LED, ADC, DAC}
+\newcommand{\klicen}{UHECR, PMT, IS, photodiode, LED, ADC, DAC}
+\newcommand{\pocetstran}{	
+\pageref{LastPage}}
+\newcommand{\pocetpriloh}{1}
 
 % -----------------------------------------------
 % Definice vlastních maker pro usnadnění psaní
@@ -169,6 +170,14 @@ Supervisor:& \vedouci\\
 Deadline:& April~\rokod
 \end{tabular}
 \end{center}
+%----Vdek------------------------------------------------------
+\newpage
+\hbox{~}
+
+\vfill
+\noindent
+
+I thank my supervisor Ing. Ladislav Chytka Ph.D. for support and for providing guidance and feedback throughout the writing of this thesis. For technical support including mainly the manufacture of fine optoelectronic analog circuits I thank Vladimír Urbášek. For necessary assistance with development of monitoring system and many advises on microcontrollers I thank Aleš Kratochvíl. I thank Mgr. Martin Vacula for providing me the theoretical calibration data and Mgr. Michal Dudka from KEF for the key advises on the STM32's timers and triggers.
 
 % ---------------------------------------------------------------
 % Prohlášení
@@ -213,6 +222,9 @@ In~Olomouc~\today   \hfill\parbox[t]{6cm}{\centering\null\dotfill\\\student}
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
+The part of modern particle physics is focused onto the studying of ultra-high energy cosmic rays. To capture these particles the special astroparticle detectors have to be used.
+However, these detectors requires a very special hardware for their proper functionality.
+\par
 This thesis is devoted to the development of calibration and monitoring hardware and techniques, mainly focused for the purposes of the astroparticle FAST telescope.
 \par
 The beginning theoretical chapters provide a short introduction into the astroparticle physics and its detection techniques, following by a summary of the associated calibration techniques. Telescope FAST is described in its own chapter.
@@ -249,17 +261,19 @@ The main significance of this thesis is its experimental part - the experimental
 By using analysis algorithms was proved, that the UV source is able to produce stable pulses, but with the optical power (pulse's height) varying over time. It was found out, that the UV LED itself is a cause of this. 
 
 \par
-The LED ageing process was discovered to have a serious impact on optical power stability. The optical feedback based on pulse sampling and regulation showed itself to be the way to handle this problem. 
+The LED ageing process was discovered to have a serious impact on optical power stability. The optical feedback based on pulse sampling and regulation showed itself to be the way to handle this problem.
 
 \par
 However, it was not able to fully examine the causes or to measure enough LEDs to obtain statistical behaviour, because there were not enough resources and time to do it. Personally I think, that this could be a future topic for solid state physics or nanotechnology.
 \par
+The fully functional calibration UV source haven't been constructed yet, but I hope that I acquired enough data and information that the development could be successfully finished.
+\par
 The new monitoring system will possibly satisfy the dynamically changing requirements onto the monitoring scheme of the deployed FAST prototypes.
 
 \par
-I managed to close the thesis by analysis of FAST calibration data. It was shown that they differ from theoretical values, which can be caused by errors in experimental method itself or there are some undiscovered effects, that are neglected by the theoretical simulations.  
+I managed to close the thesis by the analysis of FAST calibration data to illustrate the usage of the UV source. It was shown that they differ from theoretical values, which can be caused by errors in experimental method itself or there are some undiscovered effects, that are neglected by the theoretical simulations.  
 \par
-I thank my supervisor Ladislav Chytka for support. For technical support including mainly the manufacture of fine optoelectronic analog circuits I thank Vladimír Urbášek. For necessary assistance with development of monitoring system and many advises on microcontrollers I thank Aleš Kratochvíl from Jointlab. I thank Martin Vacula for providing me the theoretical calibration data and Michal Dudka from KEF for the key advises on the STM32's timers and triggers.
+
 \par
 The work on thesis was both very hard and experiencing, and thus it can be compared to have to chug a bottle of 50$\%$ vodka - get sick, get experienced.
 
