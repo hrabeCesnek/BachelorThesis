@@ -55,7 +55,7 @@ Osciloscope's readout was programmed in C language according to its programmer's
 \par
 The multimeter is controlled by VISA commands using python USBTMC library. For thermometer we use RPi's 1-Wire.
 \par
-Main component (IS,PW, PMT with HV source, UV source) are situated in protection box to prevent unwanted manipulations and touching the HV parts.The apparatus can be seen on fig. \ref{aparature1} and \ref{aparature2}.
+Main component (IS,PW, PMT with HV source, UV source) are situated in protection box to prevent unwanted manipulations and touching the HV parts.The apparatus can be seen on Fig. \ref{aparature1} and \ref{aparature2}.
 
 \begin{figure}[H]
  \centering
@@ -75,7 +75,7 @@ Main component (IS,PW, PMT with HV source, UV source) are situated in protection
 \subsection{Data acquisition and analysis}
 All the data are taken in specified interval (15 or 30 minutes). Two files are produced - osciloscope waveform file and a file with 30 samples of power meter, multimeter and a thermometer readings. From these 30 samples we calculate average and error. Most of data analysis we perform is done by C/C++ Root framework \cite{ROOT}.
 \par
-The data from oscilloscope contains the square pulses with noise (fig. \ref{pulse}). From them we need to extract the information of pulses height, slope and time of the rising edge.
+The data from oscilloscope contains the square pulses with noise (Fig. \ref{pulse}). From them we need to extract the information of pulses height, slope and time of the rising edge.
 
  \begin{figure}[H]
  \centering
@@ -84,10 +84,10 @@ The data from oscilloscope contains the square pulses with noise (fig. \ref{puls
  \label{pulse}
 \end{figure}
 
-To determine the pulse height, we need to calculate the average value from all the samples at first. Then, we split the samples into two subgroups according to fact, whether they are higher or lower than the average. These subgroups are converted to histograms with fixed binning (around 5000 bins). These histograms are then fitted by gaussian. The means of these two fits determine two levels of the pulse - high ($U_\textrm{h}$) and low ($U_\textrm{l}$). The fig. \ref{pulse} shows the real pulse with levels determined by this method. The height of pulse is then simply calculated by subtracting two levels: $U_\textrm{H} = U_\textrm{h} - U_\textrm{l}$.
+To determine the pulse height, we need to calculate the average value from all the samples at first. Then, we split the samples into two subgroups according to fact, whether they are higher or lower than the average. These subgroups are converted to histograms with fixed binning (around 5000 bins). These histograms are then fitted by gaussian. The means of these two fits determine two levels of the pulse - high ($U_\textrm{h}$) and low ($U_\textrm{l}$). The Fig. \ref{pulse} shows the real pulse with levels determined by this method. The height of pulse is then simply calculated by subtracting two levels: $U_\textrm{H} = U_\textrm{h} - U_\textrm{l}$.
 
 \par
-The properties of the rising edge can be specified by two parameters, which we are able to extract from our data - time and the slope of the rising edge. We are able to calculate both of them if we identify the samples of the rising edge. These samples' values should be between 20 $\%$ and 80 $\%$ of the $U_{H}$. First, we need to detect the rising edge in waveform data sequence. However, the signal is very noisy and this can not be simply done by detecting the exceeding of the 10 $\%$ of the $U_{H}$ .To achieve that, we cycle through the waveform until we meet two conditions - the value is higher than average (and lesser than $80 \%$) and the derivative is positive. Due to the noise, the derivative could not be calculated from two or three points, thus we use Savitzky–Golay polynomial's derivative at chosen point: $y' = \frac{1}{12h}(y_{i-2} -8y_{i-1} + 8y_{i+1} - y_{i+2}) $. However we care only of positive/negative sign, so $\frac{1}{12h}$, where $h$ is the small step, is no use for us. When these two conditions are met at some point, the program cycles back from the point through the waveform until reaches $20\%$ level, and then beginning at the same point, which met the conditions, cycles up to reaching $80\%$ level. All the samples traversed by this way are considered as samples of the rising edge. The rising time is calculated simply by multiplying the number of these samples by the sample time (2 ns). The slope is calculated from linear fit of these samples (fig. \ref{linfit}).  
+The properties of the rising edge can be specified by two parameters, which we are able to extract from our data - time and the slope of the rising edge. We are able to calculate both of them if we identify the samples of the rising edge. These samples' values should be between 20 $\%$ and 80 $\%$ of the $U_{H}$. First, we need to detect the rising edge in waveform data sequence. However, the signal is very noisy and this can not be simply done by detecting the exceeding of the 10 $\%$ of the $U_{H}$ .To achieve that, we cycle through the waveform until we meet two conditions - the value is higher than average (and lesser than $80 \%$) and the derivative is positive. Due to the noise, the derivative could not be calculated from two or three points, thus we use Savitzky–Golay polynomial's derivative at chosen point: $y' = \frac{1}{12h}(y_{i-2} -8y_{i-1} + 8y_{i+1} - y_{i+2}) $. However we care only of positive/negative sign, so $\frac{1}{12h}$, where $h$ is the small step, is no use for us. When these two conditions are met at some point, the program cycles back from the point through the waveform until reaches $20\%$ level, and then beginning at the same point, which met the conditions, cycles up to reaching $80\%$ level. All the samples traversed by this way are considered as samples of the rising edge. The rising time is calculated simply by multiplying the number of these samples by the sample time (2 ns). The slope is calculated from linear fit of these samples (Fig. \ref{linfit}).  
 
 
  \begin{figure}[H]
@@ -163,9 +163,9 @@ To confirm this measured fact and check for possible causes of the optical power
  \label{LEDCurrent}
 \end{figure}
 
-Other measurements of optical power have ended in similar way. But by using the multimeter we can see that PMT's voltage is stable (fig. \ref{PMTVolt}). It is varying only about 0.4 V at the beginning.
+Other measurements of optical power have ended in similar way. But by using the multimeter we can see that PMT's voltage is stable (Fig. \ref{PMTVolt}). It is varying only about 0.4 V at the beginning.
 \par
-The measurement of current by oscilloscope was done and analysed in similar way as was done for the PMT's pulses. Both of them are PWM square pulses by shape. The oscilloscope's probe was connected to the 100$\Omega$ resistor, which is in serial to the LED and the current source and acted as a simple $U/I$ converter. As we can see in fig. \ref{LEDCurrent}, the current varies only a little over the value which was set ($I_\textrm{d} = 2.5$ mA), and thus the rising trend of optical power is definitely not caused by the current variations.
+The measurement of current by oscilloscope was done and analysed in similar way as was done for the PMT's pulses. Both of them are PWM square pulses by shape. The oscilloscope's probe was connected to the 100$\Omega$ resistor, which is in serial to the LED and the current source and acted as a simple $U/I$ converter. As we can see in Fig. \ref{LEDCurrent}, the current varies only a little over the value which was set ($I_\textrm{d} = 2.5$ mA), and thus the rising trend of optical power is definitely not caused by the current variations.
 
 \section{UV LED diode}
 
@@ -185,7 +185,7 @@ The single UV LED powered by the current source lm334 on $I_\textrm{d} =$ 7.1 mA
  \label{SingleDiod}
 \end{figure}
 \par
-On the fig. \ref{SingleDiod} we can see that the optical power of single LED increased about $2 \%$ after one week. Then followed a stable interval which lasted about a week, but after that period the LED started "dying" and the power started to decrease.
+On the Fig. \ref{SingleDiod} we can see that the optical power of single LED increased about $2 \%$ after one week. Then followed a stable interval which lasted about a week, but after that period the LED started "dying" and the power started to decrease.
 
 \par
 There are 2 mayor possibilities to fix the LED power variation problem. The first possibility is to monitor the time usage of the UV source the and according to that recalibrate the source, but the behaviour may vary diode from diode and thus it has many disadvantages. The second and more accurate approach is to regulate the power by an optical feedback.    
@@ -203,7 +203,7 @@ For experiments and calibration, it is also necessary to determine the exact wav
  \label{wavdep}
 \end{figure}
 
-On the fig. \ref{wavdep} we can see, that both $\lambda$ and $\Delta \lambda$ dependencies on temperature are insignificant.
+On the Fig. \ref{wavdep} we can see, that both $\lambda$ and $\Delta \lambda$ dependencies on temperature are insignificant.
 
 %------------------------------------------------
 \section{Optical feedback - potential fix}
@@ -258,7 +258,7 @@ From the measured data we can see, that for the expected operating temperatures 
 \subsubsection{Signal responsivity}
 By direct illumination of the photodiode by the UV LED ($I_d = 7.5 $ mA) we are able to induce photocurrent about $I_\textrm{p} = 5$ $\mu$A, which is of the higher order than the measured dark current.
 \par
-To test responsibility of the square pulses, we integrated the photodiode into the $I/U$ trans-impedance amplifier with the op-amp ADA4805 with feedback parameters $R_\textrm{F} = 100$ k$\Omega$ and $C = 9$ pF. We illuminated the photodiode by the UV LED connected to the square pulse generator. The response could be seen on fig. \ref{response}.
+To test responsibility of the square pulses, we integrated the photodiode into the $I/U$ trans-impedance amplifier with the op-amp ADA4805 with feedback parameters $R_\textrm{F} = 100$ k$\Omega$ and $C = 9$ pF. We illuminated the photodiode by the UV LED connected to the square pulse generator. The response could be seen on Fig. \ref{response}.
 
 \begin{figure}[H]
  \centering
@@ -271,7 +271,7 @@ To test responsibility of the square pulses, we integrated the photodiode into t
 This way we are able to see the pulsing UV LED light. However, the rising edge of feedback pulse is deformed. 
 
 \subsubsection{Artificial ageing}
-For the feedback photodiode, the time stability is very important. It has to last much more than the LED. To test the long-time stability, we tried to artificially age the feedback photodiode. It is well-known fact from the molecular physics, that the diffusion coefficients of most materials depends on temperature and they grow with increasing temperature \cite{Diff}. So we tried to speed up the ageing by holding the photodiode just under the maximum of operating temperature (on $80^{\circ}$C) for one week. During that period, the photodiode was illuminated by UV LED and the photocurrent was measured (fig. \ref{agingPhotoCurrent}).
+For the feedback photodiode, the time stability is very important. It has to last much more than the LED. To test the long-time stability, we tried to artificially age the feedback photodiode. It is well-known fact from the molecular physics, that the diffusion coefficients of most materials depends on temperature and they grow with increasing temperature \cite{Diff}. So we tried to speed up the ageing by holding the photodiode just under the maximum of operating temperature (on $80^{\circ}$C) for one week. During that period, the photodiode was illuminated by UV LED and the photocurrent was measured (Fig. \ref{agingPhotoCurrent}).
 
 
 \begin{figure}[H]
@@ -295,16 +295,16 @@ Due to the fact, that any bigger drift in sensitivity was not observed under the
 
 \subsection{Feedback concept and testing}
 
-The original concept circuit was modified by adding the feedback part, which consists of two op amps - primary acts as trans-impedance amplifier to convert induced photocurrent into the signal voltage and the secondary acts as a simple voltage amplifier. The additional scheme can be seen on fig. \ref{Amplifier}.
+The original concept circuit was modified by adding the feedback part, which consists of two op amps - primary acts as trans-impedance amplifier (LTC6268) to convert induced photocurrent into the signal voltage and the secondary acts as a simple voltage amplifier (ADA4805). The photodiode is powered by a voltage regulator (LT1054). The additional scheme can be seen on Fig. \ref{Amplifier}.
    
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.5]{up_logo_bw}
- \caption{two state amplifier with a photodiode scheme.}
+ \includegraphics[scale=0.45]{./pictures/FeedBackCirc.png}
+ \caption{Two state amplifier with a photodiode scheme. Physically manufactured by Vladimír Urbášek.}
  \label{Amplifier}
 \end{figure}
 
-The UV LED is mounted in position to deliver power into the photodiode and also to an output port. The optomechanical system can be seen on fig. \ref{Optomechanics}. The prototype consists of two circuits - of the LED driver and the feedback detector, bound together by 3D printed parts.
+The UV LED is mounted in position to deliver power into the photodiode and also to an output port. The optomechanical system can be seen on Fig. \ref{Optomechanics}. The prototype consists of two circuits - of the LED driver and the feedback detector, bound together by 3D printed parts.
 
 \begin{figure}[H]
  \centering
@@ -324,7 +324,7 @@ To perform the pulse sampling, the hardware with enough capabilities has to be u
 
 The other problem is the time synchronization of sampling with the pulse, to achieve that the STM32 timers have to be combined. Due to the fact, that the excitation PWM pulses for the LED circuit are generated by STM32 timer, there is a possibility to use this PWM timer also to trigger an another timer (programmed as a slave), which can handle the ADC sampling. Some timers can be programmed to produce a burst of short pulses with defined number of repeats. These short pulses can be used to trigger ADC to take sample and transfer it directly into memory through DMA without any necessity of the CPU handling.  
 \par
-The sampling procedure captured by oscilloscope can be seen on fig. \ref{procedure}. Blue is the original PWM excitation pulse for LED current driver, yellow is the optical pulse captured by photodiode, and violet are the pulses generated by the slave timer triggering the ADC samples. Due to the deformation of the yellow photodiode signal, the first two samples are not taken to account. 
+The sampling procedure captured by oscilloscope can be seen on Fig. \ref{procedure}. Blue is the original PWM excitation pulse for LED current driver, yellow is the optical pulse captured by photodiode, and violet are the pulses generated by the slave timer triggering the ADC samples. Due to the deformation of the yellow photodiode signal, the first two samples are not taken to account. 
 There may be a space for two more samples to be taken at the end of the yellow pulse, but we decided not to do so, because of the possible prototyping variations in the pulse's end edge. 
 
 
@@ -364,7 +364,7 @@ To vary the transmission, and thus to simulate the optical power variations, ins
  \label{Feedback testing}
 \end{figure}
 
-From the fig. \ref{Feedback testing} we can see, that after the paper is inserted, the photodiode signal rapidly decreases, but the feedback detects this and begins to increase the DAC voltage (and thus the LED current) until the photodiode signal reaches the same value as it had before the transmission was altered. After removing the paper, the LED power is high, so the photodiode signal jumps onto the high level too. The feedback detects this again and lowers the DAC voltage to the original value. 
+From the Fig. \ref{Feedback testing} we can see, that after the paper is inserted, the photodiode signal rapidly decreases, but the feedback detects this and begins to increase the DAC voltage (and thus the LED current) until the photodiode signal reaches the same value as it had before the transmission was altered. After removing the paper, the LED power is high, so the photodiode signal jumps onto the high level too. The feedback detects this again and lowers the DAC voltage to the original value. 
 \par
 This behaviour is what was expected. However, the long-time test similar to the previous tests of the original UV source has to be performed either way. 
 
@@ -379,7 +379,7 @@ The test run was done on heating plate having both the prototype and Nucleo stab
 
 \par
 
-The test lasted about 10 days and the results can be seen on fig. \ref{Long test}.
+The test lasted about 10 days and the results can be seen on Fig. \ref{Long test}.
 
 
 \begin{figure}[H]

@@ -105,26 +105,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.2}Feedback concept and testing}{45}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sampling and regulation}{45}{section*.12}
+\contentsline {subsubsection}{Sampling and regulation}{46}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Direct stabilization test}{47}{section*.13}
+\contentsline {subsubsection}{Direct stabilization test}{48}{section*.13}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Long-time test}{48}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Monitoring system}{50}{chapter.6}
+\contentsline {chapter}{\numberline {6}Monitoring system}{51}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Monitoring of multiple FAST telescopes}{50}{section.6.1}
+\contentsline {section}{\numberline {6.1}Monitoring of multiple FAST telescopes}{51}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Control units and sensors}{50}{section.6.2}
+\contentsline {section}{\numberline {6.2}Control units and sensors}{51}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Software system}{52}{section.6.3}
+\contentsline {section}{\numberline {6.3}Software system}{53}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Calibration data analysis}{54}{chapter.7}
+\contentsline {chapter}{\numberline {7}Calibration data analysis}{55}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Calibration process}{54}{section.7.1}
+\contentsline {section}{\numberline {7.1}Calibration process}{55}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Analysis and results}{56}{section.7.2}
+\contentsline {section}{\numberline {7.2}Analysis and results}{57}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Simulation comparison and discussion}{59}{section.7.3}
+\contentsline {section}{\numberline {7.3}Simulation comparison and discussion}{60}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusion}{60}{chapter*.15}
+\contentsline {chapter}{Conclusion}{61}{chapter*.15}
