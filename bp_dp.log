@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  28 MAR 2022 02:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.25)  1 APR 2022 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1697,9 +1697,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
  (./bp_dp.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
-Package rerunfilecheck Info: File `bp_dp.out' has not changed.
-(rerunfilecheck)             Checksum: 0DA2D9211566588687106686A38B99F7;9027.
 
+
+Package rerunfilecheck Warning: File `bp_dp.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `bp_dp.out':
+(rerunfilecheck)             Before: 0DA2D9211566588687106686A38B99F7;9027
+(rerunfilecheck)             After:  5B7C6BA402511E38EE71C7816097309B;9004.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1728,7 +1734,7 @@ amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.
 pfb>
-Output written on bp_dp.pdf (63 pages, 88436845 bytes).
+Output written on bp_dp.pdf (63 pages, 88436842 bytes).
 PDF statistics:
  900 PDF objects out of 1000 (max. 8388607)
  742 compressed objects within 8 object streams

@@ -75,7 +75,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.2}STM32 based microcontrolers}{26}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Calibration the UV optical source}{27}{chapter.5}
+\contentsline {chapter}{\numberline {5}Calibration UV optical source}{27}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}UV source}{27}{section.5.1}
 \defcounter {refsection}{0}\relax 
