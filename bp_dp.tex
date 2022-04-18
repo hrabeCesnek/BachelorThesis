@@ -56,6 +56,8 @@ sorting=ynt
 \fi
 \newcommand{\rokod}{2022}
 \newcommand{\vedouci}{Ing. Ladislav Chytka, Ph.D.}
+\newcommand{\konzultant}{Ing. Ondřej Lác}
+
 \newcommand{\abstrakt}{%
 Tato práce je věnována vývoji kalibračního a monitorovacího hardwaru a softwaru pro účely astročásticového teleskopu FAST. Zabývá se testováním kalibračních světelných UV zdrojů, jejich vylepšením. Následně vývojem monitorovacího systému pro více teleskopů. V poslední řadě také vyhodnocením kalibračních dat.}
 % -----------------------------------------------
@@ -177,7 +179,7 @@ Deadline:& April~\rokod
 \vfill
 \noindent
 
-I thank my supervisor Ing. Ladislav Chytka Ph.D. for support and for providing guidance and feedback throughout the writing of this thesis. For technical support including mainly the manufacture of fine optoelectronic analog circuits I thank Vladimír Urbášek. For necessary assistance with development of monitoring system and many advises on microcontrollers I thank Aleš Kratochvíl. I thank Mgr. Martin Vacula for providing me the theoretical calibration data and Mgr. Michal Dudka from KEF for the key advises on the STM32's timers and triggers.
+I thank my supervisor Ing. Ladislav Chytka Ph.D. for support and for providing guidance and feedback throughout the writing of this thesis. For technical support including mainly the manufacture of fine optoelectronic analog circuits I thank Vladimír Urbášek. For necessary assistance with development of monitoring system and many advises on microcontrollers I thank Aleš Kratochvíl. I thank Mgr. Martin Vacula for providing me the theoretical calibration data and Mgr. Michal Dudka from KEF for the key advises on the STM32's timers and triggers. I also gratefully acknowledges the support received from the Operational Programme Research, Development and Education-European Regional Development Fund, project no. CZ.$02.1.01/0.0/0.0/17\_049/0008422$ of the Ministry of Education, Youth and Sports of the Czech Republic.
 
 % ---------------------------------------------------------------
 % Prohlášení
@@ -256,7 +258,7 @@ The last chapter contains a demonstration and a data analysis of the FAST calibr
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
 
-The main significance of this thesis is its experimental part - the experimental setup for measuring the UV source stability was assembled and programmed, and the experimental data were successfully acquired.
+The main significance of this thesis is its experimental part - the experimental setup for measuring the UV source stability was assembled and programmed, and the experimental data were successfully acquired. For signal processing, the analysis algorithms were developed in C++. 
  
 By using analysis algorithms was proved, that the UV source is able to produce stable pulses, but with the optical power (pulse's height) varying over time. It was found out, that the UV LED itself is a cause of this. 
 
