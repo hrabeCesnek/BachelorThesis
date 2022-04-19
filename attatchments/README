@@ -1,0 +1,9 @@
+The attatchement contains programs written throughout the thesis incuding analysis algoritms, microcontroller programs and data acquisition procedures.
+
+main.c - main file of the STM32's microcontroller feedback driver program
+FASTanalyze.cpp - program used for the calibration data analysis
+/PulseAnalysis/AllFiles.cpp - main file of program used to analyze UV source data
+/PulseAnalysis/singlePulse.cpp - object file consisting of procedures for obtaining pulse's properties
+/Measurement/ps2000aCon.c - partially programmed osciloscope data acquisition
+/Measurement/readAll.py - principial sensor readout and csv export
+
