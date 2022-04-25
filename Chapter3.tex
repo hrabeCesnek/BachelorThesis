@@ -5,7 +5,7 @@
 % -----------------------------------------------
 \chapter{Instrumentation}
 % -----------------------------------------------
-To perform all of necessary measurements we need to use various types of optical and electronic equipment.
+To perform all of necessary measurements we need to use various types of optical and electronic equipment, which is discussed in this chapter.
 % -----------------------------------------------
 \section{Integration sphere}
 % -----------------------------------------------
@@ -21,9 +21,9 @@ The Integration sphere (IS) is a special optical equipment, which can be used ei
 \par
 The IS inner surface consist of white optical diffusive material (BaSO$_4$ and Polytetrafluoroethylene). The IS also contains several circular apertures, which are called input/output ports. These can be used to mount detectors or optical sources or left free to let light flux enter or exit IS. 
 \par
-The inner surface is part where light integration happens. The effect which takes place here is known as Lambertian scattering. After one spot of inner surface is hit by a ray, the energy should be uniformly radially distributed. In output port this produces a homogeneous light source. The homogeneity decreases with increasing number and sizes of input/output ports.
+The inner surface is the part where light integration happens. The effect which takes place here is known as Lambertian scattering. After one spot of inner surface is hit by a ray, the energy should be uniformly radially distributed. In output port this produces a homogeneous light source. The homogeneity decreases with increasing number and sizes of input/output ports.
 \par
-Using optical source with IS requires baffle to prevent source's light flux or its part to exit IS without integration.
+Using optical source with IS typically requires baffle to prevent source's light flux or its part to exit IS without integration.
 \par
 Deep explanation of IS working principles and characterization of optical properties of the identical IS, which we use, can be found in \cite{VACULA2021167169}.
 \par
@@ -54,9 +54,9 @@ PMT consists of 6 main elements, which can be seen on scheme \ref{PMT scheme}.
 The input photon with sufficient energy, which strikes the PMT's photocathode, excites photocathode's electron. This electron then follows electrostatic field to the first dynode of the electron multiplier, where it induces secondary emission of more electrons. These electrons are then attracted by the next dynode, where the emission process repeats. After few times of multiplying electron number over dynodes, the electrons are then collected by 
 the anode, which is situated on the end of the electron multiplier. The anode output current is then converted to voltage signal by appropriate load resistor or by operational amplifier current-to-voltage circuit.
 \par
-As all other laboratory instruments, which are based on accelerating electrons, such as electron microscopes, the photomultiplier's main parts must be kept in vacuum. To maintain vacuum, the photomultiplier is surrounded by special glass envelope. To avoid mechanical damage of the glass envelope, the entire photomultiplier is situated in a plastic tube.
+As all other laboratory instruments, which are based on accelerating electrons, such as electron microscopes, the photomultiplier's main parts must be kept in vacuum. To maintain vacuum, the photomultiplier is surrounded by special glass envelope. To avoid mechanical damage of the glass envelope, the entire photomultiplier is sometimes situated in a plastic tube.
 \par
-One of the basic adjustable characteristic of PMT is its gain. The gain is defined as:
+One of the basic adjustable characteristics of PMT is its gain. The gain is defined as:
 
 \begin{equation}
 G = \frac{I_\textrm{a}}{I_\textrm{p}},
@@ -73,7 +73,7 @@ where $G_2$ and $G_1$ are gains at supply voltages $V_2$ and $V_1$. $\alpha$ is 
 \par
 Other effects, such as temperature, may also vary PMT's gain, and it is necessary to keep them on constant value or measure them and involve them in the final evaluation of data.
 \par
-For proper functionality of the PMT, the charge and current linearity should be considered. Charge linearity is the ratio of the number of incident photons to the number of electrons collected at the anode. Current linearity express the proportionality between incident light flux and anode current. Ideal PMT is always linear, but the real PMT may vary from linearity due to drifts, space charges, instability of voltage divider etc. These effect can lead up to saturation of the PMT. In saturation, increasing the input light flux leaves the anode current mostly unchanged.      
+For the proper functionality of the PMT, the charge and current linearity should be considered. Charge linearity is the ratio of the number of incident photons to the number of electrons collected at the anode. Current linearity expresses the proportionality between incident light flux and anode current. Ideal PMT is always linear, but the real PMT may vary from linearity due to drifts, space charges, instability of voltage divider etc. These effects can lead up to saturation of the PMT. In saturation, increasing the input light flux leaves the anode current mostly unchanged.      
 
 
 \subsubsection{Window}
@@ -87,12 +87,12 @@ The photocathode is the only light-sensitive part of PMT. It transfers the light
 \par
 One of its main parameters is quantum efficiency. It is referred to as ratio of emitted photoelectrons to the number of incident photons expressed as a percentage. It is generally less than 35 \%. For measurement, the more practical parameter is cathode radiant sensitivity. It is the ratio of photocathode current to an incident light power, which is expressed in mA/W.
 \par
-Photocathode material must be sensitive to certain wavelengths, which we want to detect with the PMT, and must have sufficient quantum efficiency. Preferred materials are usually alkali antimodes.
+Photocathode material must be sensitive to certain wavelengths, which we want to detect with the PMT, and must have sufficient quantum efficiency. Preferred materials are usually alkali antinodes.
 \subsubsection{Electron multiplier}
 The electron multiplier consists of dynodes and one anode.
 Dynodes are electrodes, which produce more electrons through secondary emission. To maintain electrostatic field between dynodes, each of dynodes is held on different potential. This is achieved by using the voltage divider. Every resistor in the divider sets the potential of one diode according to its resistivity.
 \par
-All of the photoelectrons emitted by photocathode should be ideally collected by the first dynode. However, many of them could be diverted from their path to dynode due to various effects. The parameter, which characterizes this, is the collection efficiency. The Collection efficiency is a probability that photoelectron will strike area of the first dynode. 
+All of the photoelectrons emitted by photocathode should be ideally collected by the first dynode. However, many of them could be diverted from their path to dynode due to various effects. The parameter, which characterizes this, is the collection efficiency. The collection efficiency is probability that a photoelectron will strike area of the first dynode. 
 \par
 There are few types of dynodes arrangements. On the fig. \ref{PMT scheme} is the classic linear-focusing multiplier. 
 
@@ -107,12 +107,12 @@ The resistor values could same for all the dynodes, but for some applications it
 \par
 In some applications, where high anode current peaks are expected, the divider can be filled with reservoir capacitors, which prevent the temporally charge exhaustion of the dynodes. In pulse mode, the unwanted oscillations on dynodes may occur, in that case, it is desirable to connect additional damping resistor to the divider.
 \par
-Voltage supply should be stable during the PMT's operation. As was mention before, the PMT's gain is voltage dependent. To adjust sufficient gain, high voltage (thousands of volts) needs to be applied between photocathode and anode. The high voltage needs to be ramped on required level gradually to avoid negative consequences of transition and dark current effects, which can decrease the operating life of PMT. The same truth is for shutting down the PMT.
+Voltage supply should be stable during the PMT's operation. As was mentioned before, the PMT's gain is voltage dependent. To adjust sufficient gain, high voltage (hundreds of volts) needs to be applied between photocathode and anode. The high voltage needs to be ramped on required level gradually to avoid negative consequences of transition and dark current effects, which can decrease the operating life of PMT. The same is valid for shutting down the PMT.
 \par
 The high voltage could be applied to the PMT in negative or positive polarity. In case of positive polarity, the cathode is held at ground and anode on +HV. In case of negative polarity, the cathode is held at -HV and anode at ground. 
 
 \subsection{Dark current}
-Dark current is anode current produced by photomultiplier in total darkness. It is considered to be a part of unwanted noise, causes errors in measurements and limits the detectivity of PMT. Dark current has origin in ohmical leakage, thermionic and field emission or in radioactivity. Ohmical leakage is major part of dark current at low gain. With the increasing gain the thermionic emission prevails. At high gains the field emission becomes the major part.
+Dark current is the anode current produced by a photomultiplier in total darkness. It is considered to be a part of unwanted noise, causes errors in measurements and limits the detectivity of PMT. Dark current has origin in ohmical leakage, thermionic and field emission or in radioactivity. Ohmical leakage is major part of dark current at low gain. With the increasing gain the thermionic emission prevails. At high gains the field emission becomes the major part.
 %\subsubsection{Ohmical leakage}
 %Insufficent insulation of electrodes, dynodes and all other parts which are under high voltage may lead to surface current over glass and tube. Dirt and humidity are in most cases the reason of Ohmical leakage.
 

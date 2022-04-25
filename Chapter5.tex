@@ -5,10 +5,11 @@
 % -----------------------------------------------
 \chapter{Calibration data analysis}
 % -----------------------------------------------
+\label{chap7}
 In this section we present the analysis of calibration data, which we acquired by illuminating one FAST telescope (Argentina) by the older version of homogeneous UV LED source mounted into the IS. The older version of UV source was incapable of generating exact square pulse, and thus its output is deformed. However, the pulse's shape is stable and thus it was possible to use it for this experiment.   
 
 \par
-The main goal of this experiment is to obtain the relative responsivity ration constants for every of the four FASTs' PMTs (pixels) with respect to the pixel with greatest response for three positions of illumination - from left, right and bottom. Full specifications of the pixels numbering and positions could be seen on fig. \ref{PMT orientation}.
+The main goal of this experiment is to obtain the relative responsivity ratio constants for every of the four FASTs' PMTs (pixels) with respect to the pixel with greatest response for three positions of illumination - from left, right and bottom. Full specifications of the pixels numbering and positions could be seen in Fig. \ref{PMT orientation}.
 
 \begin{figure}[H]
  \centering
@@ -21,7 +22,7 @@ The main goal of this experiment is to obtain the relative responsivity ration c
 % -----------------------------------------------
 \section{Calibration process}
 % -----------------------------------------------
-The UV source was mounted onto three positions and used as EULS to generate $8$ $\mu$s pulses. Two LED current levels were tested - $I_{d1} = 0.3$ mA and $I_{d2} = 0.8$ mA. These pulses trigger an event for the telescope - it acquires waveform data from every of the four PMTs. The PMTs' signal is converted into the number of photoelectrons registered in 20 ns. The example of detected 0.3 mA pulse from bottom position can be seen on fig (\ref{03pulse}). The 0.8 mA pulse is on fig. (\ref{08pulse}).
+The UV source was mounted onto three positions and used as EULS to generate 8-microsecond pulses. Two LED current levels were tested - $I_{d1} = 0.3$ mA and $I_{d2} = 0.8$ mA. These pulses trigger an event for the telescope - it acquires waveform data from every of the four PMTs. The PMTs' signal is converted into the number of photoelectrons registered in 20 ns. The example of detected 0.3 mA pulse from bottom position can be seen in Fig (\ref{03pulse}). The 0.8 mA pulse is in Fig. (\ref{08pulse}).
 
 \begin{figure}[H]
  \centering
@@ -50,33 +51,33 @@ The 0.3 mA pulses are suitable for our analysis. However, due to their deformati
 
 \section{Analysis and results}
 % -----------------------------------------------
-The data includes 4 waveforms for every detected pulse event and consists around 800 pulse events (for every position). From these signal waveforms we calculate the pulse's integral and then use these signal integrals to construct histograms. These histograms are fitted by gaussian. This process is repeated for all the three positions.
+The data includes 4 waveforms for every detected pulse event and consists of around 800 pulse events (for every position). From these signal waveforms we calculate the pulse's integral and then use these signal integrals to construct histograms. These histograms are fitted by a gaussian. This process is repeated for all the three positions.
 \par
-The fitted histograms can be seen on fig. \ref{leftCal} (left), \ref{rightCal} (right) and \ref{bottomCal} (bottom).
+The fitted histograms can be seen in Fig. \ref{leftCal} (left), \ref{rightCal} (right) and \ref{bottomCal} (bottom).
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.32, angle = 0]{./pictures/left.png}
- \caption{Signal integral histograms with gaussian fits for left position.}
+ \includegraphics[scale=0.3, angle = 0]{./pictures/left.png}
+ \caption{Signal integral histograms with gaussian fits for the left position.}
  \label{leftCal}
  
 \end{figure}
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.32, angle = 0]{./pictures/right.png}
- \caption{Signal integral histograms with gaussian fits for right position.}
+ \includegraphics[scale=0.3, angle = 0]{./pictures/right.png}
+ \caption{Signal integral histograms with gaussian fits for the right position.}
  \label{rightCal}
  
 \end{figure}
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.32, angle = 0]{./pictures/bottom.png}
- \caption{Signal integral histograms with gaussian fits for bottom position.}
+ \includegraphics[scale=0.3, angle = 0]{./pictures/bottom.png}
+ \caption{Signal integral histograms with gaussian fits for the bottom position.}
  \label{bottomCal}
  
 \end{figure}
 
 
-The main parameter for determining responsivity ration constants is the mean value of the signal integrals, which is extracted from the gaussian. The relative calibration constants are calculated as follows:
+The main parameter for determining responsivity ratio constants is the mean value of the signal integrals, which is extracted from the gaussian. The relative calibration constants are calculated as follows:
 
 \begin{equation}
 c_{\textrm{i}} = \frac{m_{\textrm{i}}}{m_{\textrm{ref}}}.
@@ -86,10 +87,10 @@ Where $c_{\textrm{i}}$ is a relative responsivity ration constants for i-th pixe
 \par
 The associated error is:
 \begin{equation}
-\mu(c_{\textrm{i}}) = c_{\textrm{i}} \sqrt{(\frac{\mu(m_{\textrm{i}})}{m_{\textrm{i}}})^2 + (\frac{\mu(m_{\textrm{ref}})}{m_{\textrm{ref}}})^2}.
+\sigma(c_{\textrm{i}}) = c_{\textrm{i}} \sqrt{(\frac{\sigma(m_{\textrm{i}})}{m_{\textrm{i}}})^2 + (\frac{\sigma(m_{\textrm{ref}})}{m_{\textrm{ref}}})^2}.
 \end{equation}
 
-As the basic errors $\mu(m_{\textrm{ref}})$ and $\mu(m_{\textrm{i}})$ are taken only the errors from the gaussian fits. Other systematic uncertainties were not yet determined and are not considered in this thesis.
+As the basic errors $\sigma(m_{\textrm{ref}})$ and $\sigma(m_{\textrm{i}})$ are taken only the errors from the gaussian fits. Other systematic uncertainties were not yet determined and are not considered in this thesis.
 \par
 The results calculated by these equations for every position can be seen in the following table.
 
@@ -112,7 +113,7 @@ $c_3$ & $1$    				   & $0.2462 \pm 0.0002$   & $1$      \\ \hline
 
 \section{Simulation comparison and discussion}
 
-To discuss the relevancy of measured and calculated values, we compare them to their counterparts from optical simulations, which were designed by Mgr. Martin Vacula and Mgr. Miroslav Pech Ph.D. from Jointlab. These simulations consist of theoretical models of FAST's mirrors and pixels illuminated by EULS in same three positions as was defined before. These models includes inhomogeneity correction matrixes for every pixel.
+To discuss the relevancy of measured and calculated values, we compare them to their counterparts from optical simulations, which were designed by Mgr. Martin Vacula and Mgr. Miroslav Pech Ph.D. from JLO. These simulations consist of theoretical models of FAST mirrors and pixels illuminated by EULS in the same three positions as was defined before. These models include inhomogeneity correction matrices for every pixel.
 
 \par
 The simulations were designed in ZEMAX OpticStudio software \cite{zemax}, which is based on calculating the traces of many rays through the entire optical system (ray tracing).
@@ -136,7 +137,7 @@ $c_3$ & $0.95$    & $0.46$   & $1$      \\ \hline
 The comparison between the two tables (theoretical simulation - \ref{CalibConstTblSim} and the real measurement - \ref{CalibConstTbl}) shows that the two pixels, which are lesser illuminated at the specified position have lesser responsivity than they should have according to the simulations.
 
 \par
-These differences may be caused by uncertainties in the EULS positioning, its partial space inhomogeneity, mirror inhomogeneity, or some yet undiscovered phenomena.
+These differences may be caused by uncertainties in the EULS positioning, its partial space inhomogeneity, mirror inhomogeneity, or some yet undiscovered phenomena and will be further investigated.
 
 
 % -----------------------------------------------

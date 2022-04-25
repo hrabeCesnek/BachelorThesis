@@ -15,6 +15,7 @@
 \usepackage{amsmath}
 % balíček pro vkládání obrázků
 \usepackage{graphicx}
+\usepackage{subfig}
 % balíček pro obrázky na krajích stránky 
 %\usepackage{floatflt}
 % balíček pro křížové odkazy
@@ -224,16 +225,16 @@ In~Olomouc~\today   \hfill\parbox[t]{6cm}{\centering\null\dotfill\\\student}
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
-The part of modern particle physics is focused onto the studying of ultra-high energy cosmic rays. To capture these particles the special astroparticle detectors have to be used.
-However, these detectors requires a very special hardware for their proper functionality.
+Part of modern particle physics is focused onto the studying of ultra-high energy cosmic rays. To capture these particles special astroparticle detectors have to be used.
+However, these detectors require a very special hardware for their proper functionality.
 \par
-This thesis is devoted to the development of calibration and monitoring hardware and techniques, mainly focused for the purposes of the astroparticle FAST telescope.
+This thesis is devoted to the development of calibration and monitoring hardware and techniques, mainly focused on the purposes of the astroparticle FAST telescope.
 \par
-The beginning theoretical chapters provide a short introduction into the astroparticle physics and its detection techniques, following by a summary of the associated calibration techniques. Telescope FAST is described in its own chapter.
+The beginning theoretical chapters provide a short introduction into the astroparticle physics and its detection techniques, followed by a summary of the associated calibration techniques. Telescope FAST is described in its own chapter.
 \par
-The experimental part is mainly focused onto the long-time testing of the pulse calibration UV source. The time stability of the two main parameters is observed - optical power and pulse geometry. The testing is followed by development of the stabilization upgrades leading up to optical feedback concept. The experimental part is supplemented by a short chapter describing the software development and functionality of the new FAST monitoring system for monitoring the multiple telescopes based on the Raspberry Pi.
+The experimental part is mainly focused onto the long-time testing of the pulsed calibration UV source. The time stability of the two main parameters is observed - optical power and pulse geometry. The testing is followed by development of the stabilization upgrades leading up to an optical feedback concept. The experimental part is supplemented by a chapter describing the software development and functionality of the new FAST monitoring system for monitoring the multiple telescopes based on the Raspberry Pi.
 \par
-The last chapter contains a demonstration and a data analysis of the FAST calibration using the mentioned UV source.
+The last chapter contains a demonstration and a data analysis of the FAST calibration using the tested UV source.
 
 
 % -----------------------------------------------
@@ -259,18 +260,16 @@ The last chapter contains a demonstration and a data analysis of the FAST calibr
 \addcontentsline{toc}{chapter}{Conclusion}
 
 The main significance of this thesis is its experimental part - the experimental setup for measuring the UV source stability was assembled and programmed, and the experimental data were successfully acquired. For signal processing, the analysis algorithms were developed in C++. 
- 
-By using analysis algorithms was proved, that the UV source is able to produce stable pulses, but with the optical power (pulse's height) varying over time. It was found out, that the UV LED itself is a cause of this. 
+\par
+By using analysis algorithms it was proven, that the UV source is able to produce stable pulses, but with the optical power (pulse's height) varying over time. It was found out, that the UV LED itself is the cause of this. 
 
 \par
 The LED ageing process was discovered to have a serious impact on optical power stability. The optical feedback based on pulse sampling and regulation showed itself to be the way to handle this problem.
 
 \par
-However, it was not able to fully examine the causes or to measure enough LEDs to obtain statistical behaviour, because there were not enough resources and time to do it. Personally I think, that this could be a future topic for solid state physics or nanotechnology.
+The fully functional calibration UV source haven't been constructed yet, but I believe that I acquired enough data and information that the development will be successfully finished.
 \par
-The fully functional calibration UV source haven't been constructed yet, but I hope that I acquired enough data and information that the development could be successfully finished.
-\par
-The new monitoring system will possibly satisfy the dynamically changing requirements onto the monitoring scheme of the deployed FAST prototypes.
+The new monitoring system should satisfy the requirements onto the monitoring scheme of the deployed FAST prototypes.
 
 \par
 I managed to close the thesis by the analysis of FAST calibration data to illustrate the usage of the UV source. It was shown that they differ from theoretical values, which can be caused by errors in experimental method itself or there are some undiscovered effects, that are neglected by the theoretical simulations.  

@@ -9,20 +9,23 @@
 As was mentioned before, the calibration UV optical source is an essential instrument to perform calibrations. Its main purpose is to deliver stable intensity which does not vary over time or due to the changes in outer conditions.
 \par
 In case of FAST the process of calibration requires low-intensity UV light to be delivered in microsecond square pulses. This is because FAST is a low-intensity detector and its PMTs may be easily saturated.
+\par
+At the beginning, this chapter describes long-time measurement of the UV source, then it focuses on testing LEDs and photodiodes for the purposes of the optical feedback concept. The last part deals with measurement of the feedback concept. 
+
 
 % -----------------------------------------------
 \section{UV source}
 % -----------------------------------------------
 For the calibration purposes a prototype of pulse UV source was developed. It was based on the current-driven LEDs inspired by the Karlsruhe Institute of Technology (KIT) concept. The active parts - LED drive circuit and 3 LEDs are situated in temperature stabilized head. 
 \par
-The source is driven by STM32 board, which allows us to set parameters - LED current by setting the voltage on the DAC channel, PWM duty and frequency, which is used to excite LED current through op amps.
+The source is driven by STM32 board, which allows us to set parameters - LED current by setting the voltage on the DAC channel, PWM duty and frequency, which is used to excite LED current through opamps.
  
 
 
  \begin{figure}[H]
  \centering
- \includegraphics[scale=0.09, angle = 270, origin = c]{./pictures/KarlsRuhe}
- \caption{UV source constructed by Vladimír Urbášek from Jointlab.}
+ \includegraphics[scale=0.12, angle = 0, origin = c]{./pictures/KarlsRuhe}
+ \caption{UV source constructed by Vladimír Urbášek from JLO.}
  \label{UVsource}
 \end{figure}
 
@@ -42,16 +45,16 @@ Our main task was to test this UV source's long-time stability and develop possi
 % -----------------------------------------------
 For calibration UV source, the long-time stability of optical power and pulse geometry is very important. Because there was no specialized apparatus for this measurement, we had to make our own. For these measurements, we use UV source with LED current $I_{\textrm{d}}$ = 2.5 mA, 50$\%$ duty cycle and frequency $f = 50$ kHz. 
 \subsection{Measuring apparatus}
-For measuring the optical power we use PM16 power meter (PM) and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb oscilloscope. XP2262 PMT is held on $U \approx -680$ V by HV voltage source. The PMT's gain may drift over time, but we use PMT mainly for geometry analysis and measurement of absolute optical power is left to PM16.
+For measuring the optical power we use PM16 power meter (PM) and for determining the pulse geometry we use XP2262 PMT with signal output connected to 2-channel PicoScope 2205A MSO usb oscilloscope. XP2262 PMT is held on $U \approx -680$ V by HV source. The PMT's gain may drift over time, but we use PMT mainly for geometry analysis and measurement of absolute optical power is left to PM16.
 \par
-We also use DS18B20 thermometer for PMT temperature monitoring and keysight 34461a multimeter for readout of voltages.
+We also use DS18B20 thermometer for PMT temperature monitoring and Keysight 34461a multimeter for readout of voltages.
 
 \par
 The PMT, power meter and the optical head of UV source are mounted in the IS's ports. The IS stops the unwanted external light and distributes the optical power to PMT and power meter. 
 \par
-The entire apparatus is controlled by Raspberry Pi (RPi). The RPi takes care of data acquisition and can be used to set the parameters of the UV source. It can be easily accessed over internet for data download or for user to control the experiment.
+The entire apparatus is controlled by Raspberry Pi (RPi). The RPi takes care of data acquisition and can be used to set the parameters of the UV source. It can be easily accessed over internet for data download or for a user to control the experiment.
 \par
-Osciloscope's readout was programmed in C language according to its programmer's manual \cite{PicoScope}. It is capable of 2ns sampling which is enough to capture rising edges of the pulses. The RPi sets basic parameters (DC coupling, range etc.) and then activates oscilloscope's trigger (rising edge). After sampling, RPi receives all samples from oscilloscope's memory.
+Osciloscope's readout was programmed in C language according to its programmer's manual \cite{PicoScope}. It is capable of 2-nanosecond sampling which is enough to capture rising edges of the pulses. The RPi sets basic parameters (DC coupling, range etc.) and then activates oscilloscope's trigger (rising edge). After sampling, RPi receives all samples from oscilloscope's memory.
 \par
 The multimeter is controlled by VISA commands using python USBTMC library. For thermometer we use RPi's 1-Wire.
 \par
@@ -59,14 +62,14 @@ Main component (IS,PW, PMT with HV source, UV source) are situated in protection
 
 \begin{figure}[H]
  \centering
- \includegraphics[width=150mm]{./pictures/aprature1b}
+ \includegraphics[scale = 0.09]{./pictures/aprature1b}
  \caption{Measuring apparatus.}
  \label{aparature1}
 \end{figure}
 
 \begin{figure}[H]
  \centering
- \includegraphics[scale = 0.09]{./pictures/aparature2b}
+ \includegraphics[scale = 0.07]{./pictures/aparature2b}
  \caption{PMT mounting and HV source.}
  \label{aparature2}
 \end{figure}
@@ -75,7 +78,7 @@ Main component (IS,PW, PMT with HV source, UV source) are situated in protection
 \subsection{Data acquisition and analysis}
 All the data are taken in specified interval (15 or 30 minutes). Two files are produced - osciloscope waveform file and a file with 30 samples of power meter, multimeter and a thermometer readings. From these 30 samples we calculate average and error. Most of data analysis we perform is done by C/C++ Root framework \cite{ROOT}.
 \par
-The data from oscilloscope contains the square pulses with noise (Fig. \ref{pulse}). From them we need to extract the information of pulses height, slope and time of the rising edge.
+The data from oscilloscope contain the square pulses with noise (Fig. \ref{pulse}). From them we need to extract the information of pulses height, slope and time of the rising edge.
 
  \begin{figure}[H]
  \centering
@@ -142,8 +145,8 @@ We also measured PMT's temperature for potential corrections.
  \label{temp1}
 \end{figure}
 
-From analysed data we may observe that the power is rising over time. This fact is confirmed by two sensors - both PM and PMT. In case of PMT there may be the drift in gain over time. Gain drift may be caused by changes in voltage (equation \ref{gainVolt}) or in temperature. In case of temperature, the trend is not only rising as $U_{H}$'s trend does, so the $2_{\circ}$ change in temperature may play little role in $U_{H}$ increase, but it is not probably the main cause of this effect.
-The graphs \ref{rise1} and \ref{slope1} shows that pulse is not deforming over time.
+From analysed data we may observe that the power is rising over time. This fact is confirmed by two sensors - both PM and PMT. In case of PMT there may be the drift in gain over time. Gain drift may be caused by changes in voltage (equation \ref{gainVolt}) or in temperature. In case of temperature, the trend is not only rising as $U_{H}$'s trend does, so the $2^{\circ}$C change in temperature may play little role in $U_{H}$ increase, but it is not probably the main cause of this effect.
+The graphs \ref{rise1} and \ref{slope1} show that the pulse is not deforming over time.
 \par
 The optical power instability may be caused by failures in LED driving circuit (changes in current flowing by diode) or by ageing processes in the UV diodes. The PM shows that the power increase is around $7 \%$ in 10 days, which is unacceptable for any calibration source. 
 \par
@@ -165,16 +168,16 @@ To confirm this measured fact and check for possible causes of the optical power
 
 Other measurements of optical power have ended in similar way. But by using the multimeter we can see that PMT's voltage is stable (Fig. \ref{PMTVolt}). It is varying only about 0.4 V at the beginning.
 \par
-The measurement of current by oscilloscope was done and analysed in similar way as was done for the PMT's pulses. Both of them are PWM square pulses by shape. The oscilloscope's probe was connected to the 100$\Omega$ resistor, which is in serial to the LED and the current source and acted as a simple $U/I$ converter. As we can see in Fig. \ref{LEDCurrent}, the current varies only a little over the value which was set ($I_\textrm{d} = 2.5$ mA), and thus the rising trend of optical power is definitely not caused by the current variations.
+The measurement of current by oscilloscope was done and analysed in similar way as was done for the PMT's pulses. Both of them are PWM square pulses by shape. The oscilloscope's probe was connected to the 100$\Omega$ resistor, which is in serial to the LED and the current source and acted as a simple $U/I$ converter. As we can see in Fig.~\ref{LEDCurrent}, the current varies only a little over the value which was set ($I_\textrm{d} = 2.5$ mA), and thus the rising trend of optical power is definitely not caused by the current variations.
 
 \section{UV LED diode}
 
 In following experiments and prototyping we are using the UV LED types MT3650W3-UV and its smaller SMD equivalent ELUA2016OGB.
 
-\subsection{ageing}
+\subsection{Ageing}
 As was seen in results of previous measurements, the diode ageing process is the most probable cause of the changes in optical power. We tried to confirm this fact by ageing the similar UV LED (type MT3650W3-UV).
 \par
-The single UV LED powered by the current source lm334 on $I_\textrm{d} =$ 7.1 mA was mounted onto IS's port and the optical power in continual mode was measured by the PM16. For the additional correction - the $I_\textrm{d} $ was also measured by keysight multimeter.
+The single UV LED powered by the current source lm334 on $I_\textrm{d} =$ 7.1 mA was mounted onto IS's port and the optical power in continual mode was measured by the PM16. For the additional correction - the $I_\textrm{d} $ was also measured by multimeter.
 
 
 \par
@@ -188,7 +191,7 @@ The single UV LED powered by the current source lm334 on $I_\textrm{d} =$ 7.1 mA
 On the Fig. \ref{SingleDiod} we can see that the optical power of single LED increased about $2 \%$ after one week. Then followed a stable interval which lasted about a week, but after that period the LED started "dying" and the power started to decrease.
 
 \par
-There are 2 mayor possibilities to fix the LED power variation problem. The first possibility is to monitor the time usage of the UV source the and according to that recalibrate the source, but the behaviour may vary diode from diode and thus it has many disadvantages. The second and more accurate approach is to regulate the power by an optical feedback.    
+There are 2 major possibilities to fix the LED power variation problem. The first possibility is to monitor the time usage of the UV source the and according to that recalibrate the source, but the behaviour may vary diode from diode and thus it has many disadvantages. The second and more accurate approach is to regulate the power by an optical feedback.    
 
 
 \subsection{Wavelength dependency}
@@ -203,7 +206,7 @@ For experiments and calibration, it is also necessary to determine the exact wav
  \label{wavdep}
 \end{figure}
 
-On the Fig. \ref{wavdep} we can see, that both $\lambda$ and $\Delta \lambda$ dependencies on temperature are insignificant.
+In Fig. \ref{wavdep} we can see, that both $\lambda$ and $\Delta \lambda$ dependencies on temperature are insignificant.
 
 %------------------------------------------------
 \section{Optical feedback - potential fix}
@@ -213,10 +216,10 @@ One way to handle the ageing process of UV LED diodes is to monitor the power an
 The part of optical power is reflected from LED to photodiode. Photocurrent induced this way is converted to voltage which is read by ADC (analog-digital converter). This information is then used by the STM32 board to adjust the current level by DAC. One problem is that the optical power is delivered in pulses, and thus it is necessary to sample these pulses and determine the height.
 \par
 \subsection{Detection photodiode}
-As detection photodiode we chose GUVV-T10GD (or GUVV-C20SD as SMD equivalent). It is guaranteed to be UV-A sensor with wavelength responsivity from 230 to 395 nm. However, it is necessary to test more of its properties, because some of the properties, which are essential for our application, are not shown in datasheets and probably haven't been yet measured - temperature dependency of the dark current, responsivity to 10 $\mu$s square signals and ageing processes. The reverse voltage of photodiode $U_\textrm{r}$ could go up to 2 V. With higher the $U_\textrm{r}$ is, the lower is the diode's capacity.
+As detection photodiode we chose GUVV-T10GD (or GUVV-C20SD as SMD equivalent). It is guaranteed to be UV-A sensor with wavelength responsivity from 230 to 395 nm. However, it is necessary to test more of its properties, because some of the properties, which are essential for our application, are not shown in datasheets and probably haven't been yet measured - temperature dependency of the dark current, responsivity to 10 $\mu$s square signals and ageing processes. The reverse voltage of photodiode $U_\textrm{r}$ could go up to 2 V. The higher the $U_\textrm{r}$ is, the lower is the diode's capacity.
 \par
 \subsubsection{Dark current}
-Information of dark current is very important. We need to know if the signal levels are much greater than dark current. We measured dark current with 7 set temperatures. Current was measured by Keithley 2470 picoammeter. Temperature was set by autoregulated transistor heating plate. The transistor plate is driven by STM32 nucleo's DAC. The nucleo is controlled by the RPi. The RPi also communicates with picoammeter and controls the entire data acquisition. We measured two series - one with reverse voltage $U_\textrm{r} = 0.1$ V and second with reverse voltage $U_\textrm{r} = 1$ V. The picoammeter is also capable of providing voltage, so it was used as a source of reverse voltage.
+Information of dark current is very important. We need to know if the signal levels are much greater than dark current. We measured dark current with 7 set temperatures. Current was measured by Keithley 2470 picoammeter. Temperature was set by autoregulated transistor heating plate. The transistor plate is driven by STM32 Nucleo's DAC. The Nucleo is controlled by the RPi. The RPi also communicates with picoammeter and controls the entire data acquisition. We measured two series - one with reverse voltage $U_\textrm{r} = 0.1$ V and second with reverse voltage $U_\textrm{r} = 1$ V. The picoammeter is also capable of providing voltage, so it was used as a source of reverse voltage.
 
 \begin{figure}[H]
  \centering
@@ -229,7 +232,7 @@ Information of dark current is very important. We need to know if the signal lev
 \begin{figure}[H]
  \centering
  \includegraphics[scale=0.09, angle = 180]{./pictures/heating}
- \caption{Heating control and measurement control. From the left - heating circuit, STM32 nucleo, RPi}
+ \caption{Heating control and measurement control. From the left - heating circuit, STM32 Nucleo, RPi}
  \label{heating}
 \end{figure}
 
@@ -289,18 +292,18 @@ For the feedback photodiode, the time stability is very important. It has to las
  \label{agingPhotoCurrent}
 \end{figure}
 
-The time evolution shows that the photodiode's photocurrent increased around 1 $\%$ over one week. However, this small variation is probably caused by the LED ageing, as was shown before. 
+The time evolution shows that the photodiode's photocurrent increased around 1~$\%$ over one week. However, this small variation is probably caused by the LED ageing, as was shown before. 
 \par
 Due to the fact, that any bigger drift in sensitivity was not observed under the bad conditions, we come to a conclusion that the feedback photodiode is much more stable than the LED.
 
 \subsection{Feedback concept and testing}
 
-The original concept circuit was modified by adding the feedback part, which consists of two op amps - primary acts as trans-impedance amplifier (LTC6268) to convert induced photocurrent into the signal voltage and the secondary acts as a simple voltage amplifier/follower (ADA4805) with pre-filter. The photodiode is powered by a voltage regulator (LT1054). The additional scheme can be seen on Fig. \ref{Amplifier}.
+The original concept circuit was modified by adding the feedback part, which consists of two opamps - primary acts as trans-impedance amplifier (LTC6268) to convert induced photocurrent into the signal voltage and the secondary acts as a simple voltage amplifier/follower (ADA4805) with pre-filter. The photodiode is powered by a voltage regulator (LT1054). The additional scheme can be seen on Fig. \ref{Amplifier}.
    
 \begin{figure}[H]
  \centering
  \includegraphics[scale=0.45]{./pictures/FeedBackCirc.png}
- \caption{Two state amplifier with a photodiode scheme. Physically manufactured by Vladimír Urbášek.}
+ \caption{Two stage amplifier with a photodiode scheme. Physically manufactured by Vladimír Urbášek.}
  \label{Amplifier}
 \end{figure}
 
@@ -314,17 +317,17 @@ The UV LED is mounted in position to deliver power into the photodiode and also 
 \end{figure}
 
 
-However, the UV source is designed to deliver 10$\mu$s pulses, so, to determine the signal level, it is necessary to sample this pulse. 
+However, the UV source is designed to deliver 10-microsecond pulses, so, to determine the signal level, it is necessary to sample this pulse. 
 
 \subsubsection{Sampling and regulation}
 
-To perform the pulse sampling, the hardware with enough capabilities has to be used. STM32 board Nucleo F446RE \cite{NucF446RE} offers various timers (for PWM generation and advanced triggering), both 12-bit ADC and DAC and a DMA (direct memory access) feature. The ADC combined with DMA can flush the sampled data directly into the memory and may exceed the sample rate over 1 MS/s.
+To perform the pulse sampling, the hardware with sufficent capabilities has to be used. STM32 board Nucleo F446RE \cite{NucF446RE} offers various timers (for PWM generation and advanced triggering), both 12-bit ADC and DAC and a DMA (direct memory access) feature. The ADC combined with DMA can flush the sampled data directly into the memory and may exceed the sample rate over 1 MS/s.
 
 \par
 
-The other problem is the time synchronization of sampling with the pulse, to achieve that the STM32 timers have to be combined. Due to the fact, that the excitation PWM pulses for the LED circuit are generated by STM32 timer, there is a possibility to use this PWM timer also to trigger an another timer (programmed as a slave), which can handle the ADC sampling. Some timers can be programmed to produce a burst of short pulses with defined number of repeats. These short pulses can be used to trigger ADC to take sample and transfer it directly into memory through DMA without any necessity of the CPU handling.  
+The other problem is the time synchronization of sampling with the pulse, to achieve that the STM32 timers have to be combined. Due to the fact, that the excitation PWM pulses for the LED circuit are generated by STM32 timer, there is a possibility to use this PWM timer also to trigger another timer (programmed as a slave), which can handle the ADC sampling. Some timers can be programmed to produce a burst of short pulses with defined number of repeats. These short pulses can be used to trigger ADC to take sample and transfer it directly into memory through DMA without any necessity of the CPU handling.  
 \par
-The sampling procedure captured by oscilloscope can be seen on Fig. \ref{procedure}. Blue is the original PWM excitation pulse for LED current driver, yellow is the optical pulse captured by photodiode, and violet are the pulses generated by the slave timer triggering the ADC samples. Due to the deformation of the yellow photodiode signal, the first two samples are not taken to account. 
+The sampling procedure captured by oscilloscope can be seen on Fig. \ref{procedure}. Blue is the original PWM excitation pulse for LED current driver, yellow is the optical pulse captured by photodiode, and violet are the pulses generated by the slave timer triggering the ADC samples. Due to the deformation of the yellow photodiode signal, the first two samples are not taken into account. 
 There may be a space for two more samples to be taken at the end of the yellow pulse, but we decided not to do so, because of the possible prototyping variations in the pulse's end edge. 
 
 
@@ -335,11 +338,11 @@ There may be a space for two more samples to be taken at the end of the yellow p
  \label{procedure}
 \end{figure}
 \par
-This synchronized sampling can produce up to 8 samples per pulse. To achieve better statistics, we decided to capture and sample about 50 pulses. The mean value of these samples is considered to be a level of the actual LED power. This value is then used by STM32's program to set the DAC value. However, the direct setting of DAC by actual value of LED power is not suitable for this application and may cause unwanted oscillations in power level, and thus it is better to implement some kind of numerical regulation.
+This synchronized sampling can produce up to 8 samples per pulse. To achieve better statistics, we decided to capture and sample at least 50 pulses. The mean value of these samples is considered to be the level of the actual LED power. This value is then used by STM32 program to set the DAC value. However, the direct setting of DAC by actual value of LED power is not suitable for this application and may cause unwanted oscillations in power level, and thus it is better to implement some kind of numerical regulation.
 
 
 \par
-In many applications it is needed to dynamically vary the output to compensate unwanted effects the and to achieve the stability of some physical quantity (temperature, position etc.). The most basic approach is the PID regulation (proportional-integral-derivative). PID regulation is based on a feedback loop - the error value is calculated from the difference of a current measured state and a desired state. Output is then set to the value calculated as a weighted sum proportional, integral and derivative terms of the error value (both integral and derivative are numerically calculated). This is repeated in cycle, with recalculating error value and its terms \cite{PID}. The new value for DAC is set in every cycle.
+In many applications it is needed to dynamically vary the output to compensate unwanted effects the and to achieve the stability of some physical quantity (temperature, position etc.). The most basic approach is the PID regulation (proportional-integral-derivative). PID regulation is based on a feedback loop - the error value is calculated from the difference of the current measured state and the desired state. Output is then set to the value calculated as a weighted sum proportional, integral and derivative terms of the error value (both integral and derivative are numerically calculated). This is repeated in cycle, with recalculating error value and its terms \cite{PID}. The new value for DAC is set in every cycle.
 
 \par
 For our purposes, where the output state (optical power) is set by DAC, the regulation based only on the integral term was implemented. This concept allows optical power to rapidly increase when it is too far from desired value and also to make fine corrections when the optical power starts to deviate from the desired value. 
@@ -353,13 +356,13 @@ The original ADC and DAC reference is 3.3 V made from the supply voltage stabili
 
 \subsubsection{Direct stabilization test}
 
-Before running any long-time tests, the stabilization has to be simply tested, for example by varying the transmission between the two diodes.
+Before running any long-time tests, the stabilization was tested by varying the transmission between the two diodes.
 \par
 To vary the transmission, and thus to simulate the optical power variations, inserting a simple paper shade directly into the optomechanics between the two diodes has proven to be enough for this experiment.
 
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.5]{./pictures/Stabilizin.png}
+ \includegraphics[scale=0.45]{./pictures/Stabilizin.png}
  \caption{Feedback concept testing.}
  \label{Feedback testing}
 \end{figure}
@@ -375,7 +378,7 @@ Due to the non-optimized optomechanics the source was not able to produce enough
 
 
 \par
-The test run was done on heating plate having both the prototype and Nucleo stabilized on $t \approx 40.5$ $^\circ $C (the heating itself is incapable of holding the temperature with accuracy better than 1 $^\circ $C) and covered by an insulating material. Besides the optical power measurement, the DAC value (voltage - measured by multimeter) was also measured to observe the feedback stabilization. To measure optical power with the power meter, the pulse's duty cycle was increased to 50 $\%$, but the sampling scheme was unchanged.
+The test run was done on heating plate having both the prototype and Nucleo stabilized on $t \approx 40.5$ $^\circ $C and covered by an insulating material. However, the heating itself is incapable of holding the temperature with accuracy better than 1 $^\circ $C. Besides the optical power measurement, the DAC value (voltage - measured by multimeter) was also measured to observe the feedback stabilization. To measure optical power with the power meter, the pulse's duty cycle was increased to 50 $\%$, but the sampling scheme was unchanged.
 
 \par
 
@@ -396,11 +399,11 @@ The test lasted about 10 days and the results can be seen on Fig. \ref{Long test
  \label{Long test temperatures}
 \end{figure}
 
-From the relative optical power time evolution we can see, that it decreased about 0.005 $\%$ in 10 days. This change can be partially associated with temperature drop about 0.2 $^\circ$C from Fig. \ref{Long test temperatures}. However, the DAC value increased about 1.7 $\%$ and it is highly possible, that this was the way the feedback loop balanced the LED's power decrease.
+From the relative optical power time evolution we can see, that it decreased only about 0.005~$\%$ in 10 days. This change is in correlation with temperature drop about 0.2~$^\circ$C from Fig. \ref{Long test temperatures}. However, the DAC value increased about 1.7~$\%$ and it is highly possible, that this was the way the feedback loop balanced the LED's power decrease.
 
 \par 
  
-Although there was a 0.005 $\%$ change in optical power, this test can be considered to be the most sufficient test of the UV source stability so far. However, the UV source prototype is not yet ready to fully serve the FAST's calibration procedures. There is yet much to be done - temperature stabilization, fine mechanics and user-friendly control.
+Although there was a 0.005~$\%$ change in optical power, this test can be considered successful. However, the UV source prototype is not yet ready to fully serve the FAST's calibration procedures. There is yet much to be done - temperature stabilization, fine mechanics and user-friendly control.
 
 
 %------------------------------------------------
