@@ -90,7 +90,7 @@ One of its main parameters is quantum efficiency. It is referred to as ratio of 
 Photocathode material must be sensitive to certain wavelengths, which we want to detect with the PMT, and must have sufficient quantum efficiency. Preferred materials are usually alkali antinodes.
 \subsubsection{Electron multiplier}
 The electron multiplier consists of dynodes and one anode.
-Dynodes are electrodes, which produce more electrons through secondary emission. To maintain electrostatic field between dynodes, each of dynodes is held on different potential. This is achieved by using the voltage divider. Every resistor in the divider sets the potential of one diode according to its resistivity.
+Dynodes are electrodes, which produce more electrons through secondary emission. To maintain electrostatic field between dynodes, each of dynodes is held on different potential. This is achieved by using the voltage divider. Every resistor in the divider sets the potential of one dynode according to its resistivity.
 \par
 All of the photoelectrons emitted by photocathode should be ideally collected by the first dynode. However, many of them could be diverted from their path to dynode due to various effects. The parameter, which characterizes this, is the collection efficiency. The collection efficiency is probability that a photoelectron will strike area of the first dynode. 
 \par
@@ -102,7 +102,7 @@ Voltage divider could be a simple resistor serial network, which divide high inp
 \par
 It is necessary to consider, that the multiplier current density increases in direction to the anode, so it tends to lessen the voltage between last dynode and anode. This phenomena can shake the potential levels across the entire multiplier. One way to reduce the impact on PMT's behaviour is to choose the proper resistor values of the divider. 
 \par
-The resistor values could same for all the dynodes, but for some applications it is better to have progressive voltage distribution, which increases from cathode to anode, or intermediate distribution with highest values on the beginning of the multiplier.
+The resistor values could be same for all the dynodes, but for some applications it is better to have progressive voltage distribution, which increases from cathode to anode, or intermediate distribution with highest values on the beginning of the multiplier.
 
 \par
 In some applications, where high anode current peaks are expected, the divider can be filled with reservoir capacitors, which prevent the temporally charge exhaustion of the dynodes. In pulse mode, the unwanted oscillations on dynodes may occur, in that case, it is desirable to connect additional damping resistor to the divider.
@@ -128,8 +128,8 @@ Differences of photoelectrons' trajectories from the cathode to the first dynode
 With respect to differences in electron trajectories and arrival times, the PMTs are divided into 3 types:
 \begin{enumerate}
 \item \textbf{Very-fast tubes} - photoelectrons arrive simultaneously, low collection efficiency.
-\item \textbf{Fast tubes} - compromise between timing performance and collection efficiency
-\item \textbf{General-purpose tubes} - simple optoelectronics, good collection efficiency, low timing performance
+\item \textbf{Fast tubes} - compromise between timing performance and collection efficiency.
+\item \textbf{General-purpose tubes} - simple optoelectronics, good collection efficiency, low timing performance.
 \end{enumerate}
 %\par 
 %Another time delay to be considered 
@@ -146,10 +146,10 @@ By exposing PMT to bad conditions, such as humidity, mechanical stress, high tem
 % -----------------------------------------------
 
 \subsection{Raspberry Pi}
-Raspberry Pi (RPi) is a single board computer which we use mainly for the experiment control. The linux-based Raspbian or DietPi operating system allows us to easily run various scripts and programs written in multiple languages. By having wifi and an ethernet port, the RPi can be easily accessed over internet. It can be used to control instruments and data acquisition over its USBs,1-Wire and I2C etc. However, it doesn't have any analog inputs/outputs such as ADCs and DACs.
+Raspberry Pi (RPi) is a single board computer which we use mainly for the experiment control. The linux-based Raspbian or DietPi operating system allows us to easily run various scripts and programs written in multiple languages. By having wifi and an ethernet port, the RPi can be easily accessed over internet. It can be used to control instruments and data acquisition over its USBs, 1-Wire and I2C etc. However, it doesn't have any analog inputs/outputs such as ADCs and DACs.
 \subsection{STM32 based microcontrolers}
 For other types of tasks, which do not require data storage and remote control, but require for example an analog sampling, setting up the voltage levels or generating well defined PWM pulses, we use STM32 based microcontrollers. 
 \par
-For this thesis purposes we use the STM32 nucleo F411RE and the STM32 nucleo F446RE with better analog inputs/outputs.
+For this thesis purposes we use the STM32 Nucleo F411RE and the STM32 Nucleo F446RE with better analog inputs/outputs.
 % -----------------------------------------------
 % %%%%%%%%%%%%%%%%%%%%%%%% End of file %%%%%%%%%%%%%%%%%%%%%%%%

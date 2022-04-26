@@ -45,13 +45,13 @@ Central control unit is a RPi, which collects data from STM32 F411RE Nucleo. For
 
 \section{Software system}
 % -----------------------------------------------
-For this application, where it is not essential to achieve fast sampling and fast responses, we decided to use python fo RPi and micropython for STM32 nucleo. These languages offer us libraries and easy programming for some of our sensors, however in a cost of speed and memory (compared to C/C++ for example).
+For this application, where it is not essential to achieve fast sampling and fast responses, we decided to use python for RPi and micropython for STM32 Nucleo. These languages offer us libraries and easy programming for some of our sensors, however in a cost of speed and memory (compared to C/C++ for example).
 \par
 The data reading scripts are scheduled by classic linux's tool - crontab.
 
 
 \par
-The main part of software communication between RPi (and RPi's internal processes) and STM32 nucleos is done throught the MQTT Mosquitto server, which runs on RPi. Nowadays the MQTT is a useful service used in automatization processes, where the many messages from various devices are sent and received simultaneously. The processes may have three roles - publisher, subscriber and broker (in our case done by MQTT service itself). The publisher process sends data packet with topic to broker. The broker calls all subscribers of this topic and passes them the data packet \cite{MqttServ}. The processes must be programmed to communicate with MQTT service, which can be done by using various MQTT libraries. The MQTT scheme can be in our case specified in following way: The running scripts (representing processes for MQTT) for data acquisition (wind, rain, Nucleo data transfer) are programmed as publishers and publish values of specified sensors with theme related to their names and types in specified intervals. The script, which handles the data transfer to a database is programmed as a subscriber.
+The main part of software communication between RPi (and RPi's internal processes) and STM32 Nucleos is done throught the MQTT Mosquitto server, which runs on RPi. Nowadays the MQTT is a useful service used in automatization processes, where the many messages from various devices are sent and received simultaneously. The processes may have three roles - publisher, subscriber and broker (in our case done by MQTT service itself). The publisher process sends data packet with topic to broker. The broker calls all subscribers of this topic and passes them the data packet \cite{MqttServ}. The processes must be programmed to communicate with MQTT service, which can be done by using various MQTT libraries. The MQTT scheme can be in our case specified in following way: The running scripts (representing processes for MQTT) for data acquisition (wind, rain, Nucleo data transfer) are programmed as publishers and publish values of specified sensors with theme related to their names and types in specified intervals. The script, which handles the data transfer to a database is programmed as a subscriber.
 
 
 \par
